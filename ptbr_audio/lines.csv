@@ -1,0 +1,13 @@
+msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
+1200;Corneria;General Pepper;-;It's about time you showed up Fox. You're the only hope for our world.;Que bom que apareceram\nStar Fox! Voces sao nossa\nunica esperanca.;pepper/01_que_bom.wav;yes
+1210;Corneria;Fox McCloud;-;I'll do my best! Andross won't have his way with me.;Vou sentar o dedo!\nDessa vez o Andross nao\nvai se dar bem!;fox/01_vou_sentar_o_dedo.wav;yes
+2005;Corneria;Fox McCloud;-;Open the wings.;Abram as asas.;fox/02_abram_as_asas.wav;yes
+2010;Corneria;Fox McCloud;-;Check your G-Diffuser system.;Chequem o sistema\nG-Difusor.;fox/03_chequem_o_sistema.wav;yes
+2020;Corneria;Falco Lombardi;-;Falco here. I'm fine.;Falco aqui,\neu tô de boa.;falco/01_falco_aqui.wav;yes
+2030;Corneria;Peppy Hare;-;This is Peppy. All systems go.;;peppy/;no
+2040;Corneria;Slippy Toad;-;Slippy here, I'm ok.;;slippy/;no
+2050;Corneria;Fox McCloud;-;I see em’ up ahead. Let's rock and roll!;;fox/;no
+20267;Corneria;Peppy Hare;Level entry.;Slippy, get back here!;;peppy/;no
+2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;;peppy/;no
+2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;;slippy/;no
+2336;Corneria;Slippy Toad;Mayday;Thanks Fox. I thought they had me.;;slippy/;no

@@ -192,6 +192,13 @@ std::shared_ptr<Ship::IResource> ResourceFactoryXMLSampleV0::ReadResource(std::s
 
     const char* path = child->Attribute("Path");
     auto sampleFile = Ship::Context::GetInstance()->GetResourceManager()->GetArchiveManager()->LoadFile(path);
+    /* Optional Tuning attribute lets a mod author override the default
+       sampleRate/32000 calc when packing custom voice/SFX. Use case: the
+       seq player multiplies sample.tuning by per-instrument tuning ratios
+       (e.g. 0.25 for Pepper's voice instrument). To make a 32 kHz pt-BR
+       recording play at native rate inside an instrument with tuning=0.25,
+       set Tuning="4.0" in the XML so 0.25 * 4.0 = 1.0. */
+    float tuningOverride = child->FloatAttribute("Tuning", 0.0f);
     if (customFormatStr != nullptr) {
         // Compressed files can take a really long time to decode (~250ms per).
         // This worked when we tested it (09/04/2024) (Works on my machine)
@@ -204,7 +211,11 @@ std::shared_ptr<Ship::IResource> ResourceFactoryXMLSampleV0::ReadResource(std::s
 
             drwav_get_length_in_pcm_frames(&wav, &numFrames);
 
-            sample->mSample.tuning = (float)(wav.sampleRate * wav.channels) / 32000.0f;
+            if (tuningOverride > 0.0f) {
+                sample->mSample.tuning = tuningOverride;
+            } else {
+                sample->mSample.tuning = (float)(wav.sampleRate * wav.channels) / 32000.0f;
+            }
             sample->mSample.size = numFrames * wav.channels * 2;
             sample->mSample.sampleAddr = new uint8_t[sample->mSample.size];
 

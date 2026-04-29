@@ -1,6 +1,27 @@
 [comment]: <> (Todo: Make Light Mode Image)
 [comment]: <> (Todo: Make Dark Mode Image)
 
+# Starship — Brazilian-Portuguese Localization Fork
+
+> **(WIP)** Fork of [HarbourMasters/Starship](https://github.com/HarbourMasters/Starship) (SF64 PC Port) adding a full Brazilian-Portuguese localization (voice dub + text) for Star Fox 64.
+
+This fork extends Starship with two parallel pt-BR channels:
+
+- **Voice dub** — pt-BR recordings replace the original English voice lines. Driven by a data-only `voice_manifest.txt` that maps msgIds to WAV files; the engine reads it at runtime via an `Audio_PlayVoice` intercept, so adding a new line never requires a rebuild.
+- **Text translation** — pt-BR radio-bubble text matching every dubbed line, packed into a drop-in `.o2r` mod (`mods/SF64-DubPT-BR.o2r`) generated from `ptbr_audio/lines.csv`.
+
+**Status:** proof-of-concept complete (Corneria mission briefing, Pepper + Fox lines fully dubbed end-to-end). Scaling to the full ~780-line script is in progress.
+
+### Documentation
+- [`PLAN.md`](./PLAN.md) — full localization roadmap (mapping → translation → recording → QA → distribution).
+- [`PROOF_OF_CONCEPT.md`](./PROOF_OF_CONCEPT.md) — technical deep-dive on the voice intercept, manifest format, text-mod packer, and the engine-side hooks that make it work.
+
+---
+
+The upstream Starship README follows below.
+
+---
+
 # Starship
 
 Lead Developers: 

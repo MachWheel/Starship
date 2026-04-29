@@ -719,6 +719,27 @@ void Audio_NoteInitForLayer(Note* note, SequenceLayer* layer) {
     note->playbackState.fontId = layer->channel->fontId;
     noteSub->bitField0.stereoHeadsetEffects = layer->channel->stereoHeadsetEffects;
     noteSub->bitField1.reverbIndex = layer->channel->someOtherPriority & 3;
+
+    /* Custom-voice voice-content suppression. While a letSeqRun=true custom
+       voice line is active, allow the first N notes on a voice font (those
+       carry the radio click + opening phoneme) and mute the rest (the main
+       English voice content). See audio_general.c::Audio_PlayVoice for where
+       these flags are armed. */
+    {
+        extern s32 g_dub_voice_pass_count;
+        extern bool g_dub_voice_suppress_active;
+        if (g_dub_voice_suppress_active && layer->channel != NULL) {
+            s32 fontId = (s32)layer->channel->fontId;
+            if (fontId >= 0 && fontId <= 3) {
+                if (g_dub_voice_pass_count > 0) {
+                    g_dub_voice_pass_count--;
+                } else {
+                    noteSub->bitField0.finished = 1;
+                    noteSub->bitField0.enabled = 0;
+                }
+            }
+        }
+    }
 }
 
 void func_80012E28(Note* note, SequenceLayer* layer) {

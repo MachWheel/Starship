@@ -1056,12 +1056,16 @@ Acmd* AudioSynth_ProcessNote(s32 noteIndex, NoteSubEu* noteSub, NoteSynthesisSta
 
                         if (((synthState->samplePosInt * 2) + (numSamplesToLoadAdj) *SAMPLE_SIZE) < bookSample->size) {
                             bytesToRead = (numSamplesToLoadAdj + 16) * SAMPLE_SIZE;
-                        } else {
+                        } else if ((uint32_t)(synthState->samplePosInt * 2) < bookSample->size) {
                             bytesToRead = bookSample->size - (synthState->samplePosInt * 2);
+                        } else {
+                            bytesToRead = 0;
                         }
                         // 2S2H [Port] [Custom audio] Handle decoding OPUS data
-                        aLoadBuffer(cmd++, sampleAddr + (synthState->samplePosInt * 2), DMEM_UNCOMPRESSED_NOTE,
-                                    bytesToRead);
+                        if (bytesToRead > 0) {
+                            aLoadBuffer(aList++, sampleAddr + (synthState->samplePosInt * 2), DMEM_UNCOMPRESSED_NOTE,
+                                        bytesToRead);
+                        }
 
                         goto skip;
                 }

@@ -1847,7 +1847,201 @@ void Audio_ResetSfx(void) {
     }
 }
 
+#ifdef _WIN32
+#include <windows.h>
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
+#endif
+
+/* Custom voice line table. Each row groups msgIds that should coalesce into
+   a single WAV playback (used when a single character's line spans multiple
+   Audio_PlayVoice calls — e.g., Pepper's "Está" intro on msgId=3 plus the
+   main body on msgId=1200). When any other msgId fires, we drop back to the
+   normal seq path.
+
+   `letSeqRun` lets the engine keep dispatching the msgId to the voice seq
+   even though we're playing our own WAV. We need this for the LEAD msgId of
+   a line (e.g. msgId=3 for Pepper) because the radio static SFX is baked
+   into the original sample_4270 audio data — without seq dispatch, the
+   click never plays. The brief original-language fragment that bleeds
+   through is harmless at line-start; the pt-BR PlaySound covers it within
+   ~150 ms. For continuation msgIds (1200, 1210) we still skip seq dispatch
+   to keep the unreplaceable English body samples (notably sample_3310) from
+   playing under our pt-BR. */
+#define CUSTOM_VOICE_MAX_LINES 1024
+#define CUSTOM_VOICE_MAX_IDS_PER_LINE 8
+#define CUSTOM_VOICE_MAX_PATH 256
+
+/* Surgical voice-content suppression. When a custom voice line dispatches to
+   the seq (letSeqRun=true), the seq fires multiple notes per msgId:
+       1. Click + opening phoneme (small ADPCM sample, ~2998 B)
+       2. Trailing phoneme (very small, ~288 B)
+       3. Main voice content (larger sample, ~3000+ B) — this is the English
+          voice line we want suppressed.
+   We allow the first N voice-font NoteInits (the click + phonemes), then
+   mute subsequent ones. Read+decremented from audio_playback.c. */
+s32 g_dub_voice_pass_count = 0;
+bool g_dub_voice_suppress_active = false;
+
+/* Deferred PlaySound: queue a custom-voice WAV to fire a few audio frames
+   after Audio_PlayVoice, giving the seq's radio-click SFX a head start so
+   the pt-BR voice doesn't start before the click. Tuned for ~150 ms delay. */
+#define CUSTOM_VOICE_PLAY_DELAY_FRAMES 13
+static char sCustomVoicePendingWav[CUSTOM_VOICE_MAX_PATH] = "";
+static s32 sCustomVoicePlayAtFrame = 0;
+
+typedef struct {
+    s32 msgIds[CUSTOM_VOICE_MAX_IDS_PER_LINE];        /* 0-terminated */
+    s32 letSeqRunForMsgIds[CUSTOM_VOICE_MAX_IDS_PER_LINE]; /* 0-terminated */
+    char wavFile[CUSTOM_VOICE_MAX_PATH];
+} CustomVoiceLine;
+
+static CustomVoiceLine sCustomVoiceTable[CUSTOM_VOICE_MAX_LINES];
+static s32 sCustomVoiceCount = 0;
+static bool sCustomVoiceLoaded = false;
+
+/* Parse a comma-separated list of integers into a 0-terminated array.
+   "-" or empty means no entries. Stops at separator/EOL. Updates *out_end. */
+static void parse_id_list(const char* s, s32* out_arr, s32 max_count) {
+    s32 i = 0;
+    while (*s == ' ' || *s == '\t') s++;
+    if (*s == '-' && (s[1] == '\0' || s[1] == ' ' || s[1] == '\t')) {
+        out_arr[0] = 0;
+        return;
+    }
+    while (*s != '\0' && i < max_count - 1) {
+        while (*s == ' ' || *s == '\t' || *s == ',') s++;
+        if (*s == '\0') break;
+        s32 val = 0;
+        while (*s >= '0' && *s <= '9') {
+            val = val * 10 + (*s - '0');
+            s++;
+        }
+        if (val > 0) {
+            out_arr[i++] = val;
+        }
+        while (*s == ' ' || *s == '\t') s++;
+        if (*s != ',') break;
+    }
+    out_arr[i] = 0;
+}
+
+static void parse_voice_manifest_line(char* line) {
+    /* Strip trailing whitespace / newline */
+    s32 len = (s32)strlen(line);
+    while (len > 0 && (line[len-1] == '\n' || line[len-1] == '\r' || line[len-1] == ' ' || line[len-1] == '\t')) {
+        line[--len] = '\0';
+    }
+
+    /* Skip blank lines and comments */
+    char* p = line;
+    while (*p == ' ' || *p == '\t') p++;
+    if (*p == '\0' || *p == '#') return;
+
+    /* Format: msgIds | letSeqRunForMsgIds | wavPath */
+    char* bar1 = strchr(p, '|');
+    if (bar1 == NULL) return;
+    char* bar2 = strchr(bar1 + 1, '|');
+    if (bar2 == NULL) return;
+
+    *bar1 = '\0';
+    *bar2 = '\0';
+    char* msgIdsStr = p;
+    char* letSeqStr = bar1 + 1;
+    char* wavStr = bar2 + 1;
+
+    while (*wavStr == ' ' || *wavStr == '\t') wavStr++;
+    if (*wavStr == '\0') return;
+
+    if (sCustomVoiceCount >= CUSTOM_VOICE_MAX_LINES) return;
+    CustomVoiceLine* row = &sCustomVoiceTable[sCustomVoiceCount];
+    parse_id_list(msgIdsStr, row->msgIds, CUSTOM_VOICE_MAX_IDS_PER_LINE);
+    if (row->msgIds[0] == 0) return; /* no msgIds — skip */
+    parse_id_list(letSeqStr, row->letSeqRunForMsgIds, CUSTOM_VOICE_MAX_IDS_PER_LINE);
+    strncpy(row->wavFile, wavStr, CUSTOM_VOICE_MAX_PATH - 1);
+    row->wavFile[CUSTOM_VOICE_MAX_PATH - 1] = '\0';
+    sCustomVoiceCount++;
+}
+
+static void load_voice_manifest(void) {
+    if (sCustomVoiceLoaded) return;
+    sCustomVoiceLoaded = true;
+    sCustomVoiceCount = 0;
+
+    FILE* f = fopen("voice_manifest.txt", "r");
+    if (f == NULL) return;
+    char line[1024];
+    while (fgets(line, sizeof(line), f) != NULL) {
+        parse_voice_manifest_line(line);
+    }
+    fclose(f);
+}
+
+static const CustomVoiceLine* find_custom_voice(s32 msgId) {
+    if (!sCustomVoiceLoaded) load_voice_manifest();
+    for (s32 i = 0; i < sCustomVoiceCount; i++) {
+        const CustomVoiceLine* row = &sCustomVoiceTable[i];
+        for (s32 j = 0; row->msgIds[j] != 0 && j < CUSTOM_VOICE_MAX_IDS_PER_LINE; j++) {
+            if (row->msgIds[j] == msgId) {
+                return row;
+            }
+        }
+    }
+    return NULL;
+}
+
 void Audio_PlayVoice(s32 msgId) {
+    static const CustomVoiceLine* sActiveLine = NULL;
+
+    /* Reset note-suppression state at every entry — only re-enable below
+       if this msgId triggers letSeqRun. */
+    g_dub_voice_pass_count = 0;
+    g_dub_voice_suppress_active = false;
+
+    /* PoC: route specific character lines to direct WAV playback. The seq
+       player's voice channel can't play our 32 kHz mono PCM at native rate
+       (per-instrument tuning of 0.25-0.34 forces a 4-5x slowdown, mid-note
+       tunedSample swaps split the line across multiple samples, sample_3310
+       crashes when overridden), so we bypass it entirely and let the OS mix
+       our WAV alongside the BGM. */
+    const CustomVoiceLine* line = find_custom_voice(msgId);
+    if (line != NULL) {
+        bool letSeqRun = false;
+        for (size_t i = 0; line->letSeqRunForMsgIds[i] != 0; i++) {
+            if (line->letSeqRunForMsgIds[i] == msgId) {
+                letSeqRun = true;
+                break;
+            }
+        }
+        /* Only schedule playback when transitioning between lines, not on
+           rapid same-line repeat fires (e.g. msgId=3 firing twice). PlaySound
+           is deferred by ~150 ms so the seq's radio click plays first;
+           Audio_UpdateVoice() fires it when sAudioFrameCounter catches up. */
+        if (sActiveLine != line) {
+            strncpy(sCustomVoicePendingWav, line->wavFile, sizeof(sCustomVoicePendingWav) - 1);
+            sCustomVoicePendingWav[sizeof(sCustomVoicePendingWav) - 1] = '\0';
+            sCustomVoicePlayAtFrame = sAudioFrameCounter + CUSTOM_VOICE_PLAY_DELAY_FRAMES;
+        }
+        sActiveLine = line;
+        if (letSeqRun) {
+            /* Lead msgId — forward to seq so the radio-click SFX baked into
+               the original sample plays. Then suppress voice-content notes
+               that follow (see g_dub_voice_pass_count in audio_playback.c). */
+            sCurrentVoiceId = sNextVoiceId = msgId;
+            sSetNextVoiceId = true;
+            g_dub_voice_pass_count = 2;
+            g_dub_voice_suppress_active = true;
+        }
+        /* Continuation msgIds (1200, 1210): no seq dispatch. The English
+           body never reaches the audio channels. */
+        return;
+    }
+
+    /* Any non-custom voice closes the previous custom line so the next one
+       can restart cleanly. Also drop any pending deferred PlaySound. */
+    sActiveLine = NULL;
+    sCustomVoicePendingWav[0] = '\0';
+
     sCurrentVoiceId = sNextVoiceId = msgId;
     sSetNextVoiceId = true;
 }
@@ -1878,6 +2072,18 @@ void Audio_UpdateVoice(void) {
     } else if ((sMuteBgmForVoice) && (Audio_GetCurrentVoice() == 0)) {
         Audio_SetSequenceFade(SEQ_PLAYER_BGM, 2, 127, 15);
         sMuteBgmForVoice = false;
+    }
+
+    /* Deferred custom-voice playback — fire the queued WAV once enough audio
+       frames have passed since Audio_PlayVoice scheduled it. Without this
+       delay, our pt-BR PlaySound starts ~100-150 ms before the seq's radio
+       click, since the seq dispatch only takes effect after this update tick
+       processes its IO writes. */
+    if (sCustomVoicePendingWav[0] != '\0' && sAudioFrameCounter >= sCustomVoicePlayAtFrame) {
+#ifdef _WIN32
+        PlaySoundA(sCustomVoicePendingWav, NULL, SND_FILENAME | SND_ASYNC);
+#endif
+        sCustomVoicePendingWav[0] = '\0';
     }
 }
 
