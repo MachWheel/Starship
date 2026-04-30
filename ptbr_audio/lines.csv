@@ -4,10 +4,20 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2005;Corneria;Fox McCloud;-;Open the wings.;Abram as asas.;fox/02_abram_as_asas.wav;yes
 2010;Corneria;Fox McCloud;-;Check your G-Diffuser system.;Chequem o sistema\nG-Difusor.;fox/03_chequem_o_sistema.wav;yes
 2020;Corneria;Falco Lombardi;-;Falco here. I'm fine.;Falco aqui,\neu tô de boa.;falco/01_falco_aqui.wav;yes
-2030;Corneria;Peppy Hare;-;This is Peppy. All systems go.;;peppy/;no
-2040;Corneria;Slippy Toad;-;Slippy here, I'm ok.;;slippy/;no
-2050;Corneria;Fox McCloud;-;I see em’ up ahead. Let's rock and roll!;;fox/;no
-20267;Corneria;Peppy Hare;Level entry.;Slippy, get back here!;;peppy/;no
-2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;;peppy/;no
-2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;;slippy/;no
+2030;Corneria;Peppy Hare;-;This is Peppy. All systems go.;Aqui é o Peppy.\nTodos os sistemas\nfuncionando.;peppy/01_aqui_e_o_peppy.wav;yes
+2040;Corneria;Slippy Toad;-;Slippy here, I'm ok.;Slippy aqui,\neu to bem.;slippy/01_slippy_aqui.wav;yes
+2050;Corneria;Fox McCloud;-;I see em’ up ahead. Let's rock and roll!;Estou vendo eles ali\nVamo botar o pau\npra torar!;fox/04_estou_vendo_eles.wav;yes
+20267;Corneria;Peppy Hare;Level entry.;Slippy, get back here!;Slippy, volte aqui!;peppy/02_slippy_volte_aqui.wav;yes
+2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;Slippy, cuidado!\nVagabundo tá na\nsua cola!;peppy/03_slippy_cuidado.wav;no
+2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;Uoou! Socorro!;slippy/02_uoou_socorro.wav;no
 2336;Corneria;Slippy Toad;Mayday;Thanks Fox. I thought they had me.;;slippy/;no
+2055;Corneria;Fox McCloud;Enter canyon;We’re entering Corneria City now.;;fox/;no
+2058;Corneria;Falco Lombardi;Enter Corneria City;This is horrible...;;falco/;no
+2115;Corneria;Peppy Hare;Approach checkpoint;You've got an enemy on your tail!;;peppy/;no
+2118;Corneria;Peppy Hare;Approach checkpoint;Use the brake! (C-down);;peppy/;no
+2165;Corneria;Falco Lombardi;Mayday;I'll get this one. Get the one behind me!;;falco/;no
+2167;Corneria;Falco Lombardi;Mayday;Something's wrong with the G-Diffuser.;;falco/;no
+20235;Corneria;Peppy Hare;Approach Cornerian Radar Sites;Use the boost to chase! (C-left);;peppy/;no
+2166;Corneria;Falco Lombardi;Mayday;I could use some help here Fox!;;falco/;no
+2337;Corneria;Falco Lombardi;Mayday;I guess I should be thankful.;;falco/;no
+2110;Corneria;Peppy Hare;Approach Corneria Sea;Do a barrel roll! (Z or R);;peppy/;no

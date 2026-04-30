@@ -1,5 +1,6 @@
 #include "sys.h"
 #include "sf64audio_provisional.h"
+#include "audioseq_cmd.h"
 #include "port/resource/loaders/AudioLoader.h"
 
 static const char devstr00[] = "Audio: setvol: volume minus %f\n";
@@ -721,22 +722,22 @@ void Audio_NoteInitForLayer(Note* note, SequenceLayer* layer) {
     noteSub->bitField1.reverbIndex = layer->channel->someOtherPriority & 3;
 
     /* Custom-voice voice-content suppression. While a letSeqRun=true custom
-       voice line is active, allow the first N notes on a voice font (those
-       carry the radio click + opening phoneme) and mute the rest (the main
-       English voice content). See audio_general.c::Audio_PlayVoice for where
-       these flags are armed. */
+       voice line is active, allow the first N notes on the voice seq player
+       (those carry the radio click + opening phoneme) and mute the rest (the
+       main English voice content). Filter by seq-player pointer rather than
+       fontId — high-bank msgIds (e.g. 20267) use fontIds outside 0-3, and a
+       fontId-only check let their English voice content through. See
+       audio_general.c::Audio_PlayVoice for where these flags are armed. */
     {
         extern s32 g_dub_voice_pass_count;
         extern bool g_dub_voice_suppress_active;
-        if (g_dub_voice_suppress_active && layer->channel != NULL) {
-            s32 fontId = (s32)layer->channel->fontId;
-            if (fontId >= 0 && fontId <= 3) {
-                if (g_dub_voice_pass_count > 0) {
-                    g_dub_voice_pass_count--;
-                } else {
-                    noteSub->bitField0.finished = 1;
-                    noteSub->bitField0.enabled = 0;
-                }
+        if (g_dub_voice_suppress_active && layer->channel != NULL &&
+            layer->channel->seqPlayer == &gSeqPlayers[SEQ_PLAYER_VOICE]) {
+            if (g_dub_voice_pass_count > 0) {
+                g_dub_voice_pass_count--;
+            } else {
+                noteSub->bitField0.finished = 1;
+                noteSub->bitField0.enabled = 0;
             }
         }
     }
