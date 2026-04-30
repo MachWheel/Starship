@@ -8,9 +8,9 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2040;Corneria;Slippy Toad;-;Slippy here, I'm ok.;Slippy aqui,\neu to bem.;slippy/01_slippy_aqui.wav;yes
 2050;Corneria;Fox McCloud;-;I see em’ up ahead. Let's rock and roll!;Estou vendo eles ali\nVamo botar o pau\npra torar!;fox/04_estou_vendo_eles.wav;yes
 20267;Corneria;Peppy Hare;Level entry.;Slippy, get back here!;Slippy, volte aqui!;peppy/02_slippy_volte_aqui.wav;yes
-2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;Slippy, cuidado!\nVagabundo tá na\nsua cola!;peppy/03_slippy_cuidado.wav;no
-2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;Uoou! Socorro!;slippy/02_uoou_socorro.wav;no
-2336;Corneria;Slippy Toad;Mayday;Thanks Fox. I thought they had me.;;slippy/;no
+2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;Slippy, cuidado!\nVagabundo tá na\nsua cola!;peppy/03_slippy_cuidado.wav;yes
+2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;Uoou! Socorro!;slippy/02_uoou_socorro.wav;yes
+2336;Corneria;Slippy Toad;Mayday;Thanks Fox. I thought they had me.;Obrigado Fox.\nPensei que eu\ntava na merda.;slippy/03_obrigado_fox.wav;yes
 2055;Corneria;Fox McCloud;Enter canyon;We’re entering Corneria City now.;;fox/;no
 2058;Corneria;Falco Lombardi;Enter Corneria City;This is horrible...;;falco/;no
 2115;Corneria;Peppy Hare;Approach checkpoint;You've got an enemy on your tail!;;peppy/;no
