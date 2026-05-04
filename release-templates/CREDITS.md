@@ -21,20 +21,7 @@
 
 ## Falas dubladas nesta versão
 
-| msgId | Personagem | Linha (pt-BR) |
-|---|---|---|
-| 1200 | General Pepper | Que bom que apareceram, Star Fox! |
-| 1210 | Fox McCloud | Vou sentar o dedo! |
-| 2005 | Fox McCloud | Abram as asas. |
-| 2010 | Fox McCloud | Chequem o sistema G-Difusor. |
-| 2020 | Falco Lombardi | Falco aqui, eu tô de boa. |
-| 2030 | Peppy Hare | Aqui é o Peppy. Todos os sistemas funcionando. |
-| 2040 | Slippy Toad | Slippy aqui, eu tô bem. |
-| 2050 | Fox McCloud | Estou vendo eles ali. Vamo botar o pau pra torar! |
-| 2061 | Peppy Hare | Slippy, cuidado! Vagabundo tá na sua cola! |
-| 2062 | Slippy Toad | Uoou! Socorro! |
-| 2336 | Slippy Toad | Obrigado Fox. Pensei que eu tava na merda. |
-| 20267 | Peppy Hare | Slippy, volte aqui! |
+[Todas as falas dubladas nesta versão podem ser encontradas aqui](https://github.com/MachWheel/Starship/blob/main/ptbr_audio/lines.csv)
 
 
 ## Agradecimentos
