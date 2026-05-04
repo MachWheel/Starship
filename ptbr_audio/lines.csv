@@ -21,3 +21,27 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2166;Corneria;Falco Lombardi;Mayday;I could use some help here Fox!;;falco/;no
 2337;Corneria;Falco Lombardi;Mayday;I guess I should be thankful.;;falco/;no
 2110;Corneria;Peppy Hare;Approach Corneria Sea;Do a barrel roll! (Z or R);;peppy/;no
+;Corneria;Peppy Hare;Pass waterfall;Try a somersault! (C-left, C-up);;peppy/;no
+;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;;slippy/;no
+;Corneria;Falco Lombardi;Approach All-Range;Let's go!;;falco/;no
+;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;;fox/;no
+;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;;granga/;no
+;Corneria;Granga;Enter boss battle;I'm going to crush you!;;granga/;no
+;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;;granga/;no
+;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;;peppy/;no
+;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn!;;peppy/;no
+;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;;granga/;no
+;Corneria;Granga;Battle continues;I will not be defeated by this worm!;;granga/;no
+;Corneria;Granga;Battle continues;You are starting to annoy me!;;granga/;no
+;Corneria;Granga;Battle continues;You annoying little flies!;;granga/;no
+;Corneria;Granga;Granga's backpack is hit;No!!!;;granga/;no
+;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;;granga/;no
+;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;;falco/;no
+;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;;falco/;no
+;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;;fox/;no
+;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;;falco/;no
+;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;;falco/;no
+;Corneria;Falco Lombardi;K'O target;Gotcha!;;falco/;no
+;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;;falco/;no
+;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;;accaptain/;no
