@@ -14,11 +14,11 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2055;Corneria;Fox McCloud;Enter canyon;We’re entering Corneria City now.;Estamos chegando\nem Corneria agora.;fox/05_estamos_chegando.wav;yes
 2058;Corneria;Falco Lombardi;Enter Corneria City;This is horrible...;Caralho!\nQue desgraça...;falco/02_caralho_que_desgraca.wav;yes
 7013;Corneria;Peppy Hare;Enter Corneria City;Everybody stay alert!;Galera,\nfiquem ligados!;peppy/04_galera_fiquem_ligados.wav;yes
-2115;Corneria;Peppy Hare;Approach checkpoint;You've got an enemy on your tail!;Vagabundo tá na\nsua cola!;peppy/05_vagabundo_ta_na_sua_cola.wav;no
-2118;Corneria;Peppy Hare;Approach checkpoint;Use the brake! (C-down);Use o freio! (C-DN);peppy/06_use_o_freio.wav;no
+2115;Corneria;Peppy Hare;Approach checkpoint;You've got an enemy on your tail!;Vagabundo tá na\nsua cola!;peppy/05_vagabundo_ta_na_sua_cola.wav;yes
+2118;Corneria;Peppy Hare;Approach checkpoint;Use the brake! (C-down);Use o freio! (C-DN);peppy/06_use_o_freio.wav;yes
 2165;Corneria;Falco Lombardi;Mayday;I'll get this one. Get the one behind me!;Vou atrás desse.\nPega o vagabundo\natrás de mim!;falco/03_vou_atras_desse.wav;yes
 2167;Corneria;Falco Lombardi;Mayday;Something's wrong with the G-Diffuser.;Tem alguma coisa\nerrada com esse\nG-Difusor.;falco/04_tem_alguma_coisa_errada.wav;yes
-20235;Corneria;Peppy Hare;Approach Cornerian Radar Sites;Use the boost to chase! (C-left);Use o boost para\nir atrás dele!\n(C-LF);peppy/07_use_o_boost.wav;no
+20235;Corneria;Peppy Hare;Approach Cornerian Radar Sites;Use the boost to chase! (C-left);Use o boost para\nir atrás dele!\n(C-LF);peppy/07_use_o_boost.wav;yes
 2166;Corneria;Falco Lombardi;Mayday;I could use some help here Fox!;;falco/;no
 2337;Corneria;Falco Lombardi;Mayday;I guess I should be thankful.;;falco/;no
 2110;Corneria;Peppy Hare;Approach Corneria Sea;Do a barrel roll! (Z or R);;peppy/;no
