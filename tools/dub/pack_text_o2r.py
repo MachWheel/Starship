@@ -17,7 +17,10 @@ Resource format reverse-engineered from:
 
 SF64's font is plain ASCII — no accented glyphs. Accents are stripped before
 encoding (matches what the existing community translation team did). Literal
-"\\n" in the CSV cell is expanded to a newline glyph (NWL=1).
+"\\n" in the CSV cell is expanded to a newline glyph (NWL=1). Button-icon
+escape sequences "(C-LF)", "(C-UP)", "(C-RT)", "(C-DN)", "(AUP)", "(ALF)",
+"(ADN)", "(ART)" map to their corresponding glyph indices (16-23) — same
+syntax dump_messages.py emits, so round-trip is symmetric.
 """
 
 from __future__ import annotations
@@ -59,6 +62,11 @@ CHAR_TO_GLYPH.update({
     "|": 95,    # PIP
 })
 
+SPECIAL_GLYPHS: dict[str, int] = {
+    "(C-LF)": 16, "(C-UP)": 17, "(C-RT)": 18, "(C-DN)": 19,
+    "(AUP)":  20, "(ALF)":  21, "(ADN)":  22, "(ART)":  23,
+}
+
 RESOURCE_TYPE_MESSAGE = 0x4D534720  # 'MSG '
 OTR_HEADER_SIZE = 64
 
@@ -72,12 +80,21 @@ def encode_text(text: str) -> list[int]:
     """ASCII (post-accent-strip) → glyph indices, terminated with END (0)."""
     glyphs: list[int] = []
     skipped: list[str] = []
-    for ch in strip_accents(text):
+    text = strip_accents(text)
+    i = 0
+    while i < len(text):
+        special = next((seq for seq in SPECIAL_GLYPHS if text.startswith(seq, i)), None)
+        if special is not None:
+            glyphs.append(SPECIAL_GLYPHS[special])
+            i += len(special)
+            continue
+        ch = text[i]
         g = CHAR_TO_GLYPH.get(ch)
         if g is None:
             skipped.append(ch)
-            continue
-        glyphs.append(g)
+        else:
+            glyphs.append(g)
+        i += 1
     if skipped:
         print(f"  WARNING: dropped {len(skipped)} unencodable char(s): {skipped!r}", file=sys.stderr)
     glyphs.append(0)  # END terminator
