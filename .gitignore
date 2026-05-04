@@ -52,6 +52,7 @@ Starship.log
 *.pdb
 dumps/
 _packages/*
+/release/
 *.DS_Store
 src/jp/
 src/eu/
