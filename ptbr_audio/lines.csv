@@ -1,12 +1,21 @@
 msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
-1200;Corneria;General Pepper;-;It's about time you showed up Fox. You're the only hope for our world.;Que bom que apareceram\nStar Fox! Voces sao nossa\nunica esperanca.;pepper/01_que_bom.wav;yes
-1210;Corneria;Fox McCloud;-;I'll do my best! Andross won't have his way with me.;Vou sentar o dedo!\nDessa vez o Andross nao\nvai se dar bem!;fox/01_vou_sentar_o_dedo.wav;yes
-2005;Corneria;Fox McCloud;-;Open the wings.;Abram as asas.;fox/02_abram_as_asas.wav;yes
-2010;Corneria;Fox McCloud;-;Check your G-Diffuser system.;Chequem o sistema\nG-Difusor.;fox/03_chequem_o_sistema.wav;yes
-2020;Corneria;Falco Lombardi;-;Falco here. I'm fine.;Falco aqui,\neu tô de boa.;falco/01_falco_aqui.wav;yes
-2030;Corneria;Peppy Hare;-;This is Peppy. All systems go.;Aqui é o Peppy.\nTodos os sistemas\nfuncionando.;peppy/01_aqui_e_o_peppy.wav;yes
-2040;Corneria;Slippy Toad;-;Slippy here, I'm ok.;Slippy aqui,\neu to bem.;slippy/01_slippy_aqui.wav;yes
-2050;Corneria;Fox McCloud;-;I see em’ up ahead. Let's rock and roll!;Estou vendo eles ali\nVamo botar o pau\npra torar!;fox/04_estou_vendo_eles.wav;yes
+60;Intro;ROB 64;;Message from General Pepper. Priority one!;;rob/;no
+10;Intro;General Pepper;;We need your help, Star Fox! Andross has declared war! He's invaded the Lylat system and is trying to take over Corneria! Our army alone can't do the job! Hurry, Star Fox!;;pepper/;no
+1;Intro;Opening Narrator;;Corneria, fourth planet of the Lylat system. The evil Andross turned this once thriving system into a wasteland of near extinction.;;intro/;no
+1;Intro;Opening Narrator;;General Pepper of the Cornerian army was successful in exiling this maniacal scientist to the barren, deserted planet Venom.;;intro/;no
+1;Intro;Opening Narrator;;Five years later, General Pepper noticed strange activity coming from Venom. James McCloud, Pigma Dengar, and Peppy Hare of the Star Fox team were sent to investigate.;;intro/;no
+1;Intro;Opening Narrator;;Upon their arrival, Pigma betrayed the team and James and Peppy were captured by Andross.;;intro/;no
+1;Intro;Opening Narrator;;Peppy barely escaped Venom and returned home to tell James' son Fox about his father's fate.;;intro/;no
+1;Intro;Opening Narrator;;A few years have passed. Andross has again invaded the Lylat system.;;intro/;no
+1;Intro;Opening Narrator;;General Pepper has turned to a new Star Fox team headed by Fox McCloud to save Corneria and free the Lylat system once again.;;intro/;no
+1200;Corneria;General Pepper;;It's about time you showed up Fox. You're the only hope for our world.;Que bom que apareceram\nStar Fox! Voces sao nossa\nunica esperanca.;pepper/01_que_bom.wav;yes
+1210;Corneria;Fox McCloud;;I'll do my best! Andross won't have his way with me.;Vou sentar o dedo!\nDessa vez o Andross nao\nvai se dar bem!;fox/01_vou_sentar_o_dedo.wav;yes
+2005;Corneria;Fox McCloud;;Open the wings.;Abram as asas.;fox/02_abram_as_asas.wav;yes
+2010;Corneria;Fox McCloud;;Check your G-Diffuser system.;Chequem o sistema\nG-Difusor.;fox/03_chequem_o_sistema.wav;yes
+2020;Corneria;Falco Lombardi;;Falco here. I'm fine.;Falco aqui,\neu tô de boa.;falco/01_falco_aqui.wav;yes
+2030;Corneria;Peppy Hare;;This is Peppy. All systems go.;Aqui é o Peppy.\nTodos os sistemas\nfuncionando.;peppy/01_aqui_e_o_peppy.wav;yes
+2040;Corneria;Slippy Toad;;Slippy here, I'm ok.;Slippy aqui,\neu to bem.;slippy/01_slippy_aqui.wav;yes
+2050;Corneria;Fox McCloud;;I see em’ up ahead. Let's rock and roll!;Estou vendo eles ali\nVamo botar o pau\npra torar!;fox/04_estou_vendo_eles.wav;yes
 20267;Corneria;Peppy Hare;Level entry.;Slippy, get back here!;Slippy, volte aqui!;peppy/02_slippy_volte_aqui.wav;yes
 2061;Corneria;Peppy Hare;Level entry.;Slippy, watch out! Bogey on your tail!;Slippy, cuidado!\nVagabundo tá na\nsua cola!;peppy/03_slippy_cuidado.wav;yes
 2062;Corneria;Slippy Toad;Mayday;Whoa! Help me!;Uoou! Socorro!;slippy/02_uoou_socorro.wav;yes
@@ -46,3 +55,657 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2090;Corneria;Falco Lombardi;K'O target;Gotcha!;;falco/;no
 2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;;falco/;no
 2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;;accaptain/;no
+1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;;pepper/;no
+1230;Meteo;Fox McCloud;;I won't let you down, sir!;;fox/;no
+3005;Meteo;Slippy Toad;;Things are starting to heat up!;;slippy/;no
+3010;Meteo;Peppy Hare;;Quit dinkin' around, Slip!;;peppy/;no
+3015;Meteo;Fox McCloud;;We're heading into the asteroids!;;fox/;no
+3041;Meteo;Peppy Hare;Level entry;Don't mess up that Arwing!;;peppy/;no
+3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;;peppy/;no
+3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;;peppy/;no
+20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);;peppy/;no
+20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;;peppy/;no
+3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;;slippy/;no
+3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;;slippy/;no
+2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);;peppy/;no
+20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);;peppy/;no
+20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;;peppy/;no
+20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);;falco/;no
+7066;Meteo;Peppy Hare;Mayday;They're on me! I'm getting careless!;;peppy/;no
+5230;Meteo;Peppy Hare;Rescue;Thanks, Fox.;;peppy/;no
+3050;Meteo;Peppy Hare;Enter tunnel asteroid;The enemy is coming from behind!;;peppy/;no
+2110;Meteo;Peppy Hare;Enter tunnel asteroid;Do a barrel roll! (Z or R);;peppy/;no
+3100;Meteo;Falco Lombardi;Exit tunnel asteroid;I guess it's your turn to be thankful.;;falco/;no
+3110;Meteo;Slippy Toad;Flip Bots tail Slippy;You want a piece of me?;;slippy/;no
+3120;Meteo;Slippy Toad;Flip Bots tail Slippy;Take that!;;slippy/;no
+20313;Meteo;Slippy Toad;Near Warp Rings;Hold A to charge your laser!;;slippy/;no
+20314;Meteo;Peppy Hare;Approach Butterfly Fighter clusters;You can also lock onto enemies this way!;;peppy/;no
+19360;Meteo;Peppy Hare;Successfully fly through the first few rings;Never give up! Trust your instincts!;;peppy/;no
+3040;Meteo;Peppy Hare;Passing Laser Asteroids;Just shoot it, Fox!;;peppy/;no
+3300;Meteo;Meteo Crusher pilot;Meteo Crusher Approaches;I cannot allow you to go any further.;;crusher/;no
+2225;Meteo;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+3310;Meteo;Meteo Crusher pilot;Energy reflector startup;Let's see what you've got.;;crusher/;no
+3315;Meteo;Peppy Hare;Crusher absorbs lasers;That shields absorbing the laser!;;peppy/;no
+3371;Meteo;Meteo Crusher pilot;Take out power cores;You're more cunning than I thought.;;crusher/;no
+3320;Meteo;Meteo Crusher pilot;Crusher drops barricade;I've underestimated you.;;crusher/;no
+3321;Meteo;Meteo Crusher pilot;Energy stream startup;How about this?;;crusher/;no
+3322;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I'm no match for you.;;crusher/;no
+3330;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I admit defeat...;;crusher/;no
+3340;Meteo;Falco Lombardi;Crusher turns over (Only if Falco is active);Are you gonna listen to that monkey?;;falco/;no
+3345;Meteo;Meteo Crusher pilot;Crusher turns over (Only if Falco is active);Haha, you're not as stupid as you look!;;crusher/;no
+3350;Meteo;Meteo Crusher pilot;Crusher turns over (Only Falco isn't active);If this does not work...!;;crusher/;no
+3370;Meteo;Meteo Crusher pilot;Crusher downed;I can't believe I lost to this scum!;;crusher/;no
+3360;Meteo;Fox McCloud;Boss downed;Sorry to jet, but I'm in a hurry!;;fox/;no
+20010;Meteo;Fox McCloud;;All aircraft report!;;fox/;no
+1440;Sector Y;General Pepper;;Fox, we're under attack! Help us out here!;;pepper/;no
+1450;Sector Y;Fox McCloud;;I'm on my way!;;fox/;no
+14020;Sector Y;Fox McCloud;Level entry.;Let's back up the squadron.;;fox/;no
+14030;Sector Y;Falco Lombardi;Immediately after Fox;Somebody's going to pay for all this.;;falco/;no
+14040;Sector Y;Peppy Hare;Immediately after Falco;Don't let any of em' through!;;peppy/;no
+14045;Sector Y;Slippy Toad;Immediately after Peppy;Something's wrong. I don't see anything!;;slippy/;no
+20278;Sector Y;ROB 64;Expert Mode only;Good Luck Fox.;;rob/;no
+14110;Sector Y;Peppy Hare;Grazan carriers appear;Surprise attack coming from above!;;peppy/;no
+14050;Sector Y;Peppy Hare;Grazan carriers appear;Hold 'em They're trying to get through!;;peppy/;no
+14070;Sector Y;Peppy Hare;Score over 30 Hits;Good job! Keep up the pace!;;peppy/;no
+14060;Sector Y;Falco Lombardi;Score under 30 Hits;Fox, you're supposed to shoot them all!;;falco/;no
+3050;Sector Y;Peppy Hare;Tailing Triangles;The enemy's coming from behind!;;peppy/;no
+14130;Sector Y;Falco Lombardi;Take lower route;I've got everything above.;;falco/;no
+14120;Sector Y;Peppy Hare;Take upper route;I'll take care of everything below.;;peppy/;no
+14180;Sector Y;Peppy Hare;Shogun troopers appear;He's quick! Be careful!;;peppy/;no
+14140;Sector Y;Slippy Toad;Slippy tails hidden Triangles;Ah Ha! Thought you could hide from me eh?Escaping? I don't think so!;;slippy/;no
+14160;Sector Y;Slippy Toad;Mayday;Hey! Leave me alone.;;slippy/;no
+14170;Sector Y;Falco Lombardi;Triangle formations appear;Take 'em down with one shot!;;falco/;no
+7043;Sector Y;Fox McCloud;Approach last line;We're going to break through that fleet!;;fox/;no
+14100;Sector Y;Peppy Hare;Score over 65 Hits;You're becoming a better pilot.;;peppy/;no
+14080;Sector Y;Falco Lombardi;Score under 65 Hits;Is that the best you can do??;;falco/;no
+14190;Sector Y;Slippy Toad;Reach fleet end;Something's up ahead. Looks different.;;slippy/;no
+20180;Sector Y;Fox McCloud;Enter All-Range;All-range mode!;;fox/;no
+2225;Sector Y;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+20050;Sector Y;Slippy Toad;Hit;Slippy's hit!;;slippy/;no
+14220;Sector Y;Slippy Toad;Shoguns evade;These guys are tough!;;slippy/;no
+14200;Sector Y;Falco Lombardi;Shoguns evade;Geez! Quit movin' around!;;falco/;no
+20030;Sector Y;Falco Lombardi;Hit;Shoot! I've taken damage!;;falco/;no
+14230;Sector Y;Peppy Hare;Down one Shogun;Good job. Keep up the good work.;;peppy/;no
+14210;Sector Y;Peppy Hare;Shoguns evade;Watch the radar carefully, Fox!;;peppy/;no
+9151;Sector Y;Peppy Hare;Hit;Dang! I'm hit!;;peppy/;no
+14300;Sector Y;Shogun pilot;Shogun arrives;Don't party just yet.;;shogun/;no
+14310;Sector Y;Shogun pilot;Shogun arrives;It's time to try our new weapon.;;shogun/;no
+14330;Sector Y;Shogun pilot;Charges;I'm coming for ya!;;shogun/;no
+14320;Sector Y;Shogun pilot;Idle;What's wrong? Is that it?;;shogun/;no
+14340;Sector Y;Shogun pilot;Landing;I'll take you guys out from the ship!;;shogun/;no
+14350;Sector Y;Shogun pilot;Hit;Cocky little freaks! (when attacked);;shogun/;no
+14360;Sector Y;Shogun pilot;Downed;Aaaaahhhhh!!!!;;shogun/;no
+1280;Fortuna;General Pepper;;Recover our base from the enemy army!;;pepper/;no
+1290;Fortuna;Fox McCloud;;Roger, General!;;fox/;no
+9000;Fortuna;Fox McCloud;;Split up and take it to 'em!;;fox/;no
+9010;Fortuna;Slippy Toad;The only dialogue is All Range Mode dialogue, which is randomly stated.;Why are ships coming out of the base?;;slippy/;no
+9375;Fortuna;ROB 64;The only dialogue is All Range Mode dialogue, which is randomly stated.;A bomb has been planted at the base.;;rob/;no
+9380;Fortuna;Fox McCloud;The only dialogue is All Range Mode dialogue, which is randomly stated.;Geez! Can anyone take care of it?;;fox/;no
+9250;Fortuna;Wolf O'Donnell;The only dialogue is All Range Mode dialogue, which is randomly stated.;Can't let you do that Star Fox!;;wolf/;no
+9260;Fortuna;Leon Powalski;The only dialogue is All Range Mode dialogue, which is randomly stated.;Andross has ordered us to take you down.;;leon/;no
+9275;Fortuna;Pigma Dengar;The only dialogue is All Range Mode dialogue, which is randomly stated.;Peppy! Longtime no see!;;pigma/;no
+9270;Fortuna;Pigma Dengar;The only dialogue is All Range Mode dialogue, which is randomly stated.;"Heh Heh, we're getting pay alotta cash for this! ""(If Peppy's retired)""";;pigma/;no
+9280;Fortuna;Andrew Oikonny;The only dialogue is All Range Mode dialogue, which is randomly stated.;Andross' enemy is my enemy.;;andrew/;no
+9285;Fortuna;Fox McCloud;The only dialogue is All Range Mode dialogue, which is randomly stated.;Just what I need to see. Star Wolf.;;fox/;no
+9385;Fortuna;Fox McCloud;The only dialogue is All Range Mode dialogue, which is randomly stated.;Let's take care of these guys first!;;fox/;no
+9411;Mission Accomplished;Fox McCloud;;I'll take care of the bomb now!;;fox/;no
+20010;Mission Accomplished;Fox McCloud;;All aircraft report!;;fox/;no
+9428;Mission Accomplished;Slippy Toad;;Hey we made it!;;slippy/;no
+9429;Mission Accomplished;Peppy Hare;;Fox, take it easy!;;peppy/;no
+9430;Mission Accomplished;Falco Lombardi;;That was a close call, Fox!;;falco/;no
+9390;Mission Complete;ROB 64;;Danger, one minute till explosion!;;rob/;no
+9385;Mission Complete;Fox McCloud;;Let's take care of these guys first!;;fox/;no
+9395;Mission Complete;ROB 64;;30 seconds to explosion.;;rob/;no
+9400;Mission Complete;ROB 64;;15 seconds to explosion;;rob/;no
+9405;Mission Complete;ROB 64;;Bomb exploding. Keep clear.;;rob/;no
+9431;Mission Complete;Wolf O'Donnell;;Looks like we win today Fox.;;wolf/;no
+9432;Mission Complete;Leon Powalski;;Close...but no cigar. Hahaha!;;leon/;no
+9433;Mission Complete;Pigma Dengar;;I've got two words for ya! LO-SER!;;pigma/;no
+9434;Mission Complete;Andrew Oikonny;;Score one for Andross!;;andrew/;no
+9420;Mission Complete;Fox McCloud;;Emergency maneuvers! Get out of there!;;fox/;no
+20010;Mission Complete;Fox McCloud;;All aircraft report!;;fox/;no
+9425;Mission Complete;Slippy Toad;;They almost got us.;;slippy/;no
+9426;Mission Complete;Peppy Hare;;I'm not too crazy about those guys.;;peppy/;no
+9427;Mission Complete;Falco Lombardi;;So that's Star Wolf...;;falco/;no
+1360;Katina;General Pepper;;Katina is battling the enemy. Will you help them out?;;pepper/;no
+1370;Katina;Fox McCloud;;Affirmative general!;;fox/;no
+18000;Katina;Bill Grey;;Hang on guys, help is on the way!;;bill/;no
+18005;Katina;Bill Grey;;Fox! You made it!;;bill/;no
+18006;Katina;Fox McCloud;;Bill?! Is that you? I can't believe it!;;fox/;no
+18007;Katina;Bill Grey;;We can catch up later, Fox.;;bill/;no
+18010;Katina;Slippy Toad;;Hard to tell the good guys, from the bad!;;slippy/;no
+18031;Katina;Bill Grey;Earn 10 Hits without damaging any Cornerian Air Forces;You've become quite a pilot.;;bill/;no
+18030;Katina;Bill Grey;Saucerer arrives after 10 Hits;Enemy mothership approaching!;;bill/;no
+18035;Katina;Falco Lombardi;Saucerer deploys fighters;Here they come!;;falco/;no
+18025;Katina;Falco Lombardi;Saucerer deploys fighters;Man, there's just no end to these guys!;;falco/;no
+18040;Katina;Bill Grey;Immediately after cutscene;Go for the four hatches on the underside!;;bill/;no
+18045;Katina;Bill Grey;Hatches open;The hatches are open.;;bill/;no
+18050;Katina;Bill Grey;Countdown starts;There's some sort of energy reaction.;;bill/;no
+18055;Katina;Bill Grey;Countdown starts;The core has appeared, stand by to attack!;;bill/;no
+18060;Katina;Bill Grey;Countdown:;Hurry up, take out that core!;;bill/;no
+18065;Katina;Bill Grey;30 secs;There's not much time left! Hurry!;;bill/;no
+18066;Katina;Bill Grey;12 secs;Yeehaw! You did it!;;bill/;no
+18070;Katina;Bill Grey;The only dialogue is All Range Mode dialogue, which is randomly stated.;Fox, get out of here now!;;bill/;no
+18075;Katina;Fox McCloud;The only dialogue is All Range Mode dialogue, which is randomly stated.;All aircraft, break away...;;fox/;no
+18080;Katina;Fox McCloud;The only dialogue is All Range Mode dialogue, which is randomly stated.;Dang!;;fox/;no
+18085;Katina;Peppy Hare;The only dialogue is All Range Mode dialogue, which is randomly stated.;Don't get so down, Fox.;;peppy/;no
+1380;Aquas;General Pepper;;Star Fox, I want you to take out the enemy bioweapon!;;pepper/;no
+1390;Aquas;Fox McCloud;;Yes sir! Deploy the Blue-Marine!;;fox/;no
+15010;Aquas;Fox McCloud;Level entry;I'm going to check out the bio-weapon.;;fox/;no
+15030;Aquas;Fox McCloud;Level entry;I'm sending the data to you guys.;;fox/;no
+15250;Aquas;Falco Lombardi;Enemies appear from darkness;Shoot a torpedo to help you see.;;falco/;no
+15040;Aquas;Peppy Hare;Enemies appear frequently;Looks like the pollution has started.;;peppy/;no
+15045;Aquas;Slippy Toad;Immediately after Peppy;It's awful!;;slippy/;no
+15251;Aquas;Slippy Toad;Enter ruins;Wow! Look at that! It's beautiful!;;slippy/;no
+15050;Aquas;Slippy Toad;Halfway through ruins;How's the Blue-Marine Fox?;;slippy/;no
+15051;Aquas;Peppy Hare;Immediately after Slippy;It's a good thing you prepared Slip.;;peppy/;no
+15052;Aquas;Falco Lombardi;Immediately after Peppy;This thing will never hold together!;;falco/;no
+6055;Aquas;Slippy Toad;Enemy swarms appear;Whoa! Watch out!;;slippy/;no
+2110;Aquas;Peppy Hare;Enemy swarms open fire;Do a barrel roll!;;peppy/;no
+20302;Aquas;Slippy Toad;Angler Fish tails Fox;Look out behind you!;;slippy/;no
+15053;Aquas;Slippy Toad;Near trench;Keep shooting. We've got lots of torpedoes.;;slippy/;no
+15054;Aquas;Peppy Hare;Immediately after Slippy;You're the best Slippy!;;peppy/;no
+15060;Aquas;Slippy Toad;Immediately after Peppy;Thanks, Peppy!;;slippy/;no
+15052;Aquas;Falco Lombardi;Immediately after Slippy;This thing will never hold together!;;falco/;no
+8210;Aquas;Peppy Hare;Entering trench;I've got a BAD feeling about this Fox.;;peppy/;no
+20315;Aquas;Slippy Toad;Boulders fall;Watch out, Fox!;;slippy/;no
+15100;Aquas;Fox McCloud;End of route;I've found the bio-weapon.;;fox/;no
+2225;Aquas;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+15110;Aquas;Peppy Hare;Advice;Aim for the two columns!;;peppy/;no
+15130;Aquas;Falco Lombardi;Hit tendons continually;That's it Fox!;;falco/;no
+15120;Aquas;Slippy Toad;Bacoon exposes tendons;Fire a homing torpedo!;;slippy/;no
+15140;Aquas;Peppy Hare;Eye exposed;Go for the eyes!;;peppy/;no
+7086;Aquas;Slippy Toad;Whittle down boss health;Yeah! yeah!;;slippy/;no
+15252;Aquas;Slippy Toad;Boss down;Yipeee! You did it!;;slippy/;no
+15200;Aquas;Fox McCloud;;We're preparing to dock.;;fox/;no
+15253;Aquas;Fox McCloud;;Thanks, Slip. Blue-marine came through.;;fox/;no
+15210;Aquas;Peppy Hare;;Slippy's not such a screw up after all.;;peppy/;no
+15220;Aquas;Slippy Toad;;Thanks a lot, Peppy!;;slippy/;no
+15230;Aquas;Falco Lombardi;;I'll take the sky any day.;;falco/;no
+15240;Aquas;Slippy Toad;;Sheesh, Falco! You too?;;slippy/;no
+1260;Sector X;General Pepper;Sector X's Intro.;Reports indicate that Andross is working on some secret weapon.;;pepper/;no
+1270;Sector X;Fox McCloud;Sector X's Intro.;I'll check it out.;;fox/;no
+5000;Sector X;Fox McCloud;Level entry;Let's take out that weapon boys.;;fox/;no
+5010;Sector X;Falco Lombardi;Vipers appear;Let's have a little fun!;;falco/;no
+8130;Sector X;Peppy Hare;Borzois appear;Stay alert!;;peppy/;no
+14180;Sector X;Peppy Hare;Borzois appear;He's quick! Be careful.;;peppy/;no
+5060;Sector X;Falco Lombardi;Swarms appear near minefield;Enemy groups behind us. Man they're fast!;;falco/;no
+5100;Sector X;Peppy Hare;Enter debris;We're gettin' close to the base.;;peppy/;no
+5110;Sector X;Falco Lombardi;Entering the Space Base and seeing Spyborg's arm;Somebody beat us here. It's all gone!;;falco/;no
+5130;Sector X;Falco Lombardi;Entering the Space Base and seeing Spyborg's arm;What the heck is that?!;;falco/;no
+7066;Sector X;Peppy Hare;Mayday;They're on me! I'm gettin' careless!;;peppy/;no
+5230;Sector X;Peppy Hare;Mayday;Thanks, Fox.;;peppy/;no
+5300;Sector X;Falco Lombardi;Taking Left Route;I can't wait to see this secret weapon!;;falco/;no
+5310;Sector X;Falco Lombardi;Taking Left Route;I found a gate! Looks like a warp.;;falco/;no
+5311;Sector X;Bill Grey;If Flight Route included Katina;I'm gonna open the gate. Back me up!;;bill/;no
+5312;Sector X;Fox McCloud;Sector X's Intro.;Bill! You're okay!;;fox/;no
+5313;Sector X;Bill Grey;Sector X's Intro.;Of course! I'm here to help.;;bill/;no
+5350;Sector X;Falco Lombardi;Passing debris;Something's not right here!Who took this base out?;;falco/;no
+5504;Sector X;Falco Lombardi;Fly through first two Warp gates;Yeah! Just one more.;;falco/;no
+5380;Sector X;Falco Lombardi;Inside collapsing section;Hurry up or you're toast!;;falco/;no
+5314;Sector X;Bill Grey;End of Warp Route;Take it easy Fox. Don't let us down.;;bill/;no
+5400;Sector X;Peppy Hare;Take Right Route;I'll attack from the outside.;;peppy/;no
+5410;Sector X;Slippy Toad;Defensives active;Interceptor system dead ahead.;;slippy/;no
+5430;Sector X;Peppy Hare;Fighters appear;Where is the secret weapon?;;peppy/;no
+5460;Sector X;Peppy Hare;Mayday;I'm goin' ahead. Back me up Fox.;;peppy/;no
+5470;Sector X;Falco Lombardi;End of Route;What the heck? Fox, look behind you!;;falco/;no
+5473;Sector X;Fox McCloud;Spyborg arrives;So this is the secret weapon.;;fox/;no
+5492;Sector X;Spyborg;Boss startup;Destroy. Destroy.;;spyborg/;no
+2225;Sector X;Slippy Toad;Bossometer uploaded;Enemy shield analyzed.;;slippy/;no
+5493;Sector X;Spyborg;Attacking;I will terminate all enemies.;;spyborg/;no
+5494;Sector X;Spyborg;Attacking;You are an enemy.;;spyborg/;no
+5495;Sector X;Spyborg;Attacking;Where is the creator?!;;spyborg/;no
+5496;Sector X;Fox McCloud;After Spyborg's rambles;What's he saying?;;fox/;no
+15252;Sector X;Slippy Toad;Spyborg loses helmet;Yippee! You did it!;;slippy/;no
+19205;Sector X;Fox McCloud;Phase 2 starts;Huh? What?;;fox/;no
+5497;Sector X;Spyborg;Spyborg reactivates;The view is clear.;;spyborg/;no
+5492;Sector X;Spyborg;Spyborg reactivates;Destroy. Destroy.;;spyborg/;no
+5474;Sector X;Falco Lombardi;Answering Spyborg's rambles;Destroy what? He's crazy!;;falco/;no
+5475;Sector X;Slippy Toad;If 10 secs pass;Let me handle this!;;slippy/;no
+20267;Sector X;Peppy Hare;Slippy appears;Slippy, get back here!;;peppy/;no
+4111;Sector X;Slippy Toad;If Spyborg lands a hit on Slippy;Fox!!!;;slippy/;no
+20266;Sector X;Fox McCloud;Slippy spins off towards Titania;Slippy!!!;;fox/;no
+5492;Sector X;Spyborg;Boss battle resumes;Destroy. Destroy.;;spyborg/;no
+5498;Sector X;Spyborg;Boss battle resumes;Where is the enemy?;;spyborg/;no
+5499;Sector X;Spyborg;Boss down;I must be complete.;;spyborg/;no
+5500;Sector X;Fox McCloud;;ROB, can you confirm Slippy's location?;;fox/;no
+5503;Sector X;ROB 64;;Distress signal coming from Titania.;;rob/;no
+5501;Sector X;Peppy Hare;;Looks like he's on Titania.;;peppy/;no
+5502;Sector X;Falco Lombardi;;Slippy can be such a headache.;;falco/;no
+1460;Solar;General Pepper;;That area's an oven. Don't go burning that Arwing. Be reasonable Fox!;;pepper/;no
+1470;Solar;Fox McCloud;;I'll be careful.;;fox/;no
+10010;Solar;Fox McCloud;;Keep an eye on your shield gauge!;;fox/;no
+10020;Solar;Falco Lombardi;;The Arwing might not make it...;;falco/;no
+10060;Solar;Slippy Toad;;This baby can take temperatures up to 9,000 degrees!;;slippy/;no
+10324;Solar;Peppy Hare;;Don't fly too low! Your ship can't take it!;;peppy/;no
+10050;Solar;Peppy Hare;;Shoot the rocks!;;peppy/;no
+10200;Solar;Bill Grey;(If the player completes Katina);Looks like you could use some help Fox.;;bill/;no
+10210;Solar;Fox McCloud;;Bill!;;fox/;no
+10220;Solar;Bill Grey;;Don't get too excited. Here we go!;;bill/;no
+10230;Solar;Bill Grey;;Watch yourself Fox.;;bill/;no
+10255;Solar;Peppy Hare;;They're attacking in groups!;;peppy/;no
+10321;Solar;Falco Lombardi;Mayday;I ain't your buddy! Go away! (when chased by a Gores);;falco/;no
+10322;Solar;Falco Lombardi;Rescued;Good riddance. I almost got burned!;;falco/;no
+6051;Solar;Falco Lombardi;Falco gets hit;Shoot!!;;falco/;no
+10323;Solar;Slippy Toad;Mayday;It's too hot! I can't take it anymore!;;slippy/;no
+10300;Solar;Peppy Hare;;THIS is the enemy bio-weapon!?;;peppy/;no
+10310;Solar;Falco Lombardi;;Andross is an insane fool!;;falco/;no
+4092;Solar;Slippy Toad;;Data analysis complete! Here it comes!;;slippy/;no
+10320;Solar;Peppy Hare;;Maybe it's an arm. Aim for the arm!;;peppy/;no
+18035;Solar;Falco Lombardi;;Here they come!;;falco/;no
+15252;Solar;Slippy Toad;After Vulcain is defeated;Yippee! You did it!;;slippy/;no
+20010;Solar;Fox McCloud;;All aircraft report!;;fox/;no
+20013;Solar;Slippy Toad;;I'm having some trouble here.;;slippy/;no
+20014;Solar;Peppy Hare;;I've taken a few hits, but I'm ok.;;peppy/;no
+20019;Solar;Falco Lombardi;;You worry about your own hide!;;falco/;no
+1400;Zoness;General Pepper;;There's an enemy base there!?;;pepper/;no
+1370;Zoness;Fox McCloud;;Affirmative, general!;;fox/;no
+6010;Zoness;Fox McCloud;;Let's sneak in low and surprise them.;;fox/;no
+6011;Zoness;Peppy Hare;;THIS is Zoness?;;peppy/;no
+6013;Zoness;Falco Lombardi;;I can't believe they did this...;;falco/;no
+6012;Zoness;Slippy Toad;;What a dump!;;slippy/;no
+6014;Zoness;Falco Lombardi;;I hear ya, Slippy.;;falco/;no
+6020;Zoness;Slippy Toad;;Watch out for the searchlight!;;slippy/;no
+6021;Zoness;Falco Lombardi;;Let's take 'em all out!;;falco/;no
+9110;Zoness;Slippy Toad;Mayday;Fox, get this guy off me!;;slippy/;no
+9140;Zoness;Slippy Toad;Mayday;This is really starting to tick me off!;;slippy/;no
+9170;Zoness;Slippy Toad;Mayday;Hoo! That was too close!;;slippy/;no
+6024;Zoness;Fox McCloud;(If at any point in the level, Fox is detected by a searchlight);Uh, oh! Have we been spotted?!;;fox/;no
+2140;Zoness;Peppy Hare;;Follow your father's example, Fox!;;peppy/;no
+6025;Zoness;Katt Monroe;;We're closing in on them, Falco!;;katt/;no
+6029;Zoness;Katt Monroe;;Take the right lane boy, I'm on the left.;;katt/;no
+6026;Zoness;Falco Lombardi;;Katt?! What are you doing here?;;falco/;no
+6027;Zoness;Katt Monroe;;Is that any way to greet a girl?;;katt/;no
+6055;Zoness;Slippy Toad;;Whoa! Watch out!;;slippy/;no
+6041;Zoness;Katt Monroe;Mayday;I've got somebody on my tail!;;katt/;no
+16140;Zoness;Katt Monroe;(Rescued);Beautiful! I could kiss you for that.;;katt/;no
+6042;Zoness;Katt Monroe;(Katt gets hit);Mess with me, and you'll get scratched!;;katt/;no
+6038;Zoness;Peppy Hare;;Aim for the rudder, Fox!;;peppy/;no
+6028;Zoness;Slippy Toad;;Here I go!;;slippy/;no
+6045;Zoness;Falco Lombardi;;Enemy fighters spotted! Take them down!;;falco/;no
+16135;Zoness;Katt Monroe;;Make way for Katt!;;katt/;no
+6050;Zoness;Falco Lombardi;*(Falco chases an enemy);These guys don't quit!;;falco/;no
+2090;Zoness;Falco Lombardi;(When Falco destroys his chosen foe);Gotcha!;;falco/;no
+2095;Zoness;Falco Lombardi;(When Fox kill-steals from Falco);Back off, Fox!;;falco/;no
+11060;Zoness;Falco Lombardi;;Looks like we've got company!;;falco/;no
+9430;Zoness;Falco Lombardi;;That was a close call, Fox!;;falco/;no
+8100;Zoness;Falco Lombardi;;Jeez Laweez! What is that?!;;falco/;no
+6066;Zoness;Peppy Hare;;Be careful it might be a trap!;;peppy/;no
+6067;Zoness;Slippy Toad;;Something's coming from the sea!;;slippy/;no
+6069;Zoness;Sarumarine Captain;;Disrespectful little whelps!;;sarumarine/;no
+6071;Zoness;Sarumarine Captain;;I'll teach ye some respect!;;sarumarine/;no
+2225;Zoness;Slippy Toad;;Enemy shield analyzed!;;slippy/;no
+6074;Zoness;Sarumarine Captain;(if forced to submerge and attack);Adjust 10 degrees right. Fire!;;sarumarine/;no
+6075;Zoness;Sarumarine Captain;(if the periscope is left alone);Pressure, angle ok. Fire torpedo!;;sarumarine/;no
+6077;Zoness;Sarumarine Captain;(if the periscope is destroyed);I can't see anything. Fire anyway!;;sarumarine/;no
+6073;Zoness;Sarumarine Captain;(emerging from the water);Prepare to surface!;;sarumarine/;no
+6072;Zoness;Sarumarine Captain;(resuming the fight from the surface);All sections ready, engage!;;sarumarine/;no
+6068;Zoness;Sarumarine Captain;(if he hits Fox);Ar ha ha ha harr!;;sarumarine/;no
+6081;Zoness;Peppy Hare;;Destroy the two exhaust pipes!;;peppy/;no
+6080;Zoness;Peppy Hare;;His armor's tough. Use bombs wisely!;;peppy/;no
+6076;Zoness;Sarumarine Captain;(after all exhaust pipes are taken out and when a port is destroyed during Phase 2);Aaargh. Drop the crane now!;;sarumarine/;no
+6082;Zoness;Peppy Hare;;Quick, destroy the crane!;;peppy/;no
+6090;Zoness;Sarumarine Captain;*(Phase 3 start);Oh SHOOT! (when the crane is destroyed);;sarumarine/;no
+6078;Zoness;Sarumarine Captain;(upon defeat);Fire! Fire!;;sarumarine/;no
+6079;Zoness;Sarumarine Captain;(upon defeat);Aaaarrggghhh!!!;;sarumarine/;no
+1240;Titania;General Pepper;Titania's Intro.;What are you doing? It's too dangerous there!;;pepper/;no
+1250;Titania;Fox McCloud;Titania's Intro.;I can't leave Slippy hangin'!.;;fox/;no
+4113;Titania;Fox McCloud;Titania's Intro.;Deploy the Landmaster!;;fox/;no
+4010;Titania;Fox McCloud;Titania's Intro.;Give me Slippy's location, ROB.;;fox/;no
+4011;Titania;ROB 64;Titania's Intro.;Life form indicated at 12 o'clock.;;rob/;no
+4012;Titania;Peppy Hare;Titania's Intro.;There's rocky terrain dead ahead.;;peppy/;no
+4013;Titania;Falco Lombardi;Titania's Intro.;A magnetic storm! We'll search here.;;falco/;no
+20238;Titania;Peppy Hare;Titania's Intro.;Use bombs wisely!;;peppy/;no
+4020;Titania;Falco Lombardi;Titania's Intro.;I think you look better in tank.;;falco/;no
+4022;Titania;Fox McCloud;Titania's Intro.;Why don't you come down here Falco?;;fox/;no
+4023;Titania;Falco Lombardi;Titania's Intro.;I'll pass, Fox.;;falco/;no
+4021;Titania;Falco Lombardi;Titania's Intro.;He can sure be a pain in the neck.;;falco/;no
+4024;Titania;Peppy Hare;Titania's Intro.;Don't go too fast, Falco!;;peppy/;no
+4031;Titania;Falco Lombardi;Titania's Intro.;Enemy fighters comin' at you Fox.;;falco/;no
+4030;Titania;Peppy Hare;Titania's Intro.;Try hovering!;;peppy/;no
+20290;Titania;Peppy Hare;Titania's Intro.;To barrel roll, press Z or R twice!;;peppy/;no
+4040;Titania;Peppy Hare;Titania's Intro.;Are you okay?;;peppy/;no
+20239;Titania;Peppy Hare;Titania's Intro.;Use the boost to get through!;;peppy/;no
+4030;Titania;Peppy Hare;Titania's Intro.;Try hovering!;;peppy/;no
+20238;Titania;Peppy Hare;Titania's Intro.;Use bombs wisely!;;peppy/;no
+20283;Titania;Peppy Hare;Titania's Intro.;Lock on the enemies!;;peppy/;no
+8045;Titania;Falco Lombardi;Titania's Intro.;These guys just keep coming!;;falco/;no
+4075;Titania;Peppy Hare;Titania's Intro.;Incoming!;;peppy/;no
+4050;Titania;Peppy Hare;Titania's Intro.;Don't be dead, Slip.;;peppy/;no
+9100;Titania;Falco Lombardi;Titania's Intro.;Shoot! He's right behind me!;;falco/;no
+20262;Titania;Falco Lombardi;Titania's Intro.;I guess you're good for something!;;falco/;no
+4080;Titania;Peppy Hare;Titania's Intro.;You okay? Hold together, just a bit further.;;peppy/;no
+9152;Titania;Slippy Toad;Titania's Intro.;Aahh! I'm hit!;;slippy/;no
+4082;Titania;Fox McCloud;Titania's Intro.;Is that you Slippy?;;fox/;no
+4083;Titania;Falco Lombardi;Titania's Intro.;I'll be there soon.;;falco/;no
+20266;Titania;Fox McCloud;Titania's Intro.;Slippy!;;fox/;no
+4112;Titania;Slippy Toad;Titania's Intro.;I knew you would come help me!;;slippy/;no
+4111;Titania;Slippy Toad;Titania's Intro.;Fox!!!!;;slippy/;no
+4094;Titania;Falco Lombardi;(Phase 2 start);Let me get a piece of that action, Fox!;;falco/;no
+4095;Titania;Peppy Hare;Titania's Intro.;Take out his arms, Fox!;;peppy/;no
+4093;Titania;Slippy Toad;If the player takes too long to shoot the arms upon initial reveal:;Do something!;;slippy/;no
+4097;Titania;Falco Lombardi;Titania's Intro.;Slippy, what are you doing?! Hurry up!;;falco/;no
+4098;Titania;Slippy Toad;Titania's Intro.;It's impossible this way!;;slippy/;no
+4096;Titania;Falco Lombardi;Titania's Intro.;Pipe down, Slippy, Just hold on!;;falco/;no
+4110;Titania;Slippy Toad;(Phase 3 start);I made it! I'll analyze right away!;;slippy/;no
+4092;Titania;Slippy Toad;(Phase 3 start);Data analysis complete. Here it comes.;;slippy/;no
+4091;Titania;Peppy Hare;Titania's Intro.;Go for the chest!;;peppy/;no
+20010;Titania;Fox McCloud;Titania's Intro.;All aircraft report!;;fox/;no
+4100;Titania;Slippy Toad;Titania's Intro.;I thought I was a goner!;;slippy/;no
+4101;Titania;Falco Lombardi;Titania's Intro.;We're always savin' your hide, Slip.;;falco/;no
+4102;Titania;Peppy Hare;Titania's Intro.;I'm sure he's learned his lesson.;;peppy/;no
+4103;Titania;Fox McCloud;Titania's Intro.;When we get back, we'll head to Venom!;;fox/;no
+1340;Macbeth;General Pepper;;So you're going to attack the enemy base? Great idea, Fox!;;pepper/;no
+1350;Macbeth;Fox McCloud;;It'll be a piece of cake General.;;fox/;no
+17010;Macbeth;Fox McCloud;;I spot the train. I'm taking it out!;;fox/;no
+17360;Macbeth;Forever Train engineer;;Here come the little hyenas, now!;;engineer/;no
+17390;Macbeth;Forever Train engineer;;Here you go!;;engineer/;no
+17400;Macbeth;Forever Train engineer;;They're not taking me seriously.;;engineer/;no
+18035;Macbeth;Falco Lombardi;;Here they come!;;falco/;no
+17476;Macbeth;Forever Train engineer;(If the first few cars from the back are still intact);Take THIS!;;engineer/;no
+3040;Macbeth;Peppy Hare;;Just shoot it Fox!;;peppy/;no
+17130;Macbeth;Katt Monroe;;Starting without me? Boys I'm crushed.;;katt/;no
+17131;Macbeth;Falco Lombardi;;Katt!! Not you again!;;falco/;no
+6027;Macbeth;Katt Monroe;;Is that anyway to greet a girl?;;katt/;no
+4075;Macbeth;Slippy Toad;;Incoming!;;slippy/;no
+17476;Macbeth;Forever Train engineer;;Take THIS!;;engineer/;no
+17474;Macbeth;Slippy Toad;;How's the Landmaster Fox?;;slippy/;no
+4030;Macbeth;Peppy Hare;;Try hovering!;;peppy/;no
+17370;Macbeth;Forever Train engineer;;Dang! Detach the rear vehicle!;;engineer/;no
+17030;Macbeth;Peppy Hare;;Don't let them get to the supply depot!;;peppy/;no
+9100;Macbeth;Falco Lombardi;Mayday;Shoot! He's right behind me!;;falco/;no
+2337;Macbeth;Falco Lombardi;Mayday;I guess I should be thankful.;;falco/;no
+17380;Macbeth;Forever Train engineer;;What's wrong? Come a little closer!;;engineer/;no
+4030;Macbeth;Peppy Hare;;Try hovering!;;peppy/;no
+17100;Macbeth;Falco Lombardi;;I see the fuel bunker on the right side!;;falco/;no
+17110;Macbeth;Peppy Hare;;Change the switch ahead!;;peppy/;no
+17120;Macbeth;Peppy Hare;;Shoot the eight switches to open the lock!;;peppy/;no
+16135;Macbeth;Katt Monroe;;Make way for Katt!;;katt/;no
+17140;Macbeth;Katt Monroe;;I've got the left. You take the right, hon.;;katt/;no
+17420;Macbeth;Forever Train engineer;;I didn't expect to have to use this.;;engineer/;no
+17430;Macbeth;Forever Train engineer;;You're very lucky.;;engineer/;no
+17410;Macbeth;Forever Train engineer;;I'll lure these guys to the front.;;engineer/;no
+2225;Macbeth;Slippy Toad;;Enemy shield analyzed.;;slippy/;no
+20250;Macbeth;Falco Lombardi;;I'm here to rescue you.;;falco/;no
+17473;Macbeth;Forever Train engineer;;Step on the gas!;;engineer/;no
+17170;Macbeth;Peppy Hare;;Well at least we can take this boss out.;;peppy/;no
+17460;Macbeth;Forever Train engineer;;Heh heh heh... What's wrong?;;engineer/;no
+17470;Macbeth;Forever Train engineer;;Try, this!;;engineer/;no
+17020;Macbeth;Falco Lombardi;Mayday;Hey! I've got my hands full up here!;;falco/;no
+9160;Macbeth;Falco Lombardi;Mayday;Gee! I've been saved by Fox, how swell!;;falco/;no
+17475;Macbeth;Forever Train engineer;(if the player takes too long);You're too slow! It's time to end this!;;engineer/;no
+17450;Macbeth;Forever Train engineer;(defeated);No! Get away!;;engineer/;no
+17440;Macbeth;Forever Train engineer;(defeated);Gwaa!!!;;engineer/;no
+17150;Macbeth;Peppy Hare;;OK, now shoot the switcher!;;peppy/;no
+17473;Macbeth;Forever Train engineer;;Step on the gas.;;engineer/;no
+17160;Macbeth;Peppy Hare;(When Fox successfully hits the main switch);Good goin' Fox!;;peppy/;no
+17471;Macbeth;Forever Train engineer;(defeated);NO! hit the brakes!;;engineer/;no
+17472;Macbeth;Forever Train engineer;(defeated);I can't stop IT!;;engineer/;no
+20010;Macbeth;Fox McCloud;;All aircraft report!;;fox/;no
+17330;Macbeth;Slippy Toad;;I can see the look on their stupid faces!;;slippy/;no
+17310;Macbeth;Peppy Hare;;I'm sure we hurt 'em this time.;;peppy/;no
+17300;Macbeth;Katt Monroe;;You're pretty good tiger. see ya again!;;katt/;no
+17320;Macbeth;Falco Lombardi;;Now it's our turn to kick some tail.;;falco/;no
+1420;Sector Z;General Pepper;;The enemy army is gunning for you, be careful.;;pepper/;no
+1430;Sector Z;Fox McCloud;;Don't worry, sir.;;fox/;no
+16010;Sector Z;ROB 64;;Enemy approaching from the left!;;rob/;no
+16020;Sector Z;Fox McCloud;;We'll gladly take this one.;;fox/;no
+16030;Sector Z;Falco Lombardi;;Nice welcome!;;falco/;no
+16050;Sector Z;ROB 64;(Phase 1 start);Six missiles coming from the left!;;rob/;no
+16055;Sector Z;ROB 64;(Phase 1 start);Missile one is heading for Great Fox!;;rob/;no
+16060;Sector Z;Fox McCloud;;Here it comes!;;fox/;no
+16080;Sector Z;ROB 64;(If a Missile is within 25 seconds of hitting the Great Fox.);Missile approaching. Distance 50.;;rob/;no
+16085;Sector Z;ROB 64;(If a Missile is within 10 seconds of hitting the Great Fox.);Missile approaching. Distance 20.;;rob/;no
+16090;Sector Z;ROB 64;(If a Missile is within 5 seconds of hitting the Great Fox.);Distance 10. Unable to evade.;;rob/;no
+16100;Sector Z;ROB 64;(Phase 2 start);Missiles 2 and 3 approaching!;;rob/;no
+16040;Sector Z;Slippy Toad;;I'm heading for the missile now!;;slippy/;no
+16046;Sector Z;Peppy Hare;;I'm going for the missile!;;peppy/;no
+16120;Sector Z;Katt Monroe;(If the player completes Zoness);Are you going to hog all the fun?;;katt/;no
+16125;Sector Z;Falco Lombardi;;Katt?! Can't you go bother someone else?;;falco/;no
+16130;Sector Z;Katt Monroe;;Let me help you out.;;katt/;no
+16110;Sector Z;ROB 64;;Missile 4, 5, and 6 approaching!;;rob/;no
+16135;Sector Z;Katt Monroe;;Make way for Katt!;;katt/;no
+16175;Sector Z;Peppy Hare;;One missile destroyed!;;peppy/;no
+16170;Sector Z;Falco Lombardi;;One missile down!;;falco/;no
+16180;Sector Z;Slippy Toad;;Scratch one missile!;;slippy/;no
+9436;Sector Z;Falco Lombardi;;I got the last one!;;falco/;no
+16140;Sector Z;Katt Monroe;If Fox destroys the missile;Beautiful! I could kiss you for that!;;katt/;no
+16185;Sector Z;Katt Monroe;If Katt destroys the missile;I took care of a missile for ya!;;katt/;no
+1300;Bolse;General Pepper;Bolse's Intro.;If you destroy the satellite we can go straight for Venom! Be careful Fox.;;pepper/;no
+1310;Bolse;Fox McCloud;Bolse's Intro.;I'm on it!;;fox/;no
+11010;Bolse;Fox McCloud;Cutscene;Ok guys, destroy all barriers!;;fox/;no
+11020;Bolse;Peppy Hare;Mission start;Aim for the six energy towers!;;peppy/;no
+11030;Bolse;Falco Lombardi;After Peppy;I'll cover you, Fox!;;falco/;no
+11210;Bolse;Slippy Toad;Tailing enemies;Those ships are shielded too!;;slippy/;no
+11220;Bolse;Falco Lombardi;Tailing enemies;You are not taking him down today!;;falco/;no
+11240;Bolse;Slippy Toad;Energy towers still active;They don't give up.;;slippy/;no
+11230;Bolse;Peppy Hare;Energy towers still active;What's taking so long, Fox?;;peppy/;no
+11050;Bolse;Fox McCloud;All towers destroyed;Hey! The force field is disappearing!;;fox/;no
+11060;Bolse;Falco Lombardi;Enemies appear;Looks like we've got company.;;falco/;no
+11150;Bolse;Peppy Hare;Energy core appears;Good, I see the enemy core!;;peppy/;no
+11160;Bolse;Peppy Hare;Boss battle continues;Destroy the satellite's core!;;peppy/;no
+11100;Bolse;Wolf O'Donnell;Entry;Playtime is over, Star Fox!;;wolf/;no
+11110;Bolse;Leon Powalski;Entry;I think I'll torture you for a while!;;leon/;no
+11120;Bolse;Pigma Dengar;Entry;Daddy screamed REAL good before he DIED!;;pigma/;no
+11130;Bolse;Andrew Oikonny;Entry;You'll be sorry you crossed us!;;andrew/;no
+11241;Bolse;Fox McCloud;If the route included Fortuna but lost;Star Wolf again? Why now?;;fox/;no
+11200;Bolse;Fox McCloud;'Note: The only dialogue until the Mission ends is All Range Mode dialogue, which is randomly stated.;Venom here we come.;;fox/;no
+1320;Area 6;General Pepper;Area 6's Intro.;It's almost over! We're in your debt. Come back in one piece, Fox!;;pepper/;no
+1330;Area 6;Fox McCloud;Area 6's Intro.;Will do, General!;;fox/;no
+7005;Area 6;Caiman;Area 6's Intro.;Caiman here, no problems.;;caiman/;no
+7006;Area 6;Caiman;Area 6's Intro.;Do you copy? Emergency maneuvers!;;caiman/;no
+7011;Area 6;Falco Lombardi;Area 6's Intro.;Too late! Game over pal!;;falco/;no
+7012;Area 6;Fox McCloud;Level entry;Entering Venom air defense zone!;;fox/;no
+7013;Area 6;Peppy Hare;Enemies appear;Everybody, stay alert!;;peppy/;no
+7014;Area 6;Slippy Toad;Enter minefield;Space mines ahead!;;slippy/;no
+7065;Area 6;Falco Lombardi;Mayday;Bogey behind me! Am I gettin' slow?;;falco/;no
+20301;Area 6;Falco Lombardi;Enter Umbra wave;Let's clean up this mess!;;falco/;no
+9190;Area 6;Falco Lombardi;Tailing enemy;Time for a little payback!Hold still and let me shoot you!;;falco/;no
+20262;Area 6;Falco Lombardi;K'O his target;I guess you're good for something!;;falco/;no
+2090;Area 6;Falco Lombardi;K'Os target;Gotcha!;;falco/;no
+7050;Area 6;Slippy Toad;Ninjin Missiles appear;Incoming enemy missile!;;slippy/;no
+7051;Area 6;Peppy Hare;Immediately after Slippy;Shoot em' down we're being marked!;;peppy/;no
+19461;Area 6;Slippy Toad;If any missiles explode, depending who is active;Ahhhhh!;;slippy/;no
+7052;Area 6;Area 6 commander;After missiles;Did we get em'?;;area6cmd/;no
+7053;Area 6;Caiman;If no damage is made from missiles;Not yet sir!;;caiman/;no
+7066;Area 6;Peppy Hare;Mayday;They're on me! I'm getting careless!;;peppy/;no
+9150;Area 6;Peppy Hare;Chase continues;What's taking you so long Fox?;;peppy/;no
+5230;Area 6;Peppy Hare;Chase continues;Thanks, Fox.;;peppy/;no
+20274;Area 6;Andross;Less than 99 Hits;Ah, the son of James McCloud!Those tin cans are no match for me.;;andross/;no
+20273;Area 6;Andross;Over 100 Hits;I'm looking forward to this.;;andross/;no
+20277;Area 6;Andross;Over 100 Hits;Ha ha ha, you can never defeat me!I'll make those fools pay!;;andross/;no
+7095;Area 6;Caiman;After first checkpoint;They've broken through the first line!;;caiman/;no
+7043;Area 6;Fox McCloud;Zerams appear;We're gonna break through that fleet.;;fox/;no
+7096;Area 6;Caiman;Pass Zerams;They're through the second line!;;caiman/;no
+7094;Area 6;Area 6 commander;Midst Zerams and Harlock;Fire! Fire! Don't let them through!;;area6cmd/;no
+7070;Area 6;Slippy Toad;Mayday;Venom's right there!;;slippy/;no
+9170;Area 6;Slippy Toad;Rescue;Hoo! That was too close!;;slippy/;no
+7099;Area 6;Caiman;Last two Zerams;The last line has been breached!;;caiman/;no
+7097;Area 6;Area 6 commander;End of route;These guys are crazy!;;area6cmd/;no
+7098;Area 6;Area 6 commander;End of route;Dang deploy it now!;;area6cmd/;no
+7061;Area 6;Slippy Toad;Gorgon appears;Enemy ahead! This ones different...;;slippy/;no
+7064;Area 6;Falco Lombardi;Gorgon appears;Crud! We were so close to Venom!;;falco/;no
+7085;Area 6;Falco Lombardi;Phase 2 starts;Yeah! It's working;;falco/;no
+2225;Area 6;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+7086;Area 6;Slippy Toad;Phase 3 start;Yeah, Yeah!;;slippy/;no
+7083;Area 6;Peppy Hare;Advice;Shoot the tentacles to open the core!;;peppy/;no
+20315;Area 6;Falco Lombardi;Gorgon laser charge;Watch out, Fox!;;falco/;no
+7084;Area 6;Peppy Hare;When the spires respawn, core is exposed to attack;Destroy all three energy balls!;;peppy/;no
+7087;Area 6;Peppy Hare;When the spires respawn, core is exposed to attack;The shield is gone, shoot the core!;;peppy/;no
+15252;Area 6;Slippy Toad;Boss down;Yippee! You did it!;;slippy/;no
+7093;Area 6;Fox McCloud;Mission Accomplished;Hold on, we're entering Venom air space!;;fox/;no
+8010;Venom 1;Fox McCloud;Mission Start;Don't relax, we're not done yet.;;fox/;no
+8020;Venom 1;Falco Lombardi;Fighters coming in;Time to show the monkey who's boss!;;falco/;no
+5420;Venom 1;Peppy Hare;Enter trench;They're everywhere!;;peppy/;no
+8045;Venom 1;Falco Lombardi;Passing pilars;These guys just keep comin'!;;falco/;no
+8050;Venom 1;Falco Lombardi;Passing pilars;Don't go dyin' on me.;;falco/;no
+10040;Venom 1;Peppy Hare;Fighters ambush;Brace yourselves!;;peppy/;no
+8040;Venom 1;Slippy Toad;Approach cross points;You'll be sorry punks!;;slippy/;no
+21071;Venom 1;Slippy Toad;Fly left with Slippy;I'm going left!;;slippy/;no
+3042;Venom 1;Slippy Toad;Randomised;Woah! Can you make it?;;slippy/;no
+20315;Venom 1;Slippy Toad;Randomised;Watch out, Fox!;;slippy/;no
+4075;Venom 1;Slippy Toad;Randomised;Incoming!;;slippy/;no
+8060;Venom 1;Falco Lombardi;Fly left with Falco;I'll take the left.;;falco/;no
+6050;Venom 1;Falco Lombardi;Randomised;These guys don't quit.;;falco/;no
+14200;Venom 1;Falco Lombardi;Randomised;Geez! Quit movin' around!;;falco/;no
+18035;Venom 1;Falco Lombardi;Randomised;Here they come!;;falco/;no
+2090;Venom 1;Falco Lombardi;Randomised;Gotcha!;;falco/;no
+8070;Venom 1;Peppy Hare;Fly right with Peppy;I've got the right.;;peppy/;no
+20315;Venom 1;Peppy Hare;Randomised;Watch out, Fox!;;peppy/;no
+2115;Venom 1;Peppy Hare;Randomised;You've got an enemy on your tail!;;peppy/;no
+4075;Venom 1;Peppy Hare;Randomised;Incoming!;;peppy/;no
+3040;Venom 1;Peppy Hare;Randomised;Just shoot it Fox!;;peppy/;no
+4080;Venom 1;Peppy Hare;End of cross routes;You okay? Hold together, just a bit further.;;peppy/;no
+8030;Venom 1;Peppy Hare;Approach Pillars;This brings back memories of your dad.;;peppy/;no
+8100;Venom 1;Falco Lombardi;Approach Temple;Jeez Laweez! What is that?!;;falco/;no
+8110;Venom 1;Slippy Toad;Approach Temple;That temple gives me the creeps.;;slippy/;no
+8120;Venom 1;Slippy Toad;Golemech Appears;What's going on? He's running away!;;slippy/;no
+8130;Venom 1;Peppy Hare;Golemech Appears;Stay alert!;;peppy/;no
+8140;Venom 1;Falco Lombardi;Golemech Appears;Don't get too close, Fox.;;falco/;no
+4092;Venom 1;Slippy Toad;Bossometer uploaded;Data analysis complete. Here it comes.;;slippy/;no
+19010;Venom 2;Fox McCloud;Star Wolf arrive in their new ships.;Say your prayers Andross.;;fox/;no
+19200;Venom 2;Wolf O'Donnell;Star Wolf arrive in their new ships.;Don't get too cocky Star Fox.;;wolf/;no
+19210;Venom 2;Leon Powalski;Star Wolf arrive in their new ships.;Let's see how you handle our new ships.;;leon/;no
+19220;Venom 2;Pigma Dengar;Star Wolf arrive in their new ships.;Too bad dad's not here to see ya fail!;;pigma/;no
+19230;Venom 2;Andrew Oikonny;Star Wolf arrive in their new ships.;We'll make sure you never reach Andross.;;andrew/;no
+19240;Venom 2;Fox McCloud;Star Wolf arrive in their new ships.;We'll just see about that Star Wolf.;;fox/;no
+19250;Venom 2;Falco Lombardi;Random;You guys don't give up!;;falco/;no
+19462;Venom 2;Falco Lombardi;Random;I see you've got new ships!;;falco/;no
+19463;Venom 2;Slippy Toad;Random;Hey! Nice aircraft, guys!;;slippy/;no
+19454;Venom 2;Wolf O'Donnell;Hit;You're good, but I'm better.;;wolf/;no
+19458;Venom 2;Wolf O'Donnell;Down;No way! I don't believe it!;;wolf/;no
+19455;Venom 2;Leon Powalski;Hit;Not yet. The party's just begun!;;leon/;no
+19459;Venom 2;Leon Powalski;Down;He's too strong!;;leon/;no
+19456;Venom 2;Pigma Dengar;Hit;You can't beat me! I've got a better ship!;;pigma/;no
+9366;Venom 2;Pigma Dengar;Down;This can't be happening!;;pigma/;no
+19457;Venom 2;Andrew Oikonny;Hit;Give it up. You can't win! Aaaaahhhhhh!!!;;andrew/;no
+8215;Venom 2;Fox McCloud;The battle between Fox and Andross.;I'll go it alone from here.;;fox/;no
+4111;Venom 2;Slippy Toad;The battle between Fox and Andross.;Fox!!;;slippy/;no
+8250;Venom 2;Andross;The battle between Fox and Andross.;I've been waiting for you Star Fox!;;andross/;no
+8255;Venom 2;Andross;The battle between Fox and Andross.;You know that I control the galaxy.;;andross/;no
+8260;Venom 2;Andross;The battle between Fox and Andross.;It's foolish to come against me.;;andross/;no
+8265;Venom 2;Andross;The battle between Fox and Andross.;You will die, just like your father!;;andross/;no
+19325;Venom 2;Andross;The battle between Fox and Andross.;Now, you will feel true pain!;;andross/;no
+19330;Venom 2;Andross;Andross's true form in Star Fox 64.;Only I have the brains to rule Lylat!;;andross/;no
+19466;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;So Andross, you show your true form!;;fox/;no
+19335;Venom 2;Andross;Andross's true form in Star Fox 64.;If I go down I'm taking you with me!;;andross/;no
+14360;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;Aaaaaaahhhh!;;fox/;no
+19468;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Don't ever give up, my son.;;james/;no
+19350;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;Father!?;;fox/;no
+2181;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Follow me, Fox.;;james/;no
+19355;Venom 2;James McCloud;Andross's true form in Star Fox 64.;This way, Fox.;;james/;no
+19360;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Never give up. Trust your instincts.;;james/;no
+19370;Venom 2;James McCloud;Andross's true form in Star Fox 64.;You've become so strong, Fox.;;james/;no
+8300;Venom 2;Peppy Hare;Andross's true form in Star Fox 64.;Fox!! Are you OK?;;peppy/;no
+19400;Venom 2;Peppy Hare;Andross's true form in Star Fox 64.;Fox, you're OK!;;peppy/;no
+8310;Venom 2;Slippy Toad;Andross's true form in Star Fox 64.;YES! You did it!;;slippy/;no
+19410;Venom 2;Slippy Toad;Andross's true form in Star Fox 64.;Way to go, Fox!;;slippy/;no
+8320;Venom 2;Falco Lombardi;Andross's true form in Star Fox 64.;Ok I'll admit it, you did good Fox.;;falco/;no
+19420;Venom 2;Falco Lombardi;Andross's true form in Star Fox 64.;That's our leader!;;falco/;no
+19430;Venom 2;Peppy Hare;Andross's true form in Star Fox 64.;What's wrong Fox?;;peppy/;no
+19440;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;Nothing... Nothing's wrong.;;fox/;no
+21030;End Credits;Fox McCloud;The ending ceremony.;Oh no, sir. We prefer doing things our own way.;;fox/;no
+21050;End Credits;ROB 64;The ending ceremony.;Great Fox is ready to go.;;rob/;no
+21060;End Credits;Fox McCloud;The ending ceremony.;It's time for us to go now.;;fox/;no
+19465;Misc;Fox McCloud;When one Wolfen is left;There's one more to go!;;fox/;no
+20318;Misc;Fox McCloud;Dying;Aaaaahhh!;;fox/;no
+8205;Misc;Fox McCloud;Only Fox is left when facing Andross;It's all coming down to this...;;fox/;no
+7100;Misc;Falco Lombardi;Score Bonus +7 Hits;Alright!;;falco/;no
+20060;Misc;Falco Lombardi;Hit by Fox;Hey, Einstein! I'm on your side!;;falco/;no
+20210;Misc;Falco Lombardi;Fox crashes into him;Get out of my way!;;falco/;no
+20220;Misc;Falco Lombardi;Retire;Aw, man! I'm gonna have to back off.;;falco/;no
+2270;Misc;Falco Lombardi;Fox is dead;No!!!!;;falco/;no
+20170;Misc;Falco Lombardi;K'O his target(s);Go find your own target, Fox!;;falco/;no
+9190;Misc;Falco Lombardi;Chasing targets;Time for a little payback!;;falco/;no
+9211;Misc;Falco Lombardi;Chasing targets;You're dead meat, pal!;;falco/;no
+7020;Misc;Falco Lombardi;Chasing targets;Hold still and let me shoot you!;;falco/;no
+9220;Misc;Falco Lombardi;K'O an enemy;Scratch one bogey!;;falco/;no
+9100;Misc;Falco Lombardi;S.O.S.;Shoot! He's right behind me!;;falco/;no
+9130;Misc;Falco Lombardi;S.O.S.;I can't shake this guy!;;falco/;no
+2233;Misc;Falco Lombardi;Fox is tailed persistently;Move it, Fox! He's right behind you!;;falco/;no
+9160;Misc;Falco Lombardi;Rescued;Gee, I've been saved by Fox! How swell.;;falco/;no
+2337;Misc;Falco Lombardi;Rescued;I guess I should be thankful.;;falco/;no
+20298;Misc;Falco Lombardi;Flying closely near him;Come on, Fox! Let's kick some tail!;;falco/;no
+20280;Misc;Falco Lombardi;Flying closely near him;Don't worry about me, Fox!;;falco/;no
+20301;Misc;Falco Lombardi;Flying closely near him;Let's clean up this mess.;;falco/;no
+20017;Misc;Falco Lombardi;Shields 75-50%;Ah, you're getting better, Fox.;;falco/;no
+20019;Misc;Falco Lombardi;Shields 50-25%;You worry about your own hide.;;falco/;no
+20303;Misc;Falco Lombardi;Shields 50-25%;See my ship? Does it look OK to you?;;falco/;no
+15252;Misc;Slippy Toad;Score Bonus +7 Hits;Yippie! You did it!;;slippy/;no
+20080;Misc;Slippy Toad;Hit by Fox;Hey, what's the big idea?;;slippy/;no
+20190;Misc;Slippy Toad;Fox crashes into him;What do you think you're doing, Fox!?;;slippy/;no
+20222;Misc;Slippy Toad;Retire;I'm monkey food if I don't leave!;;slippy/;no
+2270;Misc;Slippy Toad;Fox is dead;No!!!!;;slippy/;no
+20150;Misc;Slippy Toad;K'O his target(s);Hey, he was mine!;;slippy/;no
+9200;Misc;Slippy Toad;Chasing targets;You're not getting away that easy!;;slippy/;no
+9212;Misc;Slippy Toad;Chasing targets;I've got you now!;;slippy/;no
+11040;Misc;Slippy Toad;Chasing targets;Your carcass is mine!;;slippy/;no
+9230;Misc;Slippy Toad;K'O an enemy;I've got one!;;slippy/;no
+9110;Misc;Slippy Toad;S.O.S.;Fox! Get this guy off me!;;slippy/;no
+9140;Misc;Slippy Toad;S.O.S.;This is really starting to tick me off!;;slippy/;no
+20311;Misc;Slippy Toad;S.O.S.;Oh, No!;;slippy/;no
+2225;Misc;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+9170;Misc;Slippy Toad;Rescued;Whew, that was too close!;;slippy/;no
+20300;Misc;Slippy Toad;Flying closely near him;Let's take it to 'em, Fox!;;slippy/;no
+20282;Misc;Slippy Toad;Flying closely near him;How's the Arwing doing, Fox?;;slippy/;no
+4040;Misc;Slippy Toad;Flying closely near him;Are you okay?;;slippy/;no
+20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;;slippy/;no
+20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;;slippy/;no
+4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;;slippy/;no
+17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;;peppy/;no
+20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;;peppy/;no
+20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;;peppy/;no
+20221;Misc;Peppy Hare;Retire;Sorry guys. I gotta sit this one out.;;peppy/;no
+2270;Misc;Peppy Hare;Fox is dead;No!!!!;;peppy/;no
+20160;Misc;Peppy Hare;K'O his target(s);What's the big idea, Fox?;;peppy/;no
+9210;Misc;Peppy Hare;Chasing targets;I won't let you get away from me!;;peppy/;no
+9213;Misc;Peppy Hare;Chasing targets;You're mine!;;peppy/;no
+9240;Misc;Peppy Hare;K'O an enemy;There's one down!;;peppy/;no
+18150;Misc;Peppy Hare;Randomised;Enemy down...Wait, that was one of ours!;;peppy/;no
+9120;Misc;Peppy Hare;S.O.S.;Take care of the guy behind me, Fox!;;peppy/;no
+9150;Misc;Peppy Hare;S.O.S.;What's taking you so long, Fox?;;peppy/;no
+9153;Misc;Peppy Hare;S.O.S.;Shoot! They've got me!;;peppy/;no
+19464;Misc;Peppy Hare;S.O.S.;I can't break free!;;peppy/;no
+5230;Misc;Peppy Hare;Rescued;Thanks, Fox.;;peppy/;no
+9180;Misc;Peppy Hare;Rescued;Your father helped me like that too!;;peppy/;no
+20296;Misc;Peppy Hare;Flying closely near him;Come on, Fox! You can do it!;;peppy/;no
+20281;Misc;Peppy Hare;Flying closely near him;I see your father in you, Fox.;;peppy/;no
+20299;Misc;Peppy Hare;Flying closely near him;Don't go dyin' on me, Fox!;;peppy/;no
+20012;Misc;Peppy Hare;Shields 75-50%;Everything's A- OK.;;peppy/;no
+20014;Misc;Peppy Hare;Shields 50-25%;I've taken a few hits, but I'm okay.;;peppy/;no
+20016;Misc;Peppy Hare;Shields 50-25%;I saw my life flash before my eyes!;;peppy/;no
+20084;Misc;Katt Monroe;Hit by Fox;You trying to damage my pretty face?;;katt/;no
+18020;Misc;Bill Grey;Randomised;Husky unit, cover the base!;;bill/;no
+18021;Misc;Bill Grey;Randomised;Bulldog unit, don't let anything through!;;bill/;no
+18022;Misc;Bill Grey;Randomised;All units report!;;bill/;no
+18120;Misc;Bill Grey;Flying closely near him;Just like old times, eh, Fox?;;bill/;no
+18015;Misc;Bill Grey;Hit a Cornerian Fighter;Try shooting the bad guys, Fox!;;bill/;no
+18018;Misc;Bill Grey;K'O a Cornerian Fighter;Fox! That's one of ours! (If the player shoots down a Cornerian Fighter);;bill/;no
+20085;Misc;Bill Grey;Hit by Fox;Hey! See if I help you again!;;bill/;no
+20230;Misc;ROB 64;;Location confirmed. Sending supplies.;;rob/;no
+7054;Misc;ROB 64;;Great Fox will cover you.;;rob/;no
+20339;Misc;ROB 64;Results;Peppy's/Slippy's/Falco's ship is in the docking bay.;;rob/;no
+20333;Misc;ROB 64;Results;Peppy's/Slippy's/Falco's ship is in for repairs.;;rob/;no
+20345;Misc;ROB 64;Results;Repairs complete on Falco's/Slippy's/Peppy's ship.;;rob/;no
+20331;Misc;ROB 64;Results;Falco's ship is under maintenance.;;rob/;no
+20340;Misc;ROB 64;Results;Maintenance complete on Falco's ship.;;rob/;no
+9289;Misc;Wolf O'Donnell;Attacking taunt;You'll be seeing your dad soon Fox!;;wolf/;no
+9290;Misc;Wolf O'Donnell;Attacking taunt;You're in my sights, you're going down!;;wolf/;no
+9322;Misc;Wolf O'Donnell;Hit;You're not so tough!;;wolf/;no
+9369;Misc;Wolf O'Donnell;Perform evasive Somersault;What the heck?!;;wolf/;no
+9365;Misc;Wolf O'Donnell;Down;I... Can't... Lose!;;wolf/;no
+19451;Misc;Leon Powalski;Attacking taunt;I'll take care of you!;;leon/;no
+9300;Misc;Leon Powalski;Attacking taunt;You're not as tough as I thought.;;leon/;no
+9340;Misc;Leon Powalski;Hit;Shoot me down if you can!;;leon/;no
+9323;Misc;Leon Powalski;Tailing Falco;Annoying bird! I am the great Leon!;;leon/;no
+9366;Misc;Leon Powalski;Down;This can't be happening!;;leon/;no
+19452;Misc;Pigma Dengar;Attacking taunt;I'm gonna bust you up, real good!;;pigma/;no
+9310;Misc;Pigma Dengar;Attacking taunt;That reward's as good as mine!;;pigma/;no
+9350;Misc;Pigma Dengar;Hit;Come on, little man, shoot me!;;pigma/;no
+9324;Misc;Pigma Dengar;Tailing Peppy;I'll do you fast, Peppy old pal!;;pigma/;no
+9367;Misc;Pigma Dengar;Down;My beautiful reward! Aaaarrggghhh!!!;;pigma/;no
+9320;Misc;Andrew Oikonny;Attacking taunt;Bow before the great Andross!;;andrew/;no
+19457;Misc;Andrew Oikonny;Attacking taunt;Give it up! You can't win!;;andrew/;no
+9360;Misc;Andrew Oikonny;Hit;I'm not afraid of you!;;andrew/;no
+9325;Misc;Andrew Oikonny;Tailing Slippy;Stick to the pond, froggie!;;andrew/;no
+9368;Misc;Andrew Oikonny;Down;Uncle Andross!;;andrew/;no
