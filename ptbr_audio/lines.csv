@@ -1,6 +1,6 @@
 msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
-60;Intro;ROB 64;;Message from General Pepper. Priority one!;;rob/;no
-10;Intro;General Pepper;;We need your help, Star Fox! Andross has declared war! He's invaded the Lylat system and is trying to take over Corneria! Our army alone can't do the job! Hurry, Star Fox!;;pepper/;no
+60;Intro;ROB 64;;Message from General Pepper. Priority one!;Mensagem do General Pepper. Prioridade um!;rob/;no
+10;Intro;General Pepper;;We need your help, Star Fox! Andross has declared war! He's invaded the Lylat system and is trying to take over Corneria! Our army alone can't do the job! Hurry, Star Fox!;Precisamos de ajuda, Star Fox! Andross declarou guerra! Ele invadiu o sistema Lylat e está tentando dominar Corneria! Nosso exército sozinho não conseguirá! Depressa, Star Fox!;pepper/;no
 1;Intro;Opening Narrator;;Corneria, fourth planet of the Lylat system. The evil Andross turned this once thriving system into a wasteland of near extinction.;;intro/;no
 1;Intro;Opening Narrator;;General Pepper of the Cornerian army was successful in exiling this maniacal scientist to the barren, deserted planet Venom.;;intro/;no
 1;Intro;Opening Narrator;;Five years later, General Pepper noticed strange activity coming from Venom. James McCloud, Pigma Dengar, and Peppy Hare of the Star Fox team were sent to investigate.;;intro/;no
@@ -35,41 +35,41 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2200;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;Robô inimigo,\nbem à frente.;slippy/04_robo_inimigo.wav;yes
 2210;Corneria;Falco Lombardi;Approach All-Range;Let's go!;Vam'bora!;falco/07_vambora.wav;yes
 20180;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;Modo de alcance\ntotal!;fox/06_modo_de_alcance_total.wav;yes
-2240;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;;granga/;no
-2250;Corneria;Granga;Enter boss battle;I'm going to crush you!;;granga/;no
-2225;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
-2260;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;;granga/;no
-2230;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;;peppy/;no
-20237;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn!;;peppy/;no
-2263;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;;granga/;no
-2275;Corneria;Granga;Battle continues;I will not be defeated by this worm!;;granga/;no
-2265;Corneria;Granga;Battle continues;You are starting to annoy me!;;granga/;no
-2220;Corneria;Granga;Battle continues;You annoying little flies!;;granga/;no
-2270;Corneria;Granga;Granga's backpack is hit;No!!!;;granga/;no
-2280;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;;granga/;no
-2180;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;;falco/;no
-2181;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;;falco/;no
-2185;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;;fox/;no
-2188;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;;falco/;no
-9190;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;;falco/;no
-2090;Corneria;Falco Lombardi;K'O target;Gotcha!;;falco/;no
-2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;;falco/;no
-2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;;accaptain/;no
-1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;;pepper/;no
-1230;Meteo;Fox McCloud;;I won't let you down, sir!;;fox/;no
-3005;Meteo;Slippy Toad;;Things are starting to heat up!;;slippy/;no
-3010;Meteo;Peppy Hare;;Quit dinkin' around, Slip!;;peppy/;no
-3015;Meteo;Fox McCloud;;We're heading into the asteroids!;;fox/;no
-3041;Meteo;Peppy Hare;Level entry;Don't mess up that Arwing!;;peppy/;no
-3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;;peppy/;no
-3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;;peppy/;no
-20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);;peppy/;no
-20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;;peppy/;no
-3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;;slippy/;no
-3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;;slippy/;no
-2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);;peppy/;no
-20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);;peppy/;no
-20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;;peppy/;no
+2240;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;Ah, então esse é o Star Fox?;granga/;no
+2250;Corneria;Granga;Enter boss battle;I'm going to crush you!;Eu vou amassar vocês!;granga/;no
+2225;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo analisada!;slippy/;no
+2260;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;Quem cruzar o Andross vai morrer!;granga/;no
+2230;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;Mire nas costas dele!;peppy/;no
+20237;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn! (glyphs);Tente um retorno! (glyphs);peppy/;no
+2263;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;Parem de se mexer pra eu amassar vocês!;granga/;no
+2275;Corneria;Granga;Battle continues;I will not be defeated by this worm!;Eu não vou ser derrotado por este verme!;granga/;no
+2265;Corneria;Granga;Battle continues;You are starting to annoy me!;Vocês estão começando a me irritar!;granga/;no
+2220;Corneria;Granga;Battle continues;You annoying little flies!;Que mosquinhas irritantes!;granga/;no
+2270;Corneria;Granga;Granga's backpack is hit;No!!!;Nãooo!!!;granga/;no
+2280;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;Meu emperador... Eu falhei!;granga/;no
+2180;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;Tá voando bonito, Fox.;falco/;no
+2181;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;Me segue Fox!;falco/;no
+2185;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;Falco, você tá indo aonde?;fox/;no
+2188;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;Achei nosso alvo! Tenta me acompanhar.;falco/;no
+9190;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;Hora de dar o troco.;falco/;no
+2090;Corneria;Falco Lombardi;K'O target;Gotcha!;Peguei!;falco/;no
+2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;Sai fora, Fox!;falco/;no
+2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;Ah, alguém quer brincar.;accaptain/;no
+1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;Impressionante Star Fox. Agora cuidado com os inimigos no campo de asteroides!;pepper/;no
+1230;Meteo;Fox McCloud;;I won't let you down, sir!;Não vou te desapontar, senhor!;fox/;no
+3005;Meteo;Slippy Toad;;Things are starting to heat up!;A parada tá esquentando!;slippy/;no
+3010;Meteo;Peppy Hare;;Quit dinkin' around, Slip!;Para de zueira, Slip!;peppy/;no
+3015;Meteo;Fox McCloud;;We're heading into the asteroids!;Estamos indo para os asteroides!;fox/;no
+3041;Meteo;Peppy Hare;Level entry;Don't mess up that Arwing!;Não fode esse Arwing!;peppy/;no
+3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;Tá quieto. Quieto demais.;peppy/;no
+3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;Cuidado! É uma armadilha!;peppy/;no
+20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);Use bombas com sabedoria! (B);peppy/;no
+20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/09_tenta_uma_cambalhota.wav;no
+3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá vindo um grandão.;slippy/;no
+3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;Uoou! Você consegue?;slippy/;no
+2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);Use o freio! (C-DN);peppy/06_use_o_freio.wav;no
+20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);Use o boost pra conseguir passar! (C-left);peppy/;no
+20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;Tem mensagem do ROB 64!;peppy/;no
 20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);;falco/;no
 7066;Meteo;Peppy Hare;Mayday;They're on me! I'm getting careless!;;peppy/;no
 5230;Meteo;Peppy Hare;Rescue;Thanks, Fox.;;peppy/;no
@@ -607,74 +607,74 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 21030;End Credits;Fox McCloud;The ending ceremony.;Oh no, sir. We prefer doing things our own way.;;fox/;no
 21050;End Credits;ROB 64;The ending ceremony.;Great Fox is ready to go.;;rob/;no
 21060;End Credits;Fox McCloud;The ending ceremony.;It's time for us to go now.;;fox/;no
-19465;Misc;Fox McCloud;When one Wolfen is left;There's one more to go!;;fox/;no
-20318;Misc;Fox McCloud;Dying;Aaaaahhh!;;fox/;no
-8205;Misc;Fox McCloud;Only Fox is left when facing Andross;It's all coming down to this...;;fox/;no
-7100;Misc;Falco Lombardi;Score Bonus +7 Hits;Alright!;;falco/;no
-20060;Misc;Falco Lombardi;Hit by Fox;Hey, Einstein! I'm on your side!;;falco/;no
-20210;Misc;Falco Lombardi;Fox crashes into him;Get out of my way!;;falco/;no
-20220;Misc;Falco Lombardi;Retire;Aw, man! I'm gonna have to back off.;;falco/;no
-2270;Misc;Falco Lombardi;Fox is dead;No!!!!;;falco/;no
-20170;Misc;Falco Lombardi;K'O his target(s);Go find your own target, Fox!;;falco/;no
-9190;Misc;Falco Lombardi;Chasing targets;Time for a little payback!;;falco/;no
-9211;Misc;Falco Lombardi;Chasing targets;You're dead meat, pal!;;falco/;no
-7020;Misc;Falco Lombardi;Chasing targets;Hold still and let me shoot you!;;falco/;no
-9220;Misc;Falco Lombardi;K'O an enemy;Scratch one bogey!;;falco/;no
-9100;Misc;Falco Lombardi;S.O.S.;Shoot! He's right behind me!;;falco/;no
-9130;Misc;Falco Lombardi;S.O.S.;I can't shake this guy!;;falco/;no
-2233;Misc;Falco Lombardi;Fox is tailed persistently;Move it, Fox! He's right behind you!;;falco/;no
-9160;Misc;Falco Lombardi;Rescued;Gee, I've been saved by Fox! How swell.;;falco/;no
-2337;Misc;Falco Lombardi;Rescued;I guess I should be thankful.;;falco/;no
-20298;Misc;Falco Lombardi;Flying closely near him;Come on, Fox! Let's kick some tail!;;falco/;no
-20280;Misc;Falco Lombardi;Flying closely near him;Don't worry about me, Fox!;;falco/;no
-20301;Misc;Falco Lombardi;Flying closely near him;Let's clean up this mess.;;falco/;no
-20017;Misc;Falco Lombardi;Shields 75-50%;Ah, you're getting better, Fox.;;falco/;no
-20019;Misc;Falco Lombardi;Shields 50-25%;You worry about your own hide.;;falco/;no
-20303;Misc;Falco Lombardi;Shields 50-25%;See my ship? Does it look OK to you?;;falco/;no
-15252;Misc;Slippy Toad;Score Bonus +7 Hits;Yippie! You did it!;;slippy/;no
-20080;Misc;Slippy Toad;Hit by Fox;Hey, what's the big idea?;;slippy/;no
-20190;Misc;Slippy Toad;Fox crashes into him;What do you think you're doing, Fox!?;;slippy/;no
-20222;Misc;Slippy Toad;Retire;I'm monkey food if I don't leave!;;slippy/;no
-2270;Misc;Slippy Toad;Fox is dead;No!!!!;;slippy/;no
-20150;Misc;Slippy Toad;K'O his target(s);Hey, he was mine!;;slippy/;no
-9200;Misc;Slippy Toad;Chasing targets;You're not getting away that easy!;;slippy/;no
-9212;Misc;Slippy Toad;Chasing targets;I've got you now!;;slippy/;no
-11040;Misc;Slippy Toad;Chasing targets;Your carcass is mine!;;slippy/;no
-9230;Misc;Slippy Toad;K'O an enemy;I've got one!;;slippy/;no
-9110;Misc;Slippy Toad;S.O.S.;Fox! Get this guy off me!;;slippy/;no
-9140;Misc;Slippy Toad;S.O.S.;This is really starting to tick me off!;;slippy/;no
-20311;Misc;Slippy Toad;S.O.S.;Oh, No!;;slippy/;no
-2225;Misc;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
-9170;Misc;Slippy Toad;Rescued;Whew, that was too close!;;slippy/;no
-20300;Misc;Slippy Toad;Flying closely near him;Let's take it to 'em, Fox!;;slippy/;no
-20282;Misc;Slippy Toad;Flying closely near him;How's the Arwing doing, Fox?;;slippy/;no
-4040;Misc;Slippy Toad;Flying closely near him;Are you okay?;;slippy/;no
-20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;;slippy/;no
-20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;;slippy/;no
-4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;;slippy/;no
-17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;;peppy/;no
-20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;;peppy/;no
-20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;;peppy/;no
-20221;Misc;Peppy Hare;Retire;Sorry guys. I gotta sit this one out.;;peppy/;no
-2270;Misc;Peppy Hare;Fox is dead;No!!!!;;peppy/;no
-20160;Misc;Peppy Hare;K'O his target(s);What's the big idea, Fox?;;peppy/;no
-9210;Misc;Peppy Hare;Chasing targets;I won't let you get away from me!;;peppy/;no
-9213;Misc;Peppy Hare;Chasing targets;You're mine!;;peppy/;no
-9240;Misc;Peppy Hare;K'O an enemy;There's one down!;;peppy/;no
-18150;Misc;Peppy Hare;Randomised;Enemy down...Wait, that was one of ours!;;peppy/;no
-9120;Misc;Peppy Hare;S.O.S.;Take care of the guy behind me, Fox!;;peppy/;no
-9150;Misc;Peppy Hare;S.O.S.;What's taking you so long, Fox?;;peppy/;no
-9153;Misc;Peppy Hare;S.O.S.;Shoot! They've got me!;;peppy/;no
-19464;Misc;Peppy Hare;S.O.S.;I can't break free!;;peppy/;no
-5230;Misc;Peppy Hare;Rescued;Thanks, Fox.;;peppy/;no
-9180;Misc;Peppy Hare;Rescued;Your father helped me like that too!;;peppy/;no
-20296;Misc;Peppy Hare;Flying closely near him;Come on, Fox! You can do it!;;peppy/;no
-20281;Misc;Peppy Hare;Flying closely near him;I see your father in you, Fox.;;peppy/;no
-20299;Misc;Peppy Hare;Flying closely near him;Don't go dyin' on me, Fox!;;peppy/;no
-20012;Misc;Peppy Hare;Shields 75-50%;Everything's A- OK.;;peppy/;no
-20014;Misc;Peppy Hare;Shields 50-25%;I've taken a few hits, but I'm okay.;;peppy/;no
-20016;Misc;Peppy Hare;Shields 50-25%;I saw my life flash before my eyes!;;peppy/;no
-20084;Misc;Katt Monroe;Hit by Fox;You trying to damage my pretty face?;;katt/;no
+19465;Misc;Fox McCloud;When one Wolfen is left;There's one more to go!;Falta só mais um!;fox/;no
+20318;Misc;Fox McCloud;Dying;Aaaaahhh!;NOT_TRANSLATED;ORIGINAL_AUDIO;yes
+8205;Misc;Fox McCloud;Only Fox is left when facing Andross;It's all coming down to this...;No fim é isso então...;fox/;no
+7100;Misc;Falco Lombardi;Score Bonus +7 Hits;Alright!;Aí sim!;falco/;no
+20060;Misc;Falco Lombardi;Hit by Fox;Hey, Einstein! I'm on your side!;Ei, Einstein! Eu sou do seu lado!;falco/;no
+20210;Misc;Falco Lombardi;Fox crashes into him;Get out of my way!;Sai da minha frente!;falco/;no
+20220;Misc;Falco Lombardi;Retire;Aw, man! I'm gonna have to back off.;Porra mano! Vou ter que ir de base.;falco/;no
+2270;Misc;Falco Lombardi;Fox is dead;No!!!!;NÃOOO!!!;falco/;no
+20170;Misc;Falco Lombardi;K'O his target(s);Go find your own target, Fox!;Para de roubar minhas kills, Fox!;falco/;no
+9190;Misc;Falco Lombardi;Chasing targets;Time for a little payback!;Hora do troco!;falco/;no
+9211;Misc;Falco Lombardi;Chasing targets;You're dead meat, pal!;Você já era, irmão!;falco/;no
+7020;Misc;Falco Lombardi;Chasing targets;Hold still and let me shoot you!;Fica paradinho enquanto eu fuzilo você!;falco/;no
+9220;Misc;Falco Lombardi;K'O an enemy;Scratch one bogey!;Um vagabundo a menos!;falco/;no
+9100;Misc;Falco Lombardi;S.O.S.;Shoot! He's right behind me!;Atira! Ele tá na minha cola!;falco/;no
+9130;Misc;Falco Lombardi;S.O.S.;I can't shake this guy!;O maluco não sai de mim!;falco/;no
+2233;Misc;Falco Lombardi;Fox is tailed persistently;Move it, Fox! He's right behind you!;Se mexe, Fox! Ele tá atrás de você!;falco/;no
+9160;Misc;Falco Lombardi;Rescued;Gee, I've been saved by Fox! How swell.;Mano, o Fox me salvou! Que maravilha.;falco/;no
+2337;Misc;Falco Lombardi;Rescued;I guess I should be thankful.;Acho que eu deveria te agradecer.;falco/;no
+20298;Misc;Falco Lombardi;Flying closely near him;Come on, Fox! Let's kick some tail!;Vam'bora Fox! Vamo sentar o dedo nessa porra!;falco/;no
+20280;Misc;Falco Lombardi;Flying closely near him;Don't worry about me, Fox!;Eu tô de boa Fox, relaxa!;falco/;no
+20301;Misc;Falco Lombardi;Flying closely near him;Let's clean up this mess.;Bora arrumar essa bagunça aqui.;falco/;no
+20017;Misc;Falco Lombardi;Shields 75-50%;Ah, you're getting better, Fox.;Ei, tu ta ficando bom nisso, Fox!;falco/;no
+20019;Misc;Falco Lombardi;Shields 50-25%;You worry about your own hide.;Cuida do seu que eu cuido do meu.;falco/;no
+20303;Misc;Falco Lombardi;Shields 50-25%;See my ship? Does it look OK to you?;Mano, olha minha nave. Parece de boa pra você?;falco/;no
+15252;Misc;Slippy Toad;Score Bonus +7 Hits;Yippie! You did it!;UHUL! Você conseguiu!;slippy/m15252_uhul_voce_conseguiu.wav;no
+20080;Misc;Slippy Toad;Hit by Fox;Hey, what's the big idea?;Ei, que viagem é essa?;slippy/m20080_ei_que_viagem.wav;no
+20190;Misc;Slippy Toad;Fox crashes into him;What do you think you're doing, Fox!?;Que que cê tá fazendo, Fox?!;slippy/;no
+20222;Misc;Slippy Toad;Retire;I'm monkey food if I don't leave!;Vou virar janta se eu não vazar!;slippy/;no
+2270;Misc;Slippy Toad;Fox is dead;No!!!!;Nãooo!;slippy/;no
+20150;Misc;Slippy Toad;K'O his target(s);Hey, he was mine!;Ei, esse era meu!;slippy/;no
+9200;Misc;Slippy Toad;Chasing targets;You're not getting away that easy!;Você não vai se safar assim!;slippy/;no
+9212;Misc;Slippy Toad;Chasing targets;I've got you now!;Peguei você agora!;slippy/;no
+11040;Misc;Slippy Toad;Chasing targets;Your carcass is mine!;Você é meu agora!;slippy/;no
+9230;Misc;Slippy Toad;K'O an enemy;I've got one!;Derrubei um!;slippy/;no
+9110;Misc;Slippy Toad;S.O.S.;Fox! Get this guy off me!;Fox! Tira esse cara de mim!;slippy/;no
+9140;Misc;Slippy Toad;S.O.S.;This is really starting to tick me off!;Isso aqui tá me tirando do sério!;slippy/;no
+20311;Misc;Slippy Toad;S.O.S.;Oh, No!;Oh, não!;slippy/;no
+2225;Misc;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo analisada!;slippy/;no
+9170;Misc;Slippy Toad;Rescued;Whew, that was too close!;Ufa, essa foi quase em!;slippy/;no
+20300;Misc;Slippy Toad;Flying closely near him;Let's take it to 'em, Fox!;Vamo sentar o dedo neles, Fox!;slippy/;no
+20282;Misc;Slippy Toad;Flying closely near him;How's the Arwing doing, Fox?;Como é que tá esse Arwing, Fox?;slippy/;no
+4040;Misc;Slippy Toad;Flying closely near him;Are you okay?;Você tá bem?;slippy/;no
+20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;Tô bem, tô bem!;slippy/;no
+20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;To meio na merda aqui!;slippy/;no
+4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;Pensei que eu ia de base agora!;slippy/;no
+17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;Mandou bem, Fox!;peppy/;no
+20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;Sai fora, Fox!;peppy/;no
+20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;Olha onde você tá voando cara!;peppy/;no
+20221;Misc;Peppy Hare;Retire;Sorry guys. I gotta sit this one out.;Desculpa galera. Vou ter que ficar fora dessa.;peppy/;no
+2270;Misc;Peppy Hare;Fox is dead;No!!!!;NÃOOO!!!;peppy/;no
+20160;Misc;Peppy Hare;K'O his target(s);What's the big idea, Fox?;Que que cê tá fazendo, Fox?!;peppy/;no
+9210;Misc;Peppy Hare;Chasing targets;I won't let you get away from me!;Você não vai fugir de mim!;peppy/;no
+9213;Misc;Peppy Hare;Chasing targets;You're mine!;Você é meu agora!;peppy/;no
+9240;Misc;Peppy Hare;K'O an enemy;There's one down!;Derrubei um aqui!;peppy/;no
+18150;Misc;Peppy Hare;Randomised;Enemy down...Wait, that was one of ours!;Inimigo abatido...Pera, esse era um dos nossos!;peppy/;no
+9120;Misc;Peppy Hare;S.O.S.;Take care of the guy behind me, Fox!;Tira esse cara da minha cola, Fox!;peppy/;no
+9150;Misc;Peppy Hare;S.O.S.;What's taking you so long, Fox?;Por quê você tá demorando tanto, Fox?;peppy/;no
+9153;Misc;Peppy Hare;S.O.S.;Shoot! They've got me!;Atira! Eles tão me pegando!;peppy/;no
+19464;Misc;Peppy Hare;S.O.S.;I can't break free!;Eu to na merda aqui!;peppy/;no
+5230;Misc;Peppy Hare;Rescued;Thanks, Fox.;Obrigado, Fox.;peppy/;no
+9180;Misc;Peppy Hare;Rescued;Your father helped me like that too!;Seu pai me ajudou assim também!;peppy/;no
+20296;Misc;Peppy Hare;Flying closely near him;Come on, Fox! You can do it!;Vam'bora, Fox! Você consegue!;peppy/;no
+20281;Misc;Peppy Hare;Flying closely near him;I see your father in you, Fox.;Eu vejo seu pai em você, Fox.;peppy/;no
+20299;Misc;Peppy Hare;Flying closely near him;Don't go dyin' on me, Fox!;Sai de cima de mim, Fox!;peppy/;no
+20012;Misc;Peppy Hare;Shields 75-50%;Everything's A- OK.;Tá tudo bem aqui.;peppy/;no
+20014;Misc;Peppy Hare;Shields 50-25%;I've taken a few hits, but I'm okay.;Eu tomei uns tiros aí, mas tô bem.;peppy/;no
+20016;Misc;Peppy Hare;Shields 50-25%;I saw my life flash before my eyes!;Minha vida inteira passou pela minha cabeça agora!;peppy/;no
+20084;Misc;Katt Monroe;Hit by Fox;You trying to damage my pretty face?;Tá tentando estragar o meu rostinho, é?;katt/;no
 18020;Misc;Bill Grey;Randomised;Husky unit, cover the base!;;bill/;no
 18021;Misc;Bill Grey;Randomised;Bulldog unit, don't let anything through!;;bill/;no
 18022;Misc;Bill Grey;Randomised;All units report!;;bill/;no
