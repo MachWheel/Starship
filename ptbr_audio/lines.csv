@@ -19,13 +19,13 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2165;Corneria;Falco Lombardi;Mayday;I'll get this one. Get the one behind me!;Vou atrás desse.\nPega o vagabundo\natrás de mim!;falco/03_vou_atras_desse.wav;yes
 2167;Corneria;Falco Lombardi;Mayday;Something's wrong with the G-Diffuser.;Tem alguma coisa\nerrada com esse\nG-Difusor.;falco/04_tem_alguma_coisa_errada.wav;yes
 20235;Corneria;Peppy Hare;Approach Cornerian Radar Sites;Use the boost to chase! (C-left);Use o boost para\nir atrás dele!\n(C-LF);peppy/07_use_o_boost.wav;yes
-2166;Corneria;Falco Lombardi;Mayday;I could use some help here Fox!;;falco/;no
-2337;Corneria;Falco Lombardi;Mayday;I guess I should be thankful.;;falco/;no
-2110;Corneria;Peppy Hare;Approach Corneria Sea;Do a barrel roll! (Z or R);;peppy/;no
-;Corneria;Peppy Hare;Pass waterfall;Try a somersault! (C-left, C-up);;peppy/;no
-;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;;slippy/;no
-;Corneria;Falco Lombardi;Approach All-Range;Let's go!;;falco/;no
-;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;;fox/;no
+2166;Corneria;Falco Lombardi;Mayday;I could use some help here Fox!;Preciso de uma\najuda aqui Fox!;falco/05_preciso_de_uma_ajuda.wav;yes
+2337;Corneria;Falco Lombardi;Mayday;I guess I should be thankful.;Acho que eu tinha\nque te agradecer.;falco/06_acho_que_eu_tinha.wav;yes
+2110;Corneria;Peppy Hare;Approach Corneria Sea;Do a barrel roll! (Z or R);Dá uma girada!\n(Z ou R);peppy/08_da_uma_girada.wav;yes
+20236;Corneria;Peppy Hare;Pass waterfall;Try a somersault! (C-left, C-up);Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/09_tenta_uma_cambalhota.wav;yes
+2200;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;Robô inimigo,\nbem à frente.;slippy/04_robo_inimigo.wav;yes
+2210;Corneria;Falco Lombardi;Approach All-Range;Let's go!;Vam'bora!;falco/07_vambora.wav;yes
+20180;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;Modo de alcance\ntotal!;fox/06_modo_de_alcance_total.wav;yes
 ;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;;granga/;no
 ;Corneria;Granga;Enter boss battle;I'm going to crush you!;;granga/;no
 ;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
