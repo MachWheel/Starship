@@ -26,23 +26,23 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2200;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;Robô inimigo,\nbem à frente.;slippy/04_robo_inimigo.wav;yes
 2210;Corneria;Falco Lombardi;Approach All-Range;Let's go!;Vam'bora!;falco/07_vambora.wav;yes
 20180;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;Modo de alcance\ntotal!;fox/06_modo_de_alcance_total.wav;yes
-;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;;granga/;no
-;Corneria;Granga;Enter boss battle;I'm going to crush you!;;granga/;no
-;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
-;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;;granga/;no
-;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;;peppy/;no
-;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn!;;peppy/;no
-;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;;granga/;no
-;Corneria;Granga;Battle continues;I will not be defeated by this worm!;;granga/;no
-;Corneria;Granga;Battle continues;You are starting to annoy me!;;granga/;no
-;Corneria;Granga;Battle continues;You annoying little flies!;;granga/;no
-;Corneria;Granga;Granga's backpack is hit;No!!!;;granga/;no
-;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;;granga/;no
-;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;;falco/;no
-;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;;falco/;no
-;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;;fox/;no
-;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;;falco/;no
-;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;;falco/;no
-;Corneria;Falco Lombardi;K'O target;Gotcha!;;falco/;no
-;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;;falco/;no
-;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;;accaptain/;no
+2240;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;;granga/;no
+2250;Corneria;Granga;Enter boss battle;I'm going to crush you!;;granga/;no
+2225;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;;slippy/;no
+2260;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;;granga/;no
+2230;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;;peppy/;no
+20237;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn!;;peppy/;no
+2263;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;;granga/;no
+2275;Corneria;Granga;Battle continues;I will not be defeated by this worm!;;granga/;no
+2265;Corneria;Granga;Battle continues;You are starting to annoy me!;;granga/;no
+2220;Corneria;Granga;Battle continues;You annoying little flies!;;granga/;no
+2270;Corneria;Granga;Granga's backpack is hit;No!!!;;granga/;no
+2280;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;;granga/;no
+2180;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;;falco/;no
+2181;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;;falco/;no
+2185;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;;fox/;no
+2188;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;;falco/;no
+9190;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;;falco/;no
+2090;Corneria;Falco Lombardi;K'O target;Gotcha!;;falco/;no
+2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;;falco/;no
+2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;;accaptain/;no
