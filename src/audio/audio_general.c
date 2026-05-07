@@ -1899,6 +1899,15 @@ typedef struct {
 static CustomVoiceLine sCustomVoiceTable[CUSTOM_VOICE_MAX_LINES];
 static s32 sCustomVoiceCount = 0;
 static bool sCustomVoiceLoaded = false;
+static const CustomVoiceLine* sActiveLine = NULL;
+
+/* MCI handle state for the dub WAV. We use mciSendString instead of PlaySound
+   because MCI supports pause/resume; PlaySound is fire-and-forget and a paused
+   game would otherwise leak audio (or — if we stopped instead — kill the line
+   so resume couldn't continue it). sDubPaused gates the deferred-fire path in
+   Audio_UpdateVoice so a line queued just before pause stays parked. */
+static bool sDubMciOpen = false;
+static bool sDubPaused = false;
 
 /* Parse a comma-separated list of integers into a 0-terminated array.
    "-" or empty means no entries. Stops at separator/EOL. Updates *out_end. */
@@ -1990,9 +1999,63 @@ static const CustomVoiceLine* find_custom_voice(s32 msgId) {
     return NULL;
 }
 
-void Audio_PlayVoice(s32 msgId) {
-    static const CustomVoiceLine* sActiveLine = NULL;
+/* Open and start a WAV via MCI. Closes any prior handle bound to the same
+   alias first. The "open" call is synchronous (waits for device ready, ~ms);
+   "play" returns immediately. */
+static void Dub_PlayWav(const char* path) {
+#ifdef _WIN32
+    if (sDubMciOpen) {
+        mciSendStringA("close dub_voice", NULL, 0, NULL);
+        sDubMciOpen = false;
+    }
+    char cmd[CUSTOM_VOICE_MAX_PATH + 64];
+    snprintf(cmd, sizeof(cmd), "open \"%s\" type waveaudio alias dub_voice", path);
+    if (mciSendStringA(cmd, NULL, 0, NULL) != 0) return;
+    sDubMciOpen = true;
+    mciSendStringA("play dub_voice", NULL, 0, NULL);
+#endif
+}
 
+/* Stop any in-flight pt-BR dub WAV: cancel the deferred fire and close the
+   MCI handle. Reset sActiveLine so the next custom-voice fire restarts
+   cleanly. Called from Audio_ClearVoice (cutscene skip, level transition,
+   death). */
+static void Dub_StopActiveVoice(void) {
+    sCustomVoicePendingWav[0] = '\0';
+    sActiveLine = NULL;
+    sDubPaused = false;
+#ifdef _WIN32
+    if (sDubMciOpen) {
+        mciSendStringA("close dub_voice", NULL, 0, NULL);
+        sDubMciOpen = false;
+    }
+#endif
+}
+
+/* Pause the dub: pause MCI playback if active, and gate the deferred-fire so
+   a line queued just before pause doesn't kick off mid-pause. The pending
+   WAV stays in sCustomVoicePendingWav and fires on resume. */
+static void Dub_PauseActiveVoice(void) {
+    sDubPaused = true;
+#ifdef _WIN32
+    if (sDubMciOpen) {
+        mciSendStringA("pause dub_voice", NULL, 0, NULL);
+    }
+#endif
+}
+
+/* Resume the dub: unpause MCI playback, and let Audio_UpdateVoice fire any
+   pending deferred WAV on its next call. */
+static void Dub_ResumeActiveVoice(void) {
+    sDubPaused = false;
+#ifdef _WIN32
+    if (sDubMciOpen) {
+        mciSendStringA("resume dub_voice", NULL, 0, NULL);
+    }
+#endif
+}
+
+void Audio_PlayVoice(s32 msgId) {
     /* Reset note-suppression state at every entry — only re-enable below
        if this msgId triggers letSeqRun. */
     g_dub_voice_pass_count = 0;
@@ -2079,15 +2142,14 @@ void Audio_UpdateVoice(void) {
        delay, our pt-BR PlaySound starts ~100-150 ms before the seq's radio
        click, since the seq dispatch only takes effect after this update tick
        processes its IO writes. */
-    if (sCustomVoicePendingWav[0] != '\0' && sAudioFrameCounter >= sCustomVoicePlayAtFrame) {
-#ifdef _WIN32
-        PlaySoundA(sCustomVoicePendingWav, NULL, SND_FILENAME | SND_ASYNC);
-#endif
+    if (!sDubPaused && sCustomVoicePendingWav[0] != '\0' && sAudioFrameCounter >= sCustomVoicePlayAtFrame) {
+        Dub_PlayWav(sCustomVoicePendingWav);
         sCustomVoicePendingWav[0] = '\0';
     }
 }
 
 void Audio_ClearVoice(void) {
+    Dub_StopActiveVoice();
     sCurrentVoiceId = 0;
     sNextVoiceId = 1;
     sSetNextVoiceId = true;
@@ -2842,11 +2904,13 @@ void Audio_PlayDeathSequence(void) {
 
 void Audio_PlayPauseSfx(u8 active) {
     if (active) {
+        Dub_PauseActiveVoice();
         AUDIO_PLAY_SFX(NA_SE_PAUSE_ON, gDefaultSfxSource, 4);
         AUDIOCMD_GLOBAL_MUTE();
     } else {
         AUDIO_PLAY_SFX(NA_SE_PAUSE_ON, gDefaultSfxSource, 4);
         AUDIOCMD_GLOBAL_UNMUTE(false);
+        Dub_ResumeActiveVoice();
     }
 }
 
