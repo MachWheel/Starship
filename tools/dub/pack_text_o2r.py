@@ -59,12 +59,13 @@ CHAR_TO_GLYPH.update({
     "(": 92,    # LPR
     ")": 93,    # RPR
     ":": 94,    # CLN
-    "|": 95,    # PIP
+    "|": 15,    # NXT (next text box) — matches dump_messages.py
 })
 
 SPECIAL_GLYPHS: dict[str, int] = {
     "(C-LF)": 16, "(C-UP)": 17, "(C-RT)": 18, "(C-DN)": 19,
     "(AUP)":  20, "(ALF)":  21, "(ADN)":  22, "(ART)":  23,
+    "(NXT)":  15,
 }
 
 RESOURCE_TYPE_MESSAGE = 0x4D534720  # 'MSG '

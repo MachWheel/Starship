@@ -19,8 +19,9 @@ Run this AFTER:
     1. `python tools/dub/pack_text_o2r.py` (text mod regenerated from CSV)
     2. A fresh release build (`build_starship.bat`)
 
-The script never touches the manifest. Edit voice_manifest.txt by hand before
-running this.
+The script never touches the manifest. Edit `ptbr_audio/voice_manifest.txt`
+(tracked) by hand before running this; it is also synced into the build
+output dir for runtime testing.
 """
 
 from __future__ import annotations
@@ -35,9 +36,9 @@ REPO_ROOT = Path(r"C:\Repos\Starship")
 RELEASE_TEMPLATES = REPO_ROOT / "release-templates"
 
 EXE_SRC = REPO_ROOT / "build" / "x64" / "Release" / "Starship.exe"
-MANIFEST_SRC = REPO_ROOT / "build" / "x64" / "Release" / "voice_manifest.txt"
-TEXT_MOD_SRC = REPO_ROOT / "build" / "x64" / "Release" / "mods" / "SF64-DubPT-BR.o2r"
 PTBR_AUDIO_SRC = REPO_ROOT / "ptbr_audio"
+MANIFEST_SRC = PTBR_AUDIO_SRC / "voice_manifest.txt"
+TEXT_MOD_SRC = REPO_ROOT / "build" / "x64" / "Release" / "mods" / "SF64-DubPT-BR.o2r"
 LIBULTRASHIP_LICENSE = REPO_ROOT / "libultraship" / "LICENSE"
 COMMUNITY_TEXT_MOD = PTBR_AUDIO_SRC / "_archive" / "SF64 - TraducaoPT-BR.o2r"
 README_TEMPLATE = RELEASE_TEMPLATES / "README.md"
