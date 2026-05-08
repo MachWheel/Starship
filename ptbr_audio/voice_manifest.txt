@@ -23,260 +23,250 @@
 # around tokens.
 
 # Pepper:  "Que bom que apareceram, Star Fox!  Voces sao nossa unica esperanca."
-3, 1200 | 3 | ptbr_audio/pepper/01_que_bom.wav
+3, 1200 | 3 | ptbr_audio/pepper/1200_que_bom.wav
 
 # Fox:     "Vou sentar o dedo!  Dessa vez o Andross nao vai se dar bem!"
-1210    | - | ptbr_audio/fox/01_vou_sentar_o_dedo.wav
+1210    | - | ptbr_audio/fox/1210_vou_sentar_o_dedo.wav
 
 # Fox:     "Abram as asas."
 # letSeqRun=msgId so the seq fires the radio click + opening phoneme.
 # audio_playback.c::Audio_NoteInitForLayer suppresses the voice-content
 # note that fires after the first 2 click+phoneme notes.
-2005    | 2005 | ptbr_audio/fox/02_abram_as_asas.wav
+2005    | 2005 | ptbr_audio/fox/2005_abram_as_asas.wav
 
 # Fox:     "Chequem o sistema G-Difusor."
-2010    | 2010 | ptbr_audio/fox/03_chequem_o_sistema.wav
+2010    | 2010 | ptbr_audio/fox/2010_chequem_o_sistema.wav
 
 # Falco:   "Falco aqui, eu to de boa."
-2020    | 2020 | ptbr_audio/falco/01_falco_aqui.wav
+2020    | 2020 | ptbr_audio/falco/2020_falco_aqui.wav
 
 # Peppy:   "Aqui e o Peppy. Todos os sistemas funcionando."
-2030    | 2030 | ptbr_audio/peppy/01_aqui_e_o_peppy.wav
+2030    | 2030 | ptbr_audio/peppy/2030_aqui_e_o_peppy.wav
 
 # Slippy:  "Slippy aqui, eu to bem."
-2040    | 2040 | ptbr_audio/slippy/01_slippy_aqui.wav
+2040    | 2040 | ptbr_audio/slippy/2040_slippy_aqui.wav
 
 # Fox:     "Estou vendo eles ali. Vamo botar o pau pra torar!"
-2050    | 2050 | ptbr_audio/fox/04_estou_vendo_eles.wav
+2050    | 2050 | ptbr_audio/fox/2050_estou_vendo_eles.wav
 
 # Peppy:   "Slippy, volte aqui!"
-20267   | 20267 | ptbr_audio/peppy/02_slippy_volte_aqui.wav
+20267   | 20267 | ptbr_audio/peppy/20267_slippy_volte_aqui.wav
 
 # Peppy:   "Slippy, cuidado! Vagabundo ta na sua cola!"
-2061    | 2061 | ptbr_audio/peppy/03_slippy_cuidado.wav
+2061    | 2061 | ptbr_audio/peppy/2061_slippy_cuidado.wav
 
 # Slippy:  "Uoou! Socorro!"
-2062    | 2062 | ptbr_audio/slippy/02_uoou_socorro.wav
+2062    | 2062 | ptbr_audio/slippy/2062_uoou_socorro.wav
 
 # Slippy:  "Obrigado Fox. Pensei que eu tava na merda."
-2336    | 2336 | ptbr_audio/slippy/03_obrigado_fox.wav
+2336    | 2336 | ptbr_audio/slippy/2336_obrigado_fox.wav
 
 # Fox:     "Estamos chegando em Corneria agora."
-2055    | 2055 | ptbr_audio/fox/05_estamos_chegando.wav
+2055    | 2055 | ptbr_audio/fox/2055_estamos_chegando.wav
 
 # Falco:   "Caralho! Que desgraca..."
-2058    | 2058 | ptbr_audio/falco/02_caralho_que_desgraca.wav
+2058    | 2058 | ptbr_audio/falco/2058_caralho_que_desgraca.wav
 
 # Peppy:   "Galera, fiquem ligados!"
-7013    | 7013 | ptbr_audio/peppy/04_galera_fiquem_ligados.wav
+7013    | 7013 | ptbr_audio/peppy/7013_galera_fiquem_ligados.wav
 
 # Peppy:   "Vagabundo ta na sua cola!"
-2115    | 2115 | ptbr_audio/peppy/05_vagabundo_ta_na_sua_cola.wav
+2115    | 2115 | ptbr_audio/peppy/2115_vagabundo_ta_na_sua_cola.wav
 
 # Peppy:   "Use o freio!"
-2118    | 2118 | ptbr_audio/peppy/06_use_o_freio.wav
+2118    | 2118 | ptbr_audio/peppy/2118_use_o_freio.wav
 
 # Falco:   "Vou atras desse. Pega o vagabundo atras de mim!"
-2165    | 2165 | ptbr_audio/falco/03_vou_atras_desse.wav
+2165    | 2165 | ptbr_audio/falco/2165_vou_atras_desse.wav
 
 # Falco:   "Tem alguma coisa errada com esse G-Difusor."
-2167    | 2167 | ptbr_audio/falco/04_tem_alguma_coisa_errada.wav
+2167    | 2167 | ptbr_audio/falco/2167_tem_alguma_coisa_errada.wav
 
 # Peppy:   "Use o boost para ir atras dele! (C-LF)"
-20235   | 20235 | ptbr_audio/peppy/07_use_o_boost.wav
+20235   | 20235 | ptbr_audio/peppy/20235_use_o_boost.wav
 
 # Falco:   "Preciso de uma ajuda aqui Fox!"
-2166    | 2166 | ptbr_audio/falco/05_preciso_de_uma_ajuda.wav
+2166    | 2166 | ptbr_audio/falco/2166_preciso_de_uma_ajuda.wav
 
 # Falco:   "Acho que eu tinha que te agradecer."
-2337    | 2337 | ptbr_audio/falco/06_acho_que_eu_tinha.wav
+2337    | 2337 | ptbr_audio/falco/2337_acho_que_eu_tinha.wav
 
 # Peppy:   "Da uma girada! (Z ou R)"
-2110    | 2110 | ptbr_audio/peppy/08_da_uma_girada.wav
+2110    | 2110 | ptbr_audio/peppy/2110_da_uma_girada.wav
 
 # Peppy:   "Tenta uma cambalhota! (C-LF), (C-UP)"
-20236   | 20236 | ptbr_audio/peppy/09_tenta_uma_cambalhota.wav
+20236   | 20236 | ptbr_audio/peppy/20236_tenta_uma_cambalhota.wav
 
 # Slippy:  "Robo inimigo, bem a frente."
-2200    | 2200 | ptbr_audio/slippy/04_robo_inimigo.wav
+2200    | 2200 | ptbr_audio/slippy/2200_robo_inimigo.wav
 
 # Falco:   "Vam'bora!"
-2210    | 2210 | ptbr_audio/falco/07_vambora.wav
+2210    | 2210 | ptbr_audio/falco/2210_vambora.wav
 
 # Fox:     "Modo de alcance total!"
-20180   | 20180 | ptbr_audio/fox/06_modo_de_alcance_total.wav
-
-# === Corneria — Granga boss ===
-
-# Slippy:  "Defesa do inimigo analisada!" (fires from multiple missions; same wav)
-2225    | 2225 | ptbr_audio/slippy/05_defesa_do_inimigo.wav
-
-# Peppy:   "Mira nas costas dele!"
-2230    | 2230 | ptbr_audio/peppy/10_mira_nas_costas.wav
+20180   | 20180 | ptbr_audio/fox/20180_modo_de_alcance_total.wav
 
 # Granga:  "Ah, entao esse e o Star Fox?"
-2240    | 2240 | ptbr_audio/granga/01_ah_entao_esse.wav
+2240    | 2240 | ptbr_audio/granga/2240_ah_entao_esse.wav
 
 # Granga:  "Eu vou amassar voces!"
-2250    | 2250 | ptbr_audio/granga/02_eu_vou_amassar.wav
+2250    | 2250 | ptbr_audio/granga/2250_eu_vou_amassar.wav
+
+# Slippy:  "Defesa do inimigo analisada!" (fires from multiple missions; same wav)
+2225    | 2225 | ptbr_audio/slippy/2225_defesa_do_inimigo.wav
 
 # Granga:  "Quem mexer com o Andross vai morrer!"
-2260    | 2260 | ptbr_audio/granga/03_quem_mexer.wav
+2260    | 2260 | ptbr_audio/granga/2260_quem_mexer.wav
 
-# Granga:  "Parem de se mexer pra eu amassar voces!"
-2263    | 2263 | ptbr_audio/granga/04_parem_de_se.wav
-
-# Granga:  "Voces estao comecando a me irritar!"
-2265    | 2265 | ptbr_audio/granga/06_voces_estao.wav
-
-# Granga:  "Eu nao vou ser derrotado por este verme!"
-2275    | 2275 | ptbr_audio/granga/05_eu_nao_vou.wav
-
-# Granga:  "Que mosquinhas irritantes!"
-2220    | 2220 | ptbr_audio/granga/07_que_mosquinhas.wav
-
-# Granga:  "Meu imperador... Eu falhei!"
-2280    | 2280 | ptbr_audio/granga/09_meu_imperador.wav
-
-# === Meteo — Falco rival arc + Attack Carrier ===
-
-# Falco:   "Peguei!"
-2090    | 2090 | ptbr_audio/falco/12_peguei.wav
-
-# Falco:   "Sai fora, Fox!"
-2095    | 2095 | ptbr_audio/falco/13_sai_fora_fox.wav
-
-# Falco:   "Ta voando bonito, Fox."
-2180    | 2180 | ptbr_audio/falco/08_ta_voando_bonito.wav
-
-# Falco:   "Me segue aqui Fox!"
-2181    | 2181 | ptbr_audio/falco/09_me_segue_aqui.wav
-
-# Fox:     "Falco, aonde voce ta indo?"
-2185    | 2185 | ptbr_audio/fox/07_falco_onde_voce.wav
-
-# Falco:   "Achei nosso alvo! Ve se me acompanha."
-2188    | 2188 | ptbr_audio/falco/10_achei_nosso_alvo.wav
-
-# Falco:   "Hora de revidar um pouquinho."
-9190    | 9190 | ptbr_audio/falco/11_hora_de_revidar.wav
-
-# AC Captain: "Ah, parece que alguem quer brincar."
-2290    | 2290 | ptbr_audio/accaptain/01_ah_parece_que.wav
-
-# AC Captain: "Solta todo mundo, vai!"
-2291    | 2291 | ptbr_audio/accaptain/01_solta_todo_mundo.wav
-
-# AC Captain: "Tenho um presentinho pra voces!"
-2292    | 2292 | ptbr_audio/accaptain/02_tenho_um_presentinho.wav
-
-# AC Captain: "Vai!!"
-2293    | 2293 | ptbr_audio/accaptain/03_vai.wav
-
-# AC Captain: "Quem sao voces?"
-2294    | 2294 | ptbr_audio/accaptain/04_quem_sao_voces.wav
-
-# Fox:     "Nos somos o Star Fox!"
-2295    | 2295 | ptbr_audio/fox/08_nos_somos_o.wav
-
-# AC Captain: "Voces nunca vao derrotar o Andross!"
-2296    | 2296 | ptbr_audio/accaptain/05_voces_nunca_vao.wav
-
-# Peppy:   "Um inimigo esta vindo ai atras! Diminuam a altitude!"
-2298    | 2298 | ptbr_audio/peppy/12_um_inimigo_esta.wav
-
-# Peppy:   "Mira naquela abertura ali!"
-2299    | 2299 | ptbr_audio/peppy/13_mira_naquela.wav
-
-# Falco:   "ISSO! Ta funcionando!"
-7085    | 7085 | ptbr_audio/falco/15_isso_ta_funcionando.wav
-
-# Falco:   "E isso ai, Fox."
-15130   | 15130 | ptbr_audio/falco/14_e_isso_ai.wav
+# Peppy:   "Mira nas costas dele!"
+2230    | 2230 | ptbr_audio/peppy/2230_mira_nas_costas.wav
 
 # Peppy:   "Tenta fazer um retorno! (ADN), (C-DN)"
-20237   | 20237 | ptbr_audio/peppy/11_tenta_fazer_um.wav
+20237   | 20237 | ptbr_audio/peppy/20237_tenta_fazer_um.wav
 
-# === Mission complete ===
+# Granga:  "Parem de se mexer pra eu amassar voces!"
+2263    | 2263 | ptbr_audio/granga/2263_parem_de_se.wav
 
-# Slippy:  "Voce conseguiu! Eu tava bolado aqui ja."
-2300    | 2300 | ptbr_audio/slippy/06_voce_conseguiu.wav
+# Granga:  "Eu nao vou ser derrotado por este verme!"
+2275    | 2275 | ptbr_audio/granga/2275_eu_nao_vou.wav
 
-# Peppy:   "Voce ta ficando que nem seu pai, cara."
-2310    | 2310 | ptbr_audio/peppy/14_voce_ta_ficando.wav
+# Granga:  "Voces estao comecando a me irritar!"
+2265    | 2265 | ptbr_audio/granga/2265_voces_estao.wav
 
-# Falco:   "Eu to de boa. Voce ta bem ai, Fox?"
-2320    | 2320 | ptbr_audio/falco/16_eu_to_de_boa.wav
-
-# Fox:     "Estamos indo embora. Ta todo mundo bem?"
-2335    | 2335 | ptbr_audio/fox/09_estamos_indo.wav
-
-# === Slippy radio chatter (in-mission) ===
-
-# Slippy:  "Pensei que eu ia de base agora!"
-4100    | 4100 | ptbr_audio/slippy/m4100_pensei_que.wav
-
-# Slippy:  "Voce ta bem?"
-4040    | 4040 | ptbr_audio/slippy/m4040_voce_ta_bem.wav
-
-# Slippy:  "Fox! Tira esse cara de mim!"
-9110    | 9110 | ptbr_audio/slippy/m9110_fox_tira_esse.wav
-
-# Slippy:  "Isso aqui ta me tirando do serio ja!"
-9140    | 9140 | ptbr_audio/slippy/m9140_isso_aqui_ta.wav
-
-# Slippy:  "Nossa! Quase que eu me fudi!"
-9170    | 9170 | ptbr_audio/slippy/m9170_nossa_quase.wav
-
-# Slippy:  "Voce nao vai se safar facil assim nao!"
-9200    | 9200 | ptbr_audio/slippy/m9200_voce_nao_vai.wav
-
-# Slippy:  "Agora eu peguei voce!"
-9212    | 9212 | ptbr_audio/slippy/m9212_agora_eu_peguei.wav
-
-# Slippy:  "Derrubei um aqui!"
-9230    | 9230 | ptbr_audio/slippy/m9230_derrubei_um_aqui.wav
-
-# Slippy:  "Agora voce e meu!"
-11040   | 11040 | ptbr_audio/slippy/m11040_agora_voce.wav
-
-# Slippy:  "UHUL! Voce conseguiu!"
-15252   | 15252 | ptbr_audio/slippy/m15252_uhul_voce_conseguiu.wav
-
-# Slippy:  "To bem, to bem!"
-20011   | 20011 | ptbr_audio/slippy/m20011_to_bem_to_bem.wav
-
-# Slippy:  "To meio na merda aqui!"
-20013   | 20013 | ptbr_audio/slippy/m20013_eu_to_meio.wav
-
-# Slippy:  "Ei, que viagem e essa?"
-20080   | 20080 | ptbr_audio/slippy/m20080_ei_que_viagem.wav
-
-# Slippy:  "Ei, esse era meu!"
-20150   | 20150 | ptbr_audio/slippy/m20150_ei_esse_era.wav
-
-# Slippy:  "Que que ce ta fazendo, Fox?!"
-20190   | 20190 | ptbr_audio/slippy/m20190_que_que_ce.wav
-
-# Slippy:  "Se eu nao vazar eu vou virar janta!"
-20222   | 20222 | ptbr_audio/slippy/m20222_se_eu_nao_vazar.wav
-
-# Slippy:  "Como e que ta esse Arwing, Fox?"
-20282   | 20282 | ptbr_audio/slippy/m20282_como_e_que_ta.wav
-
-# Slippy:  "Vamo sentar o dedo neles, Fox!"
-20300   | 20300 | ptbr_audio/slippy/m20300_vamo_sentar.wav
-
-# Slippy:  "Oh, nao!"
-20311   | 20311 | ptbr_audio/slippy/m20311_oh_nao.wav
-
-# === Falco radio chatter (in-mission) ===
-
-# Falco:   "Ei, Einstein! Eu sou do seu lado!"
-20060   | 20060 | ptbr_audio/falco/m20060_ei_einstein.wav
+# Granga:  "Que mosquinhas irritantes!"
+2220    | 2220 | ptbr_audio/granga/2220_que_mosquinhas.wav
 
 # Granga:  "Naooo!!!"   (boss-hit / defeat — RCID_BOSS_CORNERIA, fox_co.c:167)
-2270    | 2270 | ptbr_audio/granga/08_naooo.wav
+2270    | 2270 | ptbr_audio/granga/2270_naooo.wav
+
+# Granga:  "Meu imperador... Eu falhei!"
+2280    | 2280 | ptbr_audio/granga/2280_meu_imperador.wav
+
+# Falco:   "Ta voando bonito, Fox."
+2180    | 2180 | ptbr_audio/falco/2180_ta_voando_bonito.wav
+
+# Falco:   "Me segue aqui Fox!"
+2181    | 2181 | ptbr_audio/falco/2181_me_segue_aqui.wav
+
+# Fox:     "Falco, aonde voce ta indo?"
+2185    | 2185 | ptbr_audio/fox/2185_falco_onde_voce.wav
+
+# Falco:   "Achei nosso alvo! Ve se me acompanha."
+2188    | 2188 | ptbr_audio/falco/2188_achei_nosso_alvo.wav
+
+# Falco:   "Hora de revidar um pouquinho."
+9190    | 9190 | ptbr_audio/falco/9190_hora_de_revidar.wav
+
+# Falco:   "Peguei!"
+2090    | 2090 | ptbr_audio/falco/2090_peguei.wav
+
+# Falco:   "Sai fora, Fox!"
+2095    | 2095 | ptbr_audio/falco/2095_sai_fora_fox.wav
+
+# AC Captain: "Ah, parece que alguem quer brincar."
+2290    | 2290 | ptbr_audio/accaptain/2290_ah_parece_que.wav
+
+# Peppy:   "Um inimigo esta vindo ai atras! Diminuam a altitude!"
+2298    | 2298 | ptbr_audio/peppy/2298_um_inimigo_esta.wav
+
+# AC Captain: "Solta todo mundo, vai!"
+2291    | 2291 | ptbr_audio/accaptain/2291_solta_todo_mundo.wav
+
+# AC Captain: "Tenho um presentinho pra voces!"
+2292    | 2292 | ptbr_audio/accaptain/2292_tenho_um_presentinho.wav
+
+# Falco:   "E isso ai, Fox."
+15130   | 15130 | ptbr_audio/falco/15130_e_isso_ai.wav
+
+# Peppy:   "Mira naquela abertura ali!"
+2299    | 2299 | ptbr_audio/peppy/2299_mira_naquela.wav
+
+# Falco:   "ISSO! Ta funcionando!"
+7085    | 7085 | ptbr_audio/falco/7085_isso_ta_funcionando.wav
+
+# AC Captain: "Vai!!"
+2293    | 2293 | ptbr_audio/accaptain/2293_vai.wav
+
+# AC Captain: "Quem sao voces?"
+2294    | 2294 | ptbr_audio/accaptain/2294_quem_sao_voces.wav
+
+# Fox:     "Nos somos o Star Fox!"
+2295    | 2295 | ptbr_audio/fox/2295_nos_somos_o.wav
+
+# AC Captain: "Voces nunca vao derrotar o Andross!"
+2296    | 2296 | ptbr_audio/accaptain/2296_voces_nunca_vao.wav
+
+# Fox:     "Estamos indo embora. Ta todo mundo bem?"
+2335    | 2335 | ptbr_audio/fox/2335_estamos_indo.wav
+
+# Slippy:  "Voce conseguiu! Eu tava bolado aqui ja."
+2300    | 2300 | ptbr_audio/slippy/2300_voce_conseguiu.wav
+
+# Peppy:   "Voce ta ficando que nem seu pai, cara."
+2310    | 2310 | ptbr_audio/peppy/2310_voce_ta_ficando.wav
+
+# Falco:   "Eu to de boa. Voce ta bem ai, Fox?"
+2320    | 2320 | ptbr_audio/falco/2320_eu_to_de_boa.wav
+
+# Falco:   "Ei, Einstein! Eu sou do seu lado!"
+20060   | 20060 | ptbr_audio/falco/20060_ei_einstein.wav
+
+# Slippy:  "UHUL! Voce conseguiu!"
+15252   | 15252 | ptbr_audio/slippy/15252_uhul_voce_conseguiu.wav
+
+# Slippy:  "Ei, que viagem e essa?"
+20080   | 20080 | ptbr_audio/slippy/20080_ei_que_viagem.wav
+
+# Slippy:  "Que que ce ta fazendo, Fox?!"
+20190   | 20190 | ptbr_audio/slippy/20190_que_que_ce.wav
+
+# Slippy:  "Se eu nao vazar eu vou virar janta!"
+20222   | 20222 | ptbr_audio/slippy/20222_se_eu_nao_vazar.wav
 
 # Slippy:  "Naooo!"     (Fox-is-dead reaction — RCID_SLIPPY, fox_demo.c:1622)
-20092   | 20092 | ptbr_audio/slippy/m20092_naaao.wav
+20092   | 20092 | ptbr_audio/slippy/20092_naaao.wav
+
+# Slippy:  "Ei, esse era meu!"
+20150   | 20150 | ptbr_audio/slippy/20150_ei_esse_era.wav
+
+# Slippy:  "Voce nao vai se safar facil assim nao!"
+9200    | 9200 | ptbr_audio/slippy/9200_voce_nao_vai.wav
+
+# Slippy:  "Agora eu peguei voce!"
+9212    | 9212 | ptbr_audio/slippy/9212_agora_eu_peguei.wav
+
+# Slippy:  "Agora voce e meu!"
+11040   | 11040 | ptbr_audio/slippy/11040_agora_voce.wav
+
+# Slippy:  "Derrubei um aqui!"
+9230    | 9230 | ptbr_audio/slippy/9230_derrubei_um_aqui.wav
+
+# Slippy:  "Fox! Tira esse cara de mim!"
+9110    | 9110 | ptbr_audio/slippy/9110_fox_tira_esse.wav
+
+# Slippy:  "Isso aqui ta me tirando do serio ja!"
+9140    | 9140 | ptbr_audio/slippy/9140_isso_aqui_ta.wav
+
+# Slippy:  "Oh, nao!"
+20311   | 20311 | ptbr_audio/slippy/20311_oh_nao.wav
+
+# Slippy:  "Nossa! Quase que eu me fudi!"
+9170    | 9170 | ptbr_audio/slippy/9170_nossa_quase.wav
+
+# Slippy:  "Vamo sentar o dedo neles, Fox!"
+20300   | 20300 | ptbr_audio/slippy/20300_vamo_sentar.wav
+
+# Slippy:  "Como e que ta esse Arwing, Fox?"
+20282   | 20282 | ptbr_audio/slippy/20282_como_e_que_ta.wav
+
+# Slippy:  "Voce ta bem?"
+4040    | 4040 | ptbr_audio/slippy/4040_voce_ta_bem.wav
+
+# Slippy:  "To bem, to bem!"
+20011   | 20011 | ptbr_audio/slippy/20011_to_bem_to_bem.wav
+
+# Slippy:  "To meio na merda aqui!"
+20013   | 20013 | ptbr_audio/slippy/20013_eu_to_meio.wav
+
+# Slippy:  "Pensei que eu ia de base agora!"
+4100    | 4100 | ptbr_audio/slippy/4100_pensei_que.wav
