@@ -22,6 +22,13 @@
 # Lines starting with # and blank lines are ignored. Whitespace is permitted
 # around tokens.
 
+# Opening Narrator: prologue voice-over ("Corneria, quarto planeta...").
+# Fired by Audio_PlayVoiceWithoutBGM(1000) in Map_Prologue_Update @ fox_map.c:2109
+# when the scrolling text reaches y=205. letSeqRun=- so the original English
+# narrator sample (voice bank 1, voice 0) does not play through the seq channel
+# alongside the dub.
+1000    | -    | ptbr_audio/narrator/1_intro.wav
+
 # Pepper:  "Que bom que apareceram, Star Fox!  Voces sao nossa unica esperanca."
 # msgId 3 is the generic "Pepper hologram appears" cue (Audio_PlayVoice(3) in
 # Map_GralPepper_Talk @ fox_map.c:2583), fired before EVERY briefing - NOT
