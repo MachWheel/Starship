@@ -23,7 +23,10 @@
 # around tokens.
 
 # Pepper:  "Que bom que apareceram, Star Fox!  Voces sao nossa unica esperanca."
-3, 1200 | 3 | ptbr_audio/pepper/1200_que_bom.wav
+# msgId 3 is the generic "Pepper hologram appears" cue (Audio_PlayVoice(3) in
+# Map_GralPepper_Talk @ fox_map.c:2583), fired before EVERY briefing - NOT
+# Corneria-specific. Do not add msgId 3 here or the WAV plays in every briefing.
+1200    | -    | ptbr_audio/pepper/1200_que_bom.wav
 
 # Fox:     "Vou sentar o dedo!  Dessa vez o Andross nao vai se dar bem!"
 1210    | - | ptbr_audio/fox/1210_vou_sentar_o_dedo.wav

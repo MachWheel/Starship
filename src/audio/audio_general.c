@@ -2016,6 +2016,30 @@ static void Dub_PlayWav(const char* path) {
 #endif
 }
 
+/* True while the dub is producing or about to produce audio: a queued WAV is
+   awaiting deferred fire, or MCI is playing/paused. Used by Audio_GetCurrentVoice
+   so briefing / radio state machines wait for the dub to finish, not just the
+   seq's voice channel. Without this, msgIds with letSeqRun="-" (e.g. msgId=1200
+   in the Corneria briefing) leave the seq voice channel idle and callers
+   transition on text-scroll alone, cutting the WAV off mid-line. */
+static bool Dub_IsPlaying(void) {
+    if (sCustomVoicePendingWav[0] != '\0') {
+        return true;
+    }
+#ifdef _WIN32
+    if (!sDubMciOpen) {
+        return false;
+    }
+    char mode[64] = "";
+    if (mciSendStringA("status dub_voice mode", mode, sizeof(mode), NULL) != 0) {
+        return false;
+    }
+    return (strcmp(mode, "playing") == 0) || (strcmp(mode, "paused") == 0);
+#else
+    return false;
+#endif
+}
+
 /* Stop any in-flight pt-BR dub WAV: cancel the deferred fire and close the
    MCI handle. Reset sActiveLine so the next custom-voice fire restarts
    cleanly. Called from Audio_ClearVoice (cutscene skip, level transition,
@@ -2158,6 +2182,17 @@ void Audio_ClearVoice(void) {
 s32 Audio_GetCurrentVoice(void) {
     // LAudioTODO: Stub for now
     // return 0;
+
+    /* If the pt-BR dub is still producing audio, signal "voice playing" so
+       briefing / radio state machines hold their case-4 wait until the WAV
+       finishes naturally (rather than transitioning on text-scroll alone and
+       cutting the line off via Audio_ClearVoice). */
+    if (Dub_IsPlaying()) {
+        if ((sActiveLine != NULL) && (sActiveLine->msgIds[0] >= 4)) {
+            return sActiveLine->msgIds[0];
+        }
+        return 4; /* sentinel: non-zero and >= 4 so the < 4 filter passes */
+    }
 
     if (!IS_SEQUENCE_CHANNEL_VALID(gSeqPlayers[SEQ_PLAYER_VOICE].channels[15])) {
         return 0;
