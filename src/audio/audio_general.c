@@ -1977,7 +1977,7 @@ static void load_voice_manifest(void) {
     sCustomVoiceLoaded = true;
     sCustomVoiceCount = 0;
 
-    FILE* f = fopen("voice_manifest.txt", "r");
+    FILE* f = fopen("ptbr_audio/voice_manifest.txt", "r");
     if (f == NULL) return;
     char line[1024];
     while (fgets(line, sizeof(line), f) != NULL) {

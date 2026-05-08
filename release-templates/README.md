@@ -31,8 +31,9 @@ Mod de dublagem em português brasileiro para Star Fox 64 no port Starship.
 4. Inicie `Starship.exe` a partir dessa pasta.
 
 > Em ambos os casos, **lance o Starship a partir da pasta que contém o
-> `voice_manifest.txt`** — o manifesto é resolvido relativo ao diretório de
-> trabalho do processo.
+> `Starship.exe`** — os arquivos da dublagem são resolvidos relativos ao
+> diretório de trabalho do processo, e a pasta `ptbr_audio/` (com o
+> `voice_manifest.txt` e os WAVs) precisa estar ao lado do executável.
 
 ### Verificação
 
@@ -50,8 +51,7 @@ em `CREDITS.md`. Falas não dubladas continuam tocando em inglês.
 | Arquivo | Função |
 |---|---|
 | `Starship.exe` | Build do Starship com os hooks de dublagem |
-| `voice_manifest.txt` | Mapeia msgIds para arquivos de voz pt-BR |
-| `ptbr_audio/` | Gravações de voz em português brasileiro |
+| `ptbr_audio/` | Manifesto de voz (`voice_manifest.txt`) e gravações pt-BR |
 | `mods/SF64-DubPT-BR.o2r` | Texto traduzido para as falas dubladas |
 
 ### Créditos e licenças

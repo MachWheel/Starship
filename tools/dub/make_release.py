@@ -7,7 +7,7 @@ Reads inputs from this repo and produces:
 Bundle layout (matches PLAN.md Stage 5):
 
     Starship.exe                       patched build with dub intercept
-    voice_manifest.txt                 hand-edited manifest
+    ptbr_audio/voice_manifest.txt      hand-edited manifest
     ptbr_audio/<character>/*.wav       voice recordings (only those referenced
                                        by the manifest are bundled)
     mods/SF64-DubPT-BR.o2r             text override mod
@@ -80,7 +80,9 @@ def _stage(stage_dir: Path, version: str, include_community: bool) -> None:
     stage_dir.mkdir(parents=True, exist_ok=True)
 
     shutil.copy2(EXE_SRC, stage_dir / "Starship.exe")
-    shutil.copy2(MANIFEST_SRC, stage_dir / "voice_manifest.txt")
+    ptbr_audio_dst = stage_dir / "ptbr_audio"
+    ptbr_audio_dst.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(MANIFEST_SRC, ptbr_audio_dst / "voice_manifest.txt")
 
     mods_dir = stage_dir / "mods"
     mods_dir.mkdir(exist_ok=True)

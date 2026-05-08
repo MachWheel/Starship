@@ -156,7 +156,7 @@ The game has ~10 distinct speaker roles. Approximate line counts (verify against
 `lines.csv` is the master record. The text-override mod is **regenerated automatically** from it via `pack_text_o2r.py`. The voice routing manifest is **maintained by hand** alongside it (no auto-sync yet).
 
 ### Voice manifest (hand-edited)
-Edit `build/x64/Release/voice_manifest.txt`:
+Edit `ptbr_audio/voice_manifest.txt` (source of truth; sync into `build/x64/Release/ptbr_audio/` for runtime testing):
 ```
 <msgIds> | <letSeqRunForMsgIds> | <wavPath>
 ```
@@ -190,8 +190,8 @@ Run `python tools/dub/pack_text_o2r.py` to regenerate `mods/SF64-DubPT-BR.o2r` f
 ```
 SF64-DubPT-BR-v1.0.zip
 ├── README-pt-BR.md                  (install instructions)
-├── voice_manifest.txt               (drops next to Starship.exe)
 ├── ptbr_audio/                      (drops next to Starship.exe)
+│   ├── voice_manifest.txt           (manifesto de voz)
 │   └── *.wav
 ├── mods/
 │   └── SF64-DubPT-BR.o2r            (drops into Starship's mods/ folder)
@@ -242,9 +242,8 @@ Cutscene voices like msgId=3 fire `Audio_PlayVoice` but have no associated radio
 ## Reference
 
 ### Working files
-- `ptbr_audio/` — voice recordings (master copies)
-- `build/x64/Release/ptbr_audio/` — runtime mirrors
-- `build/x64/Release/voice_manifest.txt` — runtime voice routing
+- `ptbr_audio/` — voice recordings (master copies) and `voice_manifest.txt`
+- `build/x64/Release/ptbr_audio/` — runtime mirrors (including `voice_manifest.txt`)
 - `tools/dub/pack_text_o2r.py` — text packager (reads `ptbr_audio/lines.csv` directly)
 - `src/audio/audio_general.c::Audio_PlayVoice` (line ~1897) — manifest loader + intercept
 - `PROOF_OF_CONCEPT.md` — architecture deep-dive
@@ -261,6 +260,3 @@ Cutscene voices like msgId=3 fire `Audio_PlayVoice` but have no associated radio
 - Starship: <https://github.com/HarbourMasters/Starship>
 - Community translation mod (text only): `mods/SF64 - TraducaoPT-BR.o2r` in this build
 - Discord: <https://discord.com/invite/shipofharkinian>
-
-### Carry-over from earlier exploration
-The `SF64RecompBRAudio` repo's `audio_dump/` decoded every voice sample from the original ROM into `.aifc`/`.wav` files. Useful as a *reference* when checking what each msgId originally said, but **the o2r path naming bears no relation to the audio-bank offsets stored there** — those notes were the wrong reference frame for Starship's resource layout. The current bypass routes by msgId only and never touches the engine's sample bank, so audio-dump path mapping is no longer needed.

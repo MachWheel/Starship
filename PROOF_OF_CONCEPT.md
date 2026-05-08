@@ -125,7 +125,7 @@ The `ptbr_audio/` folder must sit next to `Starship.exe` because `PlaySoundA` re
 
 ### Voice intercept (`src/audio/audio_general.c`)
 
-The intercept reads its routing table from `voice_manifest.txt` (next to the exe) at first call. Adding a voice line is a manifest edit, not a code change.
+The intercept reads its routing table from `ptbr_audio/voice_manifest.txt` at first call. Adding a voice line is a manifest edit, not a code change.
 
 ```c
 typedef struct {
@@ -193,7 +193,7 @@ The XML format auto-detection in `libultraship/src/resource/ResourceLoader.cpp:8
    ```
    <msgId>;<character>;<script_en>;<script_pt with \n line breaks>;<wav_file>
    ```
-4. **Add a row** to `build/x64/Release/voice_manifest.txt`:
+4. **Add a row** to `ptbr_audio/voice_manifest.txt` (and sync into `build/x64/Release/ptbr_audio/`):
    ```
    <msgIds> | <letSeqRunForMsgIds> | <wavPath>
    ```
@@ -242,8 +242,9 @@ C:\Repos\Starship\
 ├── PROOF_OF_CONCEPT.md                            ← This file
 └── build\x64\Release\
     ├── Starship.exe                               ← Built engine
-    ├── voice_manifest.txt                         ← Voice routing manifest (hand-edited)
-    ├── ptbr_audio\<character>\*.wav               ← Runtime mirrors (per-character subfolders)
+    ├── ptbr_audio\
+    │   ├── voice_manifest.txt                     ← Voice routing manifest (hand-edited)
+    │   └── <character>\*.wav                      ← Runtime mirrors (per-character subfolders)
     └── mods\
         ├── SF64-DubPT-BR.o2r                      ← Generated text override (from lines.csv)
         └── HUD_BR_SF64.o2r                        ← Community HUD (untouched)
