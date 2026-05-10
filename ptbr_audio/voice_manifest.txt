@@ -280,3 +280,46 @@
 
 # Slippy:  "Pensei que eu ia de base agora!"
 4100    | 4100 | ptbr_audio/slippy/4100_pensei_que.wav
+
+# ==== Meteo ====
+
+# Pepper:  "Impressionante Star Fox. Cuidado agora com os inimigos no campo de asteroides!"
+# letSeqRun=- because Pepper's hologram briefing has no radio click in the
+# original audio — leaving seq on plays the EN voice on top of the dub
+# (same pattern as 1200/1210 Corneria briefing).
+1220    | -    | ptbr_audio/pepper/1220_impressionante.wav
+
+# Fox:     "Nao te deixarei na mao, senhor!"
+1230    | -    | ptbr_audio/fox/1230_nao_te_deixarei.wav
+
+# Slippy:  "O bagulho ta ficando doido, em!"
+3005    | 3005 | ptbr_audio/slippy/3005_o_bagulho.wav
+
+# Peppy:   "Para de zuar ai, Slip!"
+3010    | 3010 | ptbr_audio/peppy/3010_para_de_zuar.wav
+
+# Fox:     "Estamos indo para os asteroides pessoal!"
+3015    | 3015 | ptbr_audio/fox/3015_estamos_indo.wav
+
+# Peppy:   "Nao fode esse Arwing ai!"
+3041    | 3041 | ptbr_audio/peppy/3041_ve_se_nao_fode.wav
+
+# Peppy:   "Esta tudo quieto. Quieto demais."
+3025    | 3025 | ptbr_audio/peppy/3025_esta_tudo_quieto.wav
+
+# Peppy:   "Cuidado! E uma armadilha!"
+3026    | 3026 | ptbr_audio/peppy/3026_cuidado_e_uma.wav
+
+# Peppy:   "Use bombas com sabedoria Fox! (B)"
+20238   | 20238 | ptbr_audio/peppy/20238_use_bombas.wav
+
+# Fox:     "Desculpe a pressa, mas eu to na correria!"
+3360    | 3360 | ptbr_audio/fox/3360_desculpe_a_pressa.wav
+
+# Fox:     "Todas as aeronaves, reportem-se!"
+20010   | 20010 | ptbr_audio/fox/20010_todas_as_aeronaves.wav
+
+# ==== Sector Y ====
+
+# Slippy:  "Slippy foi atingido!"
+20050   | 20050 | ptbr_audio/slippy/20050_slippy_foi_atingido.wav

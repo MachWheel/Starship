@@ -67,17 +67,17 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2300;Corneria;Slippy Toad;Mission Complete;You did it! I was worried for a moment.;Você conseguiu!\nEu tava bolado\naqui já.;slippy/2300_voce_conseguiu.wav;no
 2310;Corneria;Peppy Hare;Mission Complete;You're becoming more like your father.;Você tá ficando\nque nem seu pai,\ncara.;peppy/2310_voce_ta_ficando.wav;no
 2320;Corneria;Falco Lombardi;Mission Complete;I'm fine. You OK over there, Fox?;Eu tô de boa.\nVocê tá bem aí,\nFox?;falco/2320_eu_to_de_boa.wav;no
-1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;Impressionante Star Fox.\nAgora cuidado com\nos inimigos no\ncampo de asteroides!;pepper/;no
-1230;Meteo;Fox McCloud;;I won't let you down, sir!;Não vou te\ndesapontar, senhor!;fox/;no
-3005;Meteo;Slippy Toad;;Things are starting to heat up!;A parada tá\nesquentando!;slippy/;no
-3010;Meteo;Peppy Hare;;Quit dinkin' around, Slip!;Para de zueira,\nSlip!;peppy/;no
-3015;Meteo;Fox McCloud;;We're heading into the asteroids!;Estamos indo para\nos asteroides!;fox/;no
-3041;Meteo;Peppy Hare;Level entry;Don't mess up that Arwing!;Não fode esse\nArwing!;peppy/;no
-3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;Tá quieto.\nQuieto demais.;peppy/;no
-3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;Cuidado!\nÉ uma armadilha!;peppy/;no
-20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);Use bombas com\nsabedoria! (B);peppy/;no
+1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;Impressionante Star Fox.\nCuidado agora com os\ninimigos no campo de\nasteroides!;pepper/1220_impressionante.wav;yes
+1230;Meteo;Fox McCloud;;I won't let you down, sir!;Não te deixarei na\nmão, senhor!;fox/1230_nao_te_deixarei.wav;yes
+3005;Meteo;Slippy Toad;;Things are starting to heat up!;O bagulho tá\nficando doido, em!;slippy/3005_o_bagulho.wav;yes
+3010;Meteo;Peppy Hare;;Quit dinkin' around, Slip!;Para de zuar aí,\nSlip!;peppy/3010_para_de_zuar.wav;yes
+3015;Meteo;Fox McCloud;;We're heading into the asteroids!;Estamos indo para\nos asteroides\npessoal!;fox/3015_estamos_indo.wav;yes
+3041;Meteo;Peppy Hare;Level entry;Don't mess up that Arwing!;Não fode esse\nArwing aí!;peppy/3041_ve_se_nao_fode.wav;yes
+3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;Está tudo quieto.\nQuieto demais.;peppy/3025_esta_tudo_quieto.wav;yes
+3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;Cuidado!\nÉ uma armadilha!;peppy/3026_cuidado_e_uma.wav;yes
+20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);Use bombas com\nsabedoria Fox! (B);peppy/20238_use_bombas.wav;yes
 20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/20236_tenta_uma_cambalhota.wav;no
-3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá vindo um\ngrandão.;slippy/;no
+3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá chegando um\ngrandão.;slippy/;no
 3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;Uoou!\nVocê consegue?;slippy/;no
 2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);Use o freio! (C-DN);peppy/2118_use_o_freio.wav;no
 20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);Use o boost pra\nconseguir passar!\n(C-LF);peppy/;no
@@ -107,8 +107,8 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 3345;Meteo;Meteo Crusher pilot;Crusher turns over (Only if Falco is active);Haha, you're not as stupid as you look!;;crusher/;no
 3350;Meteo;Meteo Crusher pilot;Crusher turns over (Only Falco isn't active);If this does not work...!;;crusher/;no
 3370;Meteo;Meteo Crusher pilot;Crusher downed;I can't believe I lost to this scum!;;crusher/;no
-3360;Meteo;Fox McCloud;Boss downed;Sorry to jet, but I'm in a hurry!;;fox/;no
-20010;Meteo;Fox McCloud;;All aircraft report!;;fox/;no
+3360;Meteo;Fox McCloud;Boss downed;Sorry to jet, but I'm in a hurry!;Desculpe a pressa,\nmas eu tô na\ncorreria!;fox/3360_desculpe_a_pressa.wav;yes
+20010;Meteo;Fox McCloud;;All aircraft report!;Todas as aeronaves,\nreportem-se!;fox/20010_todas_as_aeronaves.wav;yes
 1440;Sector Y;General Pepper;;Fox, we're under attack! Help us out here!;;pepper/;no
 1450;Sector Y;Fox McCloud;;I'm on my way!;;fox/;no
 14020;Sector Y;Fox McCloud;Level entry.;Let's back up the squadron.;;fox/;no
@@ -133,7 +133,7 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 14190;Sector Y;Slippy Toad;Reach fleet end;Something's up ahead. Looks different.;;slippy/;no
 20180;Sector Y;Fox McCloud;Enter All-Range;All-range mode!;;fox/;no
 2225;Sector Y;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;no
-20050;Sector Y;Slippy Toad;Hit;Slippy's hit!;;slippy/;no
+20050;Sector Y;Slippy Toad;Hit;Slippy's hit!;Slippy foi\natingido!;slippy/20050_slippy_foi_atingido.wav;yes
 14220;Sector Y;Slippy Toad;Shoguns evade;These guys are tough!;;slippy/;no
 14200;Sector Y;Falco Lombardi;Shoguns evade;Geez! Quit movin' around!;;falco/;no
 20030;Sector Y;Falco Lombardi;Hit;Shoot! I've taken damage!;;falco/;no
