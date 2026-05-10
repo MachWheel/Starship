@@ -319,7 +319,33 @@
 # Fox:     "Todas as aeronaves, reportem-se!"
 20010   | 20010 | ptbr_audio/fox/20010_todas_as_aeronaves.wav
 
+# Slippy:  "Ta chegando um grandao."
+3020    | 3020 | ptbr_audio/slippy/3020_ta_chegando.wav
+
+# Slippy:  "Uoou! Sera que da pra passar?"
+3042    | 3042 | ptbr_audio/slippy/3042_uoou_sera_que.wav
+
+# Peppy:   "Use o boost pra conseguir passar! (C-LF)"
+20239   | 20239 | ptbr_audio/peppy/20239_use_o_boost.wav
+
+# Peppy:   "Tem mensagem do ROB 64!"
+20269   | 20269 | ptbr_audio/peppy/20269_tem_mensagem.wav
+
+# Peppy:   "To dando mole! Eles tao atras de mim!"
+7066    | 7066 | ptbr_audio/peppy/7066_to_dando_mole.wav
+
+# Peppy:   "Obrigado, Fox."
+5230    | 5230 | ptbr_audio/peppy/5230_obrigado_fox.wav
+
+# Peppy:   "Tem vagabundo vindo por tras de voce!"
+3050    | 3050 | ptbr_audio/peppy/3050_tem_vagabundo.wav
+
 # ==== Sector Y ====
 
 # Slippy:  "Slippy foi atingido!"
 20050   | 20050 | ptbr_audio/slippy/20050_slippy_foi_atingido.wav
+
+# ==== Misc / cross-mission ====
+
+# ROB 64:  "Localizacao confirmada. Enviando suprimentos." (supply-drop announcement)
+20230   | 20230 | ptbr_audio/rob/20230_localizacao_confirmada.wav

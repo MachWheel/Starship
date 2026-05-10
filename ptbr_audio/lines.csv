@@ -76,17 +76,17 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 3025;Meteo;Peppy Hare;Approach asteroids;It's quiet. Too quiet.;Está tudo quieto.\nQuieto demais.;peppy/3025_esta_tudo_quieto.wav;yes
 3026;Meteo;Peppy Hare;Butterfly Fighters appear;Be careful! It's a trap!;Cuidado!\nÉ uma armadilha!;peppy/3026_cuidado_e_uma.wav;yes
 20238;Meteo;Peppy Hare;Butterflies retreat;Use bombs wisely! (B);Use bombas com\nsabedoria Fox! (B);peppy/20238_use_bombas.wav;yes
-20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/20236_tenta_uma_cambalhota.wav;no
-3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá chegando um\ngrandão.;slippy/;no
-3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;Uoou!\nVocê consegue?;slippy/;no
+20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/20236_tenta_uma_cambalhota.wav;yes
+3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá chegando um\ngrandão.;slippy/3020_ta_chegando.wav;yes
+3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;Uoou! Será que\ndá pra passar?;slippy/3042_uoou_sera_que.wav;yes
 2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);Use o freio! (C-DN);peppy/2118_use_o_freio.wav;no
-20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);Use o boost pra\nconseguir passar!\n(C-LF);peppy/;no
-20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;Tem mensagem\ndo ROB 64!;peppy/;no
-20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);;falco/;no
-7066;Meteo;Peppy Hare;Mayday;They're on me! I'm getting careless!;;peppy/;no
-5230;Meteo;Peppy Hare;Rescue;Thanks, Fox.;;peppy/;no
-3050;Meteo;Peppy Hare;Enter tunnel asteroid;The enemy is coming from behind!;;peppy/;no
-2110;Meteo;Peppy Hare;Enter tunnel asteroid;Do a barrel roll! (Z or R);;peppy/;no
+20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);Use o boost pra\nconseguir passar!\n(C-LF);peppy/20239_use_o_boost.wav;yes
+20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;Tem mensagem\ndo ROB 64!;peppy/20269_tem_mensagem.wav;yes
+20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);Cuidado aí Fox!;falco/;no
+7066;Meteo;Peppy Hare;Mayday;They're on me! I'm getting careless!;Tô dando mole!\nEles tão atrás\nde mim!;peppy/7066_to_dando_mole.wav;yes
+5230;Meteo;Peppy Hare;Rescue;Thanks, Fox.;Obrigado, Fox.;peppy/5230_obrigado_fox.wav;yes
+3050;Meteo;Peppy Hare;Enter tunnel asteroid;The enemy is coming from behind!;Tem vagabundo\nvindo por trás\nde você!;peppy/3050_tem_vagabundo.wav;yes
+2110;Meteo;Peppy Hare;Enter tunnel asteroid;Do a barrel roll! (Z or R);Dá uma girada!\n(Z ou R);peppy/2110_da_uma_girada.wav;yes
 3100;Meteo;Falco Lombardi;Exit tunnel asteroid;I guess it's your turn to be thankful.;;falco/;no
 3110;Meteo;Slippy Toad;Flip Bots tail Slippy;You want a piece of me?;;slippy/;no
 3120;Meteo;Slippy Toad;Flip Bots tail Slippy;Take that!;;slippy/;no
@@ -694,7 +694,7 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 18015;Misc;Bill Grey;Hit a Cornerian Fighter;Try shooting the bad guys, Fox!;;bill/;no
 18018;Misc;Bill Grey;K'O a Cornerian Fighter;Fox! That's one of ours! (If the player shoots down a Cornerian Fighter);;bill/;no
 20085;Misc;Bill Grey;Hit by Fox;Hey! See if I help you again!;;bill/;no
-20230;Misc;ROB 64;;Location confirmed. Sending supplies.;;rob/20230_localizacao_confirmada.wav;no
+20230;Misc;ROB 64;;Location confirmed. Sending supplies.;Localização\nconfirmada. Enviando\nsuprimentos.;rob/20230_localizacao_confirmada.wav;yes
 7054;Misc;ROB 64;;Great Fox will cover you.;;rob/;no
 20339;Misc;ROB 64;Results;Peppy's/Slippy's/Falco's ship is in the docking bay.;;rob/;no
 20333;Misc;ROB 64;Results;Peppy's/Slippy's/Falco's ship is in for repairs.;;rob/;no
