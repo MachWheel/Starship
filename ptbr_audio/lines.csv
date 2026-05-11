@@ -33,40 +33,40 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 2200;Corneria;Slippy Toad;Approach pick-ups stack-up;Enemy robot, dead ahead.;Robô inimigo,\nbem à frente.;slippy/2200_robo_inimigo.wav;yes
 2210;Corneria;Falco Lombardi;Approach All-Range;Let's go!;Vam'bora!;falco/2210_vambora.wav;yes
 20180;Corneria;Fox McCloud;Enter All-Range Mode;All-Range mode!;Modo de alcance\ntotal!;fox/20180_modo_de_alcance_total.wav;yes
-2240;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;Ah, então esse é\no Star Fox?;granga/2240_ah_entao_esse.wav;no
-2250;Corneria;Granga;Enter boss battle;I'm going to crush you!;Eu vou amassar\nvocês!;granga/2250_eu_vou_amassar.wav;no
-2225;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;no
-2260;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;Quem mexer com\no Andross\nvai morrer!;granga/2260_quem_mexer.wav;no
-2230;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;Mira nas costas\ndele!;peppy/2230_mira_nas_costas.wav;no
-20237;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn! (glyphs);Tenta fazer\num retorno!\n(ADN), (C-DN);peppy/20237_tenta_fazer_um.wav;no
-2263;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;Parem de se mexer\npra eu amassar\nvocês!;granga/2263_parem_de_se.wav;no
-2275;Corneria;Granga;Battle continues;I will not be defeated by this worm!;Eu não vou ser\nderrotado por\neste verme!;granga/2275_eu_nao_vou.wav;no
-2265;Corneria;Granga;Battle continues;You are starting to annoy me!;Vocês estão\ncomeçando a\nme irritar!;granga/2265_voces_estao.wav;no
-2220;Corneria;Granga;Battle continues;You annoying little flies!;Que mosquinhas\nirritantes!;granga/2220_que_mosquinhas.wav;no
-2270;Corneria;Granga;Granga's backpack is hit;No!!!;Nãooo!!!;granga/2270_naooo.wav;no
-2280;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;Meu imperador...\nEu falhei!;granga/2280_meu_imperador.wav;no
-2180;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;Tá voando bonito,\nFox.;falco/2180_ta_voando_bonito.wav;no
-2181;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;Me segue aqui Fox!;falco/2181_me_segue_aqui.wav;no
-2185;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;Falco, aonde\nvocê tá indo?;fox/2185_falco_onde_voce.wav;no
-2188;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;Achei nosso alvo!\nVê se me acompanha.;falco/2188_achei_nosso_alvo.wav;no
-9190;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;Hora de revidar\num pouquinho.;falco/9190_hora_de_revidar.wav;no
-2090;Corneria;Falco Lombardi;K'O target;Gotcha!;Peguei!;falco/2090_peguei.wav;no
-2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;Sai fora, Fox!;falco/2095_sai_fora_fox.wav;no
-2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;Ah, parece que\nalguém quer\nbrincar.;accaptain/2290_ah_parece_que.wav;no
-2298;Corneria;Peppy Hare;Attack Carrier approaches;Incoming enemy from the rear! Drop altitude!;Inimigo vindo\natrás! Diminuam\na altitude!;peppy/2298_um_inimigo_esta.wav;no
-2291;Corneria;Attack Carrier Captain;Launching Granga Fighters;Deploy all units! Charge!;Solta todo mundo,\nvai!;accaptain/2291_solta_todo_mundo.wav;no
-2292;Corneria;Attack Carrier Captain;Firing missiles;I've got a present for ya!;Tenho um\npresentinho\npra vocês!;accaptain/2292_tenho_um_presentinho.wav;no
-15130;Corneria;Falco Lombardi;K'O one side;That's it, Fox.;É isso aí, Fox.;falco/15130_e_isso_ai.wav;no
-2299;Corneria;Peppy Hare;Advice;Aim for the open spot!;Mira naquela\nabertura ali!;peppy/2299_mira_naquela.wav;no
-7085;Corneria;Falco Lombardi;K'O both sides;YEAH! It's working!;ISSO!\nTá funcionando!;falco/7085_isso_ta_funcionando.wav;no
-2293;Corneria;Attack Carrier Captain;Boss faces forward;Go!!;Vai!!;accaptain/2293_vai.wav;no
-2294;Corneria;Attack Carrier Captain;Boss downed;Who are you guys?;Quem são vocês?;accaptain/2294_quem_sao_voces.wav;no
-2295;Corneria;Fox McCloud;Boss downed;We're Star Fox!;Nós somos\no Star Fox!;fox/2295_nos_somos_o.wav;no
-2296;Corneria;Attack Carrier Captain;Boss downed;You'll never defeat Andross!;Vocês nunca vão\nderrotar o Andross!;accaptain/2296_voces_nunca_vao.wav;no
-2335;Corneria;Fox McCloud;Mission Complete;We're heading out. All aircraft report!;Estamos indo\nembora. Tá todo\nmundo bem?;fox/2335_estamos_indo.wav;no
-2300;Corneria;Slippy Toad;Mission Complete;You did it! I was worried for a moment.;Você conseguiu!\nEu tava bolado\naqui já.;slippy/2300_voce_conseguiu.wav;no
-2310;Corneria;Peppy Hare;Mission Complete;You're becoming more like your father.;Você tá ficando\nque nem seu pai,\ncara.;peppy/2310_voce_ta_ficando.wav;no
-2320;Corneria;Falco Lombardi;Mission Complete;I'm fine. You OK over there, Fox?;Eu tô de boa.\nVocê tá bem aí,\nFox?;falco/2320_eu_to_de_boa.wav;no
+2240;Corneria;Granga;Enter boss battle;Ah, so this is Star Fox?;Ah, então esse é\no Star Fox?;granga/2240_ah_entao_esse.wav;yes
+2250;Corneria;Granga;Enter boss battle;I'm going to crush you!;Eu vou amassar\nvocês!;granga/2250_eu_vou_amassar.wav;yes
+2225;Corneria;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;yes
+2260;Corneria;Granga;Launching Missiles;Those who cross Andross will die!;Quem mexer com\no Andross\nvai morrer!;granga/2260_quem_mexer.wav;yes
+2230;Corneria;Peppy Hare;Flying away from Granga's Mech;Aim for his back!;Mira nas costas\ndele!;peppy/2230_mira_nas_costas.wav;yes
+20237;Corneria;Peppy Hare;Approach Radar edge;Try a U-Turn! (glyphs);Tenta fazer\num retorno!\n(ADN), (C-DN);peppy/20237_tenta_fazer_um.wav;yes
+2263;Corneria;Granga;Evade Granga's Mech;Stop moving so I can squash you!;Parem de se mexer\npra eu amassar\nvocês!;granga/2263_parem_de_se.wav;yes
+2275;Corneria;Granga;Battle continues;I will not be defeated by this worm!;Eu não vou ser\nderrotado por\neste verme!;granga/2275_eu_nao_vou.wav;yes
+2265;Corneria;Granga;Battle continues;You are starting to annoy me!;Vocês estão\ncomeçando a\nme irritar!;granga/2265_voces_estao.wav;yes
+2220;Corneria;Granga;Battle continues;You annoying little flies!;Que mosquinhas\nirritantes!;granga/2220_que_mosquinhas.wav;yes
+2270;Corneria;Granga;Granga's backpack is hit;No!!!;Nãooo!!!;granga/2270_naooo.wav;yes
+2280;Corneria;Granga;Granga's Mech is downed;My emperor... I've failed you!;Meu imperador...\nEu falhei!;granga/2280_meu_imperador.wav;yes
+2180;Corneria;Falco Lombardi;Fly under first four stone arches;Pretty smooth flying, Fox.;Tá voando bonito,\nFox.;falco/2180_ta_voando_bonito.wav;yes
+2181;Corneria;Falco Lombardi;Fly under all stone arches;Follow me Fox!;Me segue aqui Fox!;falco/2181_me_segue_aqui.wav;yes
+2185;Corneria;Fox McCloud;Fly under first four stone arches;Falco, where you going?;Falco, aonde\nvocê tá indo?;fox/2185_falco_onde_voce.wav;yes
+2188;Corneria;Falco Lombardi;Fly through waterfall;I found the target! Try to keep up.;Achei nosso alvo!\nVê se me acompanha.;falco/2188_achei_nosso_alvo.wav;yes
+9190;Corneria;Falco Lombardi;Tailing enemies;Time for a little payback.;Hora de revidar\num pouquinho.;falco/9190_hora_de_revidar.wav;yes
+2090;Corneria;Falco Lombardi;K'O target;Gotcha!;Peguei!;falco/2090_peguei.wav;yes
+2095;Corneria;Falco Lombardi;K'O his target;Back off, Fox!;Sai fora, Fox!;falco/2095_sai_fora_fox.wav;yes
+2290;Corneria;Attack Carrier Captain;Fly towards sea;Ah, someone wants to play.;Ah, parece que\nalguém quer\nbrincar.;accaptain/2290_ah_parece_que.wav;yes
+2298;Corneria;Peppy Hare;Attack Carrier approaches;Incoming enemy from the rear! Drop altitude!;Inimigo vindo\natrás! Diminuam\na altitude!;peppy/2298_um_inimigo_esta.wav;yes
+2291;Corneria;Attack Carrier Captain;Launching Granga Fighters;Deploy all units! Charge!;Solta todo mundo,\nvai!;accaptain/2291_solta_todo_mundo.wav;yes
+2292;Corneria;Attack Carrier Captain;Firing missiles;I've got a present for ya!;Tenho um\npresentinho\npra vocês!;accaptain/2292_tenho_um_presentinho.wav;yes
+15130;Corneria;Falco Lombardi;K'O one side;That's it, Fox.;É isso aí, Fox.;falco/15130_e_isso_ai.wav;yes
+2299;Corneria;Peppy Hare;Advice;Aim for the open spot!;Mira naquela\nabertura ali!;peppy/2299_mira_naquela.wav;yes
+7085;Corneria;Falco Lombardi;K'O both sides;YEAH! It's working!;ISSO!\nTá funcionando!;falco/7085_isso_ta_funcionando.wav;yes
+2293;Corneria;Attack Carrier Captain;Boss faces forward;Go!!;Vai!!;accaptain/2293_vai.wav;yes
+2294;Corneria;Attack Carrier Captain;Boss downed;Who are you guys?;Quem são vocês?;accaptain/2294_quem_sao_voces.wav;yes
+2295;Corneria;Fox McCloud;Boss downed;We're Star Fox!;Nós somos\no Star Fox!;fox/2295_nos_somos_o.wav;yes
+2296;Corneria;Attack Carrier Captain;Boss downed;You'll never defeat Andross!;Vocês nunca vão\nderrotar o Andross!;accaptain/2296_voces_nunca_vao.wav;yes
+2335;Corneria;Fox McCloud;Mission Complete;We're heading out. All aircraft report!;Estamos indo\nembora. Tá todo\nmundo bem?;fox/2335_estamos_indo.wav;yes
+2300;Corneria;Slippy Toad;Mission Complete;You did it! I was worried for a moment.;Você conseguiu!\nEu tava bolado\naqui já.;slippy/2300_voce_conseguiu.wav;yes
+2310;Corneria;Peppy Hare;Mission Complete;You're becoming more like your father.;Você tá ficando\nque nem seu pai,\ncara.;peppy/2310_voce_ta_ficando.wav;yes
+2320;Corneria;Falco Lombardi;Mission Complete;I'm fine. You OK over there, Fox?;Eu tô de boa.\nVocê tá bem aí,\nFox?;falco/2320_eu_to_de_boa.wav;yes
 1220;Meteo;General Pepper;;Impressive Star Fox. Now watch out for enemies in the asteroid field!;Impressionante Star Fox.\nCuidado agora com os\ninimigos no campo de\nasteroides!;pepper/1220_impressionante.wav;yes
 1230;Meteo;Fox McCloud;;I won't let you down, sir!;Não te deixarei na\nmão, senhor!;fox/1230_nao_te_deixarei.wav;yes
 3005;Meteo;Slippy Toad;;Things are starting to heat up!;O bagulho tá\nficando doido, em!;slippy/3005_o_bagulho.wav;yes
@@ -643,27 +643,27 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 20017;Misc;Falco Lombardi;Shields 75-50%;Ah, you're getting better, Fox.;Ei, tu ta ficando\nbom nisso, Fox!;falco/;no
 20019;Misc;Falco Lombardi;Shields 50-25%;You worry about your own hide.;Cuida do seu\nque eu cuido\ndo meu.;falco/;no
 20303;Misc;Falco Lombardi;Shields 50-25%;See my ship? Does it look OK to you?;Mano, olha\nminha nave. Parece\nde boa pra você?;falco/;no
-15252;Misc;Slippy Toad;Score Bonus +7 Hits;Yippie! You did it!;UHUL! Você\nconseguiu!;slippy/15252_uhul_voce_conseguiu.wav;no
-20080;Misc;Slippy Toad;Hit by Fox;Hey, what's the big idea?;Ei, que viagem\né essa?;slippy/20080_ei_que_viagem.wav;no
-20190;Misc;Slippy Toad;Fox crashes into him;What do you think you're doing, Fox!?;Que que cê tá\nfazendo, Fox?!;slippy/20190_que_que_ce.wav;no
-20222;Misc;Slippy Toad;Retire;I'm monkey food if I don't leave!;Se eu não vazar\neu vou virar\njanta!;slippy/20222_se_eu_nao_vazar.wav;no
-20092;Misc;Slippy Toad;Fox is dead;No!!!!;Nãooo!;slippy/20092_naaao.wav;no
-20150;Misc;Slippy Toad;K'O his target(s);Hey, he was mine!;Ei, esse era meu!;slippy/20150_ei_esse_era.wav;no
-9200;Misc;Slippy Toad;Chasing targets;You're not getting away that easy!;Você não vai\nse safar fácil\nassim não!;slippy/9200_voce_nao_vai.wav;no
-9212;Misc;Slippy Toad;Chasing targets;I've got you now!;Agora eu peguei\nvocê!;slippy/9212_agora_eu_peguei.wav;no
-11040;Misc;Slippy Toad;Chasing targets;Your carcass is mine!;Agora você é meu!;slippy/11040_agora_voce.wav;no
-9230;Misc;Slippy Toad;K'O an enemy;I've got one!;Derrubei um aqui!;slippy/9230_derrubei_um_aqui.wav;no
-9110;Misc;Slippy Toad;S.O.S.;Fox! Get this guy off me!;Fox! Tira esse\ncara de mim!;slippy/9110_fox_tira_esse.wav;no
-9140;Misc;Slippy Toad;S.O.S.;This is really starting to tick me off!;Isso aqui tá me\ntirando do\nsério já!;slippy/9140_isso_aqui_ta.wav;no
-20311;Misc;Slippy Toad;S.O.S.;Oh, No!;Oh, não!;slippy/20311_oh_nao.wav;no
-2225;Misc;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;no
-9170;Misc;Slippy Toad;Rescued;Whew, that was too close!;Nossa! Quase que\neu me fudi!;slippy/9170_nossa_quase.wav;no
-20300;Misc;Slippy Toad;Flying closely near him;Let's take it to 'em, Fox!;Vamo sentar o\ndedo neles, Fox!;slippy/20300_vamo_sentar.wav;no
-20282;Misc;Slippy Toad;Flying closely near him;How's the Arwing doing, Fox?;Como é que tá\nesse Arwing, Fox?;slippy/20282_como_e_que_ta.wav;no
-4040;Misc;Slippy Toad;Flying closely near him;Are you okay?;Você tá bem?;slippy/4040_voce_ta_bem.wav;no
-20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;Tô bem, tô bem!;slippy/20011_to_bem_to_bem.wav;no
-20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;To meio na merda\naqui!;slippy/20013_eu_to_meio.wav;no
-4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;Pensei que eu ia\nde base agora!;slippy/4100_pensei_que.wav;no
+15252;Misc;Slippy Toad;Score Bonus +7 Hits;Yippie! You did it!;UHUL! Você\nconseguiu!;slippy/15252_uhul_voce_conseguiu.wav;yes
+20080;Misc;Slippy Toad;Hit by Fox;Hey, what's the big idea?;Ei, que viagem\né essa?;slippy/20080_ei_que_viagem.wav;yes
+20190;Misc;Slippy Toad;Fox crashes into him;What do you think you're doing, Fox!?;Que que cê tá\nfazendo, Fox?!;slippy/20190_que_que_ce.wav;yes
+20222;Misc;Slippy Toad;Retire;I'm monkey food if I don't leave!;Se eu não vazar\neu vou virar\njanta!;slippy/20222_se_eu_nao_vazar.wav;yes
+20092;Misc;Slippy Toad;Fox is dead;No!!!!;Nãooo!;slippy/20092_naaao.wav;yes
+20150;Misc;Slippy Toad;K'O his target(s);Hey, he was mine!;Ei, esse era meu!;slippy/20150_ei_esse_era.wav;yes
+9200;Misc;Slippy Toad;Chasing targets;You're not getting away that easy!;Você não vai\nse safar fácil\nassim não!;slippy/9200_voce_nao_vai.wav;yes
+9212;Misc;Slippy Toad;Chasing targets;I've got you now!;Agora eu peguei\nvocê!;slippy/9212_agora_eu_peguei.wav;yes
+11040;Misc;Slippy Toad;Chasing targets;Your carcass is mine!;Agora você é meu!;slippy/11040_agora_voce.wav;yes
+9230;Misc;Slippy Toad;K'O an enemy;I've got one!;Derrubei um aqui!;slippy/9230_derrubei_um_aqui.wav;yes
+9110;Misc;Slippy Toad;S.O.S.;Fox! Get this guy off me!;Fox! Tira esse\ncara de mim!;slippy/9110_fox_tira_esse.wav;yes
+9140;Misc;Slippy Toad;S.O.S.;This is really starting to tick me off!;Isso aqui tá me\ntirando do\nsério já!;slippy/9140_isso_aqui_ta.wav;yes
+20311;Misc;Slippy Toad;S.O.S.;Oh, No!;Oh, não!;slippy/20311_oh_nao.wav;yes
+2225;Misc;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;yes
+9170;Misc;Slippy Toad;Rescued;Whew, that was too close!;Nossa! Quase que\neu me fudi!;slippy/9170_nossa_quase.wav;yes
+20300;Misc;Slippy Toad;Flying closely near him;Let's take it to 'em, Fox!;Vamo sentar o\ndedo neles, Fox!;slippy/20300_vamo_sentar.wav;yes
+20282;Misc;Slippy Toad;Flying closely near him;How's the Arwing doing, Fox?;Como é que tá\nesse Arwing, Fox?;slippy/20282_como_e_que_ta.wav;yes
+4040;Misc;Slippy Toad;Flying closely near him;Are you okay?;Você tá bem?;slippy/4040_voce_ta_bem.wav;yes
+20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;Tô bem, tô bem!;slippy/20011_to_bem_to_bem.wav;yes
+20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;To meio na merda\naqui!;slippy/20013_eu_to_meio.wav;yes
+4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;Pensei que eu ia\nde base agora!;slippy/4100_pensei_que.wav;yes
 17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;Mandou bem, Fox!;peppy/;no
 20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;Sai fora, Fox!;peppy/;no
 20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;Olha onde você\ntá voando cara!;peppy/;no

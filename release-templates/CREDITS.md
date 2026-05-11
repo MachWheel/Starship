@@ -1,27 +1,30 @@
 # Créditos
 
-**Versão v0.1a**
+**Versão v{{VERSION}}**
+
+Mod de dublagem em português brasileiro para Star Fox 64 no port Starship.
 
 
 ## Tradução, adaptação e desenvolvimento
 
-- [_MachWheel_](https://github.com/MachWheel) (Wyller R. Machado)
+- [_MachWheel_](https://github.com/MachWheel) (Wyller R. Machado) — direção, tradução, gravação, engenharia e empacotamento.
+
+
+## Tradução das texturas e interface
+
+- [_eusouodepois_](https://gamebanana.com/mods/583180)
 
 
 ## Elenco das vozes
 
-> Dublagem por [_MachWheel_](https://github.com/MachWheel), através do [_ElevenLabs Voice Changer_](https://elevenlabs.io/app/speech-synthesis/speech-to-speech) utilizando as vozes dos dubladores da versão **USA** do Star Fox 64 (1997):
-
-- General Pepper — David Frederick White
-- Fox McCloud — Mike West
-- Falco Lombardi — Bill Johns
-- Peppy Hare — Rick May
-- Slippy Toad — Lyssa Browne
+> Dublagem por [_MachWheel_](https://github.com/MachWheel), através do [_ElevenLabs Voice Changer_](https://elevenlabs.io/app/speech-synthesis/speech-to-speech) utilizando as vozes dos dubladores da versão americana (**USA**) do Star Fox 64 (1997):
 
 
 ## Falas dubladas nesta versão
 
-[Todas as falas dubladas nesta versão podem ser encontradas aqui](https://github.com/MachWheel/Starship/blob/main/ptbr_audio/lines.csv)
+A lista canônica está em [`ptbr_audio/lines.csv`](https://github.com/MachWheel/Starship/blob/main/ptbr_audio/lines.csv) — toda linha com `is_complete=yes` está dublada e validada em jogo.
+
+O roadmap completo (arquitetura, fluxo de trabalho, próximos passos e pendências) está em [`ROADMAP.md`](https://github.com/MachWheel/Starship/blob/main/ROADMAP.md).
 
 
 ## Agradecimentos

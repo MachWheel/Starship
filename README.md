@@ -1,23 +1,53 @@
 [comment]: <> (Todo: Make Light Mode Image)
 [comment]: <> (Todo: Make Dark Mode Image)
 
-# Starship — Brazilian-Portuguese Localization Fork
+# Starship — Localização em Português Brasileiro
 
-> **(WIP)** Fork of [HarbourMasters/Starship](https://github.com/HarbourMasters/Starship) (SF64 PC Port) adding a full Brazilian-Portuguese localization (voice dub + text) for Star Fox 64.
+> **(Em desenvolvimento)** Fork do [HarbourMasters/Starship](https://github.com/HarbourMasters/Starship) (port PC do SF64) adicionando uma dublagem completa em português brasileiro para Star Fox 64 — voz **e** texto.
 
-This fork extends Starship with two parallel pt-BR channels:
+Este fork estende o Starship com dois canais pt-BR paralelos:
 
-- **Voice dub** — pt-BR recordings replace the original English voice lines. Driven by a data-only `voice_manifest.txt` that maps msgIds to WAV files; the engine reads it at runtime via an `Audio_PlayVoice` intercept, so adding a new line never requires a rebuild.
-- **Text translation** — pt-BR radio-bubble text matching every dubbed line, packed into a drop-in `.o2r` mod (`mods/SF64-DubPT-BR.o2r`) generated from `ptbr_audio/lines.csv`.
+- **Dublagem (voz)** — gravações em português substituem as falas originais em inglês. O roteamento é todo data-driven via `ptbr_audio/voice_manifest.txt`, lido em runtime por um intercept de `Audio_PlayVoice`. Adicionar uma fala nova não exige rebuild.
+- **Tradução (texto)** — o balão de rádio mostra o texto pt-BR casando com cada fala dublada, empacotado num mod drop-in (`mods/SF64-DubPT-BR.o2r`) gerado a partir de `ptbr_audio/lines.csv`.
 
-**Status:** proof-of-concept complete (Corneria mission briefing, Pepper + Fox lines fully dubbed end-to-end). Scaling to the full ~780-line script is in progress.
+## Progresso atual
 
-### Documentation
-- [`PLAN.md`](./PLAN.md) — full localization roadmap (mapping → translation → recording → QA → distribution).
-- [`PROOF_OF_CONCEPT.md`](./PROOF_OF_CONCEPT.md) — technical deep-dive on the voice intercept, manifest format, text-mod packer, and the engine-side hooks that make it work.
+**106 de 722 linhas completas (~15%)** — gravadas, roteadas, traduzidas, validadas em jogo.
+
+| Missão | Completo |
+|---|---|
+| Intro | 1 / 7 |
+| **Corneria** | **61 / 61** ✅ |
+| Meteo | 20 / 42 |
+| Sector Y | 1 / 38 |
+| Misc (cross-mission) | 23 / 102 |
+| Demais missões | 0 / 472 |
+
+Outras 165 linhas já têm `script_pt` escrito e estão prontas para gravação.
+Atualizado em **2026-05-10**. Para ver linha por linha, veja [`ptbr_audio/lines.csv`](./ptbr_audio/lines.csv)
+
+## Documentação do projeto
+
+- [`ROADMAP.md`](./ROADMAP.md) — arquitetura, fluxo de trabalho por linha, próximos passos, pendências de engenharia e referência rápida dos arquivos.
+- [`release-templates/README.md`](./release-templates/README.md) — instruções de instalação que vão dentro do zip de release (a versão que o usuário final lê).
+- [`release-templates/CREDITS.md`](./release-templates/CREDITS.md) — créditos de tradução, elenco de vozes e licenças.
+
+## Plataforma
+
+Apenas **Windows (10/11, 64-bit)** por enquanto — o intercept de áudio
+usa `PlaySoundA` da Win32 API. Suporte a Linux/macOS está mapeado no
+[`ROADMAP.md`](./ROADMAP.md#áudio-cross-platform-bloqueio-para-linuxmacos).
+
+## Como contribuir
+
+1. Entenda o pipeline lendo o [`ROADMAP.md`](./ROADMAP.md) (seção *Fluxo por linha*).
+2. Pegue uma linha sem `script_pt` ou sem `.wav` em `ptbr_audio/lines.csv`.
+3. Siga o fluxo de 8 passos do roadmap (mapear `msgId` → traduzir → gravar → manifesto → espelhar → reempacotar → checar órfãos → testar).
+4. Marque `is_complete=yes` só depois do teste em jogo.
+
 
 ---
-
+<br><br>
 The upstream Starship README follows below.
 
 ---

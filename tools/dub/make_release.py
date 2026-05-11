@@ -4,7 +4,7 @@ Reads inputs from this repo and produces:
 
     release/SF64-DubPT-BR-v<version>-windows.zip
 
-Bundle layout (matches PLAN.md Stage 5):
+Bundle layout (matches ROADMAP.md → "Distribuição"):
 
     Starship.exe                       patched build with dub intercept
     ptbr_audio/voice_manifest.txt      hand-edited manifest
