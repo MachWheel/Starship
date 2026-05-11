@@ -24,7 +24,11 @@ Mod de dublagem em português brasileiro para Star Fox 64 no port Starship.
 2. Extraia este zip dentro da pasta do seu Starship.
 3. Quando perguntado, sobrescreva o `Starship.exe` e mescle a pasta `mods/`.
 4. Inicie `Starship.exe`.
-
+5. **Habilite os Assets Alternativos** (necessário para a HUD em
+   português aparecer): no menu, vá em
+   **Graphics → Enable Alternative Assets**, ou pressione
+   `TAB` em jogo para alternar.
+   
 ### Verificação
 
 Inicie o briefing da fase Corneria pelo mapa. Você deve ouvir o General Pepper
@@ -48,6 +52,7 @@ já estiver escrito.
 | `ptbr_audio/voice_manifest.txt` | Manifesto de voz (roteamento `msgId → wav`) |
 | `ptbr_audio/<personagem>/*.wav` | Gravações pt-BR das falas |
 | `mods/SF64-DubPT-BR.o2r` | Texto traduzido para os balões de rádio |
+| `mods/HUD_BR_SF64.o2r` | HUD, *title cards* e telas de fim de missão em pt-BR (exige *Alternative Assets* habilitado — veja **Instalação**) |
 | `LICENSE-libultraship.txt` | Licença MIT do libultraship (obrigatória na redistribuição) |
 | `CREDITS.md` | Créditos completos de tradução, elenco e licenças |
 

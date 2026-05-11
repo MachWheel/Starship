@@ -11,6 +11,9 @@ Bundle layout (matches ROADMAP.md → "Distribuição"):
     ptbr_audio/<character>/*.wav       voice recordings (only those referenced
                                        by the manifest are bundled)
     mods/SF64-DubPT-BR.o2r             text override mod
+    mods/HUD_BR_SF64.o2r               community pt-BR HUD/title-card textures
+                                       (alt-asset; user must enable
+                                       "Alternative Assets" in-engine)
     LICENSE-libultraship.txt           MIT, required when redistributing
     README.md                          install instructions (en + pt)
     CREDITS.md                         voice cast, translation, engineering
@@ -39,6 +42,7 @@ EXE_SRC = REPO_ROOT / "build" / "x64" / "Release" / "Starship.exe"
 PTBR_AUDIO_SRC = REPO_ROOT / "ptbr_audio"
 MANIFEST_SRC = PTBR_AUDIO_SRC / "voice_manifest.txt"
 TEXT_MOD_SRC = REPO_ROOT / "build" / "x64" / "Release" / "mods" / "SF64-DubPT-BR.o2r"
+HUD_MOD_SRC = PTBR_AUDIO_SRC / "_archive" / "HUD_BR_SF64.o2r"
 LIBULTRASHIP_LICENSE = REPO_ROOT / "libultraship" / "LICENSE"
 COMMUNITY_TEXT_MOD = PTBR_AUDIO_SRC / "_archive" / "SF64 - TraducaoPT-BR.o2r"
 README_TEMPLATE = RELEASE_TEMPLATES / "README.md"
@@ -47,8 +51,8 @@ CREDITS_TEMPLATE = RELEASE_TEMPLATES / "CREDITS.md"
 
 def _verify_inputs() -> list[str]:
     errs: list[str] = []
-    for p in (EXE_SRC, MANIFEST_SRC, TEXT_MOD_SRC, LIBULTRASHIP_LICENSE,
-              README_TEMPLATE, CREDITS_TEMPLATE):
+    for p in (EXE_SRC, MANIFEST_SRC, TEXT_MOD_SRC, HUD_MOD_SRC,
+              LIBULTRASHIP_LICENSE, README_TEMPLATE, CREDITS_TEMPLATE):
         if not p.exists():
             errs.append(f"missing: {p}")
     return errs
@@ -87,6 +91,8 @@ def _stage(stage_dir: Path, version: str, include_community: bool) -> None:
     mods_dir = stage_dir / "mods"
     mods_dir.mkdir(exist_ok=True)
     shutil.copy2(TEXT_MOD_SRC, mods_dir / "SF64-DubPT-BR.o2r")
+    shutil.copy2(HUD_MOD_SRC, mods_dir / HUD_MOD_SRC.name)
+    print(f"  + bundled HUD mod: {HUD_MOD_SRC.name} (requires Alternative Assets enabled)")
 
     if include_community:
         if COMMUNITY_TEXT_MOD.exists():
