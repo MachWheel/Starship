@@ -12,19 +12,19 @@ Este fork estende o Starship com dois canais pt-BR paralelos:
 
 ## Progresso atual
 
-**106 de 722 linhas completas (~15%)** — gravadas, roteadas, traduzidas, validadas em jogo.
+**155 de 722 linhas completas (~21%)** — gravadas, roteadas, traduzidas, validadas em jogo.
 
 | Missão | Completo |
 |---|---|
-| Intro | 1 / 7 |
+| **Intro** | **7 / 7** ✅ |
 | **Corneria** | **61 / 61** ✅ |
-| Meteo | 20 / 42 |
+| Meteo | 40 / 41 |
 | Sector Y | 1 / 38 |
-| Misc (cross-mission) | 23 / 102 |
+| Misc (cross-mission) | 46 / 103 |
 | Demais missões | 0 / 472 |
 
-Outras 165 linhas já têm `script_pt` escrito e estão prontas para gravação.
-Atualizado em **2026-05-10**. Para ver linha por linha, veja [`ptbr_audio/lines.csv`](./ptbr_audio/lines.csv)
+Outras 23 linhas já têm `script_pt` escrito e estão prontas para gravação.
+Atualizado em **2026-05-13**. Para ver linha por linha, veja [`ptbr_audio/lines.csv`](./ptbr_audio/lines.csv)
 
 ## Documentação do projeto
 

@@ -1,10 +1,10 @@
 msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
-60;Intro;ROB 64;;Message from General Pepper. Priority one!;Mensagem do\nGeneral Pepper.\nPrioridade um!;rob/;no
-10;Intro;General Pepper;;We need your help, Star Fox!;Precisamos de\najuda, Star Fox!\n|;pepper/;no
-20;Intro;General Pepper;;Andross has declared war!;Andross declarou\nguerra!\n|;pepper/;no
-30;Intro;General Pepper;;He's invaded the Lylat system;Ele invadiu o\nsistema Lylat\n|;pepper/;no
-40;Intro;General Pepper;;and is trying to take over Corneria!;e está tentando\ndominar Corneria!\nNosso\n|;pepper/;no
-50;Intro;General Pepper;;Our army alone can't do the job! Hurry, Star Fox!;exército sozinho\nnão conseguirá!\nDepressa, Star Fox!;pepper/;no
+60;Intro;ROB 64;;Message from General Pepper. Priority one!;Mensagem do\nGeneral Pepper.\nPrioridade um!;rob/60_mensagem_do.wav;yes
+10;Intro;General Pepper;;We need your help, Star Fox!;Precisamos de sua\najuda, Star Fox!\n|;pepper/10_precisamos_de.wav;yes
+20;Intro;General Pepper;;Andross has declared war!;Andross declarou\nguerra!\n|;pepper/20_andross_declarou.wav;yes
+30;Intro;General Pepper;;He's invaded the Lylat system;Ele invadiu o\nsistema Lylat\n|;pepper/30_ele_invadiu_o.wav;yes
+40;Intro;General Pepper;;and is trying to take over Corneria!;e está tentando\ndominar Corneria!\n|;pepper/40_e_esta_tentando.wav;yes
+50;Intro;General Pepper;;Our army alone can't do the job! Hurry, Star Fox!;Nosso exército sozi\nnho não conseguirá!\nDepressa, Star Fox!;pepper/50_nosso_exercito.wav;yes
 1;Intro;Opening Narrator;;Corneria, fourth planet of the Lylat system. The evil Andross turned this once thriving system into a wasteland of near extinction. General Pepper of the Cornerian army was successful in exiling this maniacal scientist to the barren, deserted planet Venom. Five years later, General Pepper noticed strange activity coming from Venom. James McCloud, Pigma Dengar, and Peppy Hare of the Star Fox team were sent to investigate. Upon their arrival, Pigma betrayed the team and James and Peppy were captured by Andross. Peppy barely escaped Venom and returned home to tell James' son Fox about his father's fate. A few years have passed. Andross has again invaded the Lylat system. General Pepper has turned to a new Star Fox team headed by Fox McCloud to save Corneria and free the Lylat system once again.;Corneria, quarto planeta do sistema\nLylat. O maligno Andross transformou\neste sistema, outrora próspero, em um\ndeserto à beira da extinção.\n \nO General Pepper, do exército\ncorneriano, conseguiu exilar este\ncientista maníaco para o planeta\nVenom, estéril e deserto.\n \nCinco anos depois, o General Pepper\nnotou uma atividade estranha... vinda\nde Venom. James McCloud, Pigma Dengar\ne Peppy Hare, da equipe Star Fox,\nforam enviados para investigar.\n \nAo chegarem, Pigma traiu a equipe e\nJames e Peppy foram capturados por\nAndross.\n \nPeppy escapou por pouco de Venom e\nvoltou para casa para contar ao\nfilho de James, Fox, sobre o destino\nde seu pai.\n \nAlguns anos se passaram. Andross\ninvadiu novamente o sistema Lylat.\n \nO General Pepper recorreu a uma nova\nequipe Star Fox, liderada por Fox\nMcCloud, para salvar Corneria e\nlibertar o sistema Lylat mais uma vez.;narrator/1_intro.wav;yes
 1200;Corneria;General Pepper;;It's about time you showed up Fox. You're the only hope for our world.;Que bom que apareceram\nStar Fox! Voces sao nossa\nunica esperanca.;pepper/1200_que_bom.wav;yes
 1210;Corneria;Fox McCloud;;I'll do my best! Andross won't have his way with me.;Vou sentar o dedo!\nDessa vez o Andross\nnao vai se dar bem!;fox/1210_vou_sentar_o_dedo.wav;yes
@@ -79,34 +79,34 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 20236;Meteo;Peppy Hare;Approach pickups stack-up;Try a somersault!;Tenta uma\ncambalhota!\n(C-LF), (C-UP);peppy/20236_tenta_uma_cambalhota.wav;yes
 3020;Meteo;Slippy Toad;Largest asteroids appear;Here comes a big one.;Tá chegando um\ngrandão.;slippy/3020_ta_chegando.wav;yes
 3042;Meteo;Slippy Toad;Largest asteroids appear;Whoa! Can you make it?;Uoou! Será que\ndá pra passar?;slippy/3042_uoou_sera_que.wav;yes
-2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);Use o freio! (C-DN);peppy/2118_use_o_freio.wav;no
+2118;Meteo;Peppy Hare;Largest asteroids appear;Use the brake! (C down);Use o freio! (C-DN);peppy/2118_use_o_freio.wav;yes
 20239;Meteo;Peppy Hare;Largest asteroids appear;Use the boost to get through! (C<);Use o boost pra\nconseguir passar!\n(C-LF);peppy/20239_use_o_boost.wav;yes
 20269;Meteo;Peppy Hare;C>>> Appears;Incoming message from ROB 64!;Tem mensagem\ndo ROB 64!;peppy/20269_tem_mensagem.wav;yes
-20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);Cuidado aí Fox!;falco/;no
+20315;Meteo;Falco Lombardi;Rock Gunners tailing;Watch out Fox! (Depends on previous Mission performance);Cuidado aí Fox!;falco/20315_cuidado_ai.wav;yes
 7066;Meteo;Peppy Hare;Mayday;They're on me! I'm getting careless!;Tô dando mole!\nEles tão atrás\nde mim!;peppy/7066_to_dando_mole.wav;yes
 5230;Meteo;Peppy Hare;Rescue;Thanks, Fox.;Obrigado, Fox.;peppy/5230_obrigado_fox.wav;yes
 3050;Meteo;Peppy Hare;Enter tunnel asteroid;The enemy is coming from behind!;Tem vagabundo\nvindo por trás\nde você!;peppy/3050_tem_vagabundo.wav;yes
 2110;Meteo;Peppy Hare;Enter tunnel asteroid;Do a barrel roll! (Z or R);Dá uma girada!\n(Z ou R);peppy/2110_da_uma_girada.wav;yes
-3100;Meteo;Falco Lombardi;Exit tunnel asteroid;I guess it's your turn to be thankful.;;falco/;no
-3110;Meteo;Slippy Toad;Flip Bots tail Slippy;You want a piece of me?;;slippy/;no
-3120;Meteo;Slippy Toad;Flip Bots tail Slippy;Take that!;;slippy/;no
-20313;Meteo;Slippy Toad;Near Warp Rings;Hold A to charge your laser!;;slippy/;no
-20314;Meteo;Peppy Hare;Approach Butterfly Fighter clusters;You can also lock onto enemies this way!;;peppy/;no
-19360;Meteo;Peppy Hare;Successfully fly through the first few rings;Never give up! Trust your instincts!;;peppy/;no
-3040;Meteo;Peppy Hare;Passing Laser Asteroids;Just shoot it, Fox!;;peppy/;no
-3300;Meteo;Meteo Crusher pilot;Meteo Crusher Approaches;I cannot allow you to go any further.;;crusher/;no
+3100;Meteo;Falco Lombardi;Exit tunnel asteroid;I guess it's your turn to be thankful.;Sua vez de me\nagradecer agora em.;falco/3100_sua_vez_de.wav;yes
+3110;Meteo;Slippy Toad;Flip Bots tail Slippy;You want a piece of me?;Vocês querem\nme pegar é?;slippy/3110_voces_querem_me.wav;yes
+3120;Meteo;Slippy Toad;Flip Bots tail Slippy;Take that!;Vai tomando!;slippy/3120_vai_tomando.wav;yes
+20313;Meteo;Slippy Toad;Near Warp Rings;Hold A to charge your laser!;Segure A para\ncarregar o laser!;slippy/20313_segure_a_para.wav;yes
+20314;Meteo;Peppy Hare;Approach Butterfly Fighter clusters;You can also lock onto enemies this way!;Você pode travar\na mira nos inimigos\nassim também!;peppy/20314_voce_pode_travar.wav;yes
+20304;Misc;Peppy Hare;Player low health (random 1/2 — paired with 20307);Never give up.\nTrust your \ninstincts.;Nunca desista!\nConfie nos seus\ninstintos!;peppy/20304_nunca_desista_confie.wav;yes
+3040;Meteo;Peppy Hare;Passing Laser Asteroids;Just shoot it, Fox!;Só atira neles,\nFox!;peppy/3040_so_atira_neles.wav;yes
+3300;Meteo;Meteo Crusher pilot;Meteo Crusher Approaches;I cannot allow you to go any further.;Eu não posso\npermitir que\npassem daqui.;crusher/3300_eu_nao_posso.wav;yes
 2225;Meteo;Slippy Toad;Bossometer uploaded;Enemy shield analyzed!;Defesa do inimigo\nanalisada!;slippy/2225_defesa_do_inimigo.wav;no
-3310;Meteo;Meteo Crusher pilot;Energy reflector startup;Let's see what you've got.;;crusher/;no
-3315;Meteo;Peppy Hare;Crusher absorbs lasers;That shields absorbing the laser!;;peppy/;no
-3371;Meteo;Meteo Crusher pilot;Take out power cores;You're more cunning than I thought.;;crusher/;no
-3320;Meteo;Meteo Crusher pilot;Crusher drops barricade;I've underestimated you.;;crusher/;no
-3321;Meteo;Meteo Crusher pilot;Energy stream startup;How about this?;;crusher/;no
-3322;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I'm no match for you.;;crusher/;no
-3330;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I admit defeat...;;crusher/;no
-3340;Meteo;Falco Lombardi;Crusher turns over (Only if Falco is active);Are you gonna listen to that monkey?;;falco/;no
-3345;Meteo;Meteo Crusher pilot;Crusher turns over (Only if Falco is active);Haha, you're not as stupid as you look!;;crusher/;no
-3350;Meteo;Meteo Crusher pilot;Crusher turns over (Only Falco isn't active);If this does not work...!;;crusher/;no
-3370;Meteo;Meteo Crusher pilot;Crusher downed;I can't believe I lost to this scum!;;crusher/;no
+3310;Meteo;Meteo Crusher pilot;Energy reflector startup;Let's see what you've got.;Vamos ver qual\né a de vocês.;crusher/3310_vamos_ver_qual.wav;yes
+3315;Meteo;Peppy Hare;Crusher absorbs lasers;That shields absorbing the laser!;Os escudos dele\nabsorvem os\nlasers!;peppy/3315_os_escudos_dele.wav;yes
+3371;Meteo;Meteo Crusher pilot;Take out power cores;You're more cunning than I thought.;Você é mais esperto\ndo que eu pensava!;crusher/3371_voce_e_mais.wav;yes
+3320;Meteo;Meteo Crusher pilot;Crusher drops barricade;I've underestimated you.;Eu subestimei\nvocês.;crusher/3320_eu_subestimei_voces.wav;yes
+3321;Meteo;Meteo Crusher pilot;Energy stream startup;How about this?;Que tal isso?;crusher/3321_que_tal_isso.wav;yes
+3322;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I'm no match for you.;Eu não sou páreo\npara vocês.;crusher/3322_eu_nao_sou.wav;yes
+3330;Meteo;Meteo Crusher pilot;Shield Gauge emptied;I admit defeat...;Tá bom, eu perdi\nentão...;crusher/3330_ta_bom_eu.wav;yes
+3340;Meteo;Falco Lombardi;Crusher turns over (Only if Falco is active);Are you gonna listen to that monkey?;Tu vai ficar\nouvindo esse\nmacaco aí?;falco/3340_tu_vai_ficar.wav;yes
+3345;Meteo;Meteo Crusher pilot;Crusher turns over (Only if Falco is active);Haha, you're not as stupid as you look!;Vocês não são tão\nestúpidos quanto\nparecem!;crusher/3345_voces_nao_sao.wav;yes
+3350;Meteo;Meteo Crusher pilot;Crusher turns over (Only Falco isn't active);If this does not work...!;Porra, se essa\nnão funcionar...!;crusher/3350_porra_se_essa.wav;yes
+3370;Meteo;Meteo Crusher pilot;Crusher downed;I can't believe I lost to this scum!;Eu não acredito\nque perdi pra essa\nescória!;crusher/3370_eu_nao_acredito.wav;yes
 3360;Meteo;Fox McCloud;Boss downed;Sorry to jet, but I'm in a hurry!;Desculpe a pressa,\nmas eu tô na\ncorreria!;fox/3360_desculpe_a_pressa.wav;yes
 20010;Meteo;Fox McCloud;;All aircraft report!;Todas as aeronaves,\nreportem-se!;fox/20010_todas_as_aeronaves.wav;yes
 1440;Sector Y;General Pepper;;Fox, we're under attack! Help us out here!;;pepper/;no
@@ -604,7 +604,7 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 14360;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;Aaaaaaahhhh!;;fox/;no
 19468;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Don't ever give up, my son.;;james/;no
 19350;Venom 2;Fox McCloud;Andross's true form in Star Fox 64.;Father!?;;fox/;no
-2181;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Follow me, Fox.;;james/;no
+19340;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Follow me, Fox.;;james/;no
 19355;Venom 2;James McCloud;Andross's true form in Star Fox 64.;This way, Fox.;;james/;no
 19360;Venom 2;James McCloud;Andross's true form in Star Fox 64.;Never give up. Trust your instincts.;;james/;no
 19370;Venom 2;James McCloud;Andross's true form in Star Fox 64.;You've become so strong, Fox.;;james/;no
@@ -664,28 +664,28 @@ msgId;mission;character;action;script_en;script_pt;wav_file;is_complete
 20011;Misc;Slippy Toad;Shields 75-50%;I'm fine, I'm fine!;Tô bem, tô bem!;slippy/20011_to_bem_to_bem.wav;yes
 20013;Misc;Slippy Toad;Shields 50-25%;I'm having some trouble here!;To meio na merda\naqui!;slippy/20013_eu_to_meio.wav;yes
 4100;Misc;Slippy Toad;Shields 50-25%;I thought I was a goner!;Pensei que eu ia\nde base agora!;slippy/4100_pensei_que.wav;yes
-17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;Mandou bem, Fox!;peppy/;no
-20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;Sai fora, Fox!;peppy/;no
-20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;Olha onde você\ntá voando cara!;peppy/;no
-20221;Misc;Peppy Hare;Retire;Sorry guys. I gotta sit this one out.;Desculpa galera.\nVou ter que ficar\nfora dessa.;peppy/;no
-20091;Misc;Peppy Hare;Fox is dead;No!!!!;NÃOOO!!!;peppy/;no
-20160;Misc;Peppy Hare;K'O his target(s);What's the big idea, Fox?;Que que cê tá\nfazendo, Fox?!;peppy/;no
-9210;Misc;Peppy Hare;Chasing targets;I won't let you get away from me!;Você não vai\nfugir de mim!;peppy/;no
-9213;Misc;Peppy Hare;Chasing targets;You're mine!;Você é meu agora!;peppy/;no
-9240;Misc;Peppy Hare;K'O an enemy;There's one down!;Derrubei um aqui!;peppy/;no
-18150;Misc;Peppy Hare;Randomised;Enemy down...Wait, that was one of ours!;Inimigo abatido...\nPera, esse era um\ndos nossos!;peppy/;no
-9120;Misc;Peppy Hare;S.O.S.;Take care of the guy behind me, Fox!;Tira esse cara\nda minha cola, Fox!;peppy/;no
-9150;Misc;Peppy Hare;S.O.S.;What's taking you so long, Fox?;Por quê você tá\ndemorando tanto,\nFox?;peppy/;no
-9153;Misc;Peppy Hare;S.O.S.;Shoot! They've got me!;Atira! Eles tão\nme pegando!;peppy/;no
-19464;Misc;Peppy Hare;S.O.S.;I can't break free!;Eu to na merda\naqui!;peppy/;no
-5230;Misc;Peppy Hare;Rescued;Thanks, Fox.;Obrigado, Fox.;peppy/;no
-9180;Misc;Peppy Hare;Rescued;Your father helped me like that too!;Seu pai me ajudou\nassim também!;peppy/;no
-20296;Misc;Peppy Hare;Flying closely near him;Come on, Fox! You can do it!;Vam'bora, Fox!\nVocê consegue!;peppy/;no
-20281;Misc;Peppy Hare;Flying closely near him;I see your father in you, Fox.;Eu vejo seu pai\nem você, Fox.;peppy/;no
-20299;Misc;Peppy Hare;Flying closely near him;Don't go dyin' on me, Fox!;Sai de cima de mim,\nFox!;peppy/;no
-20012;Misc;Peppy Hare;Shields 75-50%;Everything's A- OK.;Tá tudo bem aqui.;peppy/;no
-20014;Misc;Peppy Hare;Shields 50-25%;I've taken a few hits, but I'm okay.;Eu tomei uns tiros\naí, mas tô bem.;peppy/;no
-20016;Misc;Peppy Hare;Shields 50-25%;I saw my life flash before my eyes!;Minha vida inteira\npassou pela\nminha cabeça agora!;peppy/;no
+17160;Misc;Peppy Hare;Score Bonus +7 Hits;Good going, Fox!;Mandou bem, Fox!;peppy/17160_mandou_bem.wav;yes
+20070;Misc;Peppy Hare;Hit by Fox;Knock it off, Fox!;Sai fora, Fox!;peppy/20070_sai_fora_fox.wav;yes
+20200;Misc;Peppy Hare;Fox crashes into him;Watch where you're flying!;Olha onde você\ntá voando cara!;peppy/20200_olha_onde_voce.wav;yes
+20221;Misc;Peppy Hare;Retire;Sorry guys. I gotta sit this one out.;Desculpa galera.\nVou ter que ralar\nfora agora!;peppy/20221_desculpa_galera.wav;yes
+20091;Misc;Peppy Hare;Fox is dead;No!!!!;NÃOOO!!!;peppy/20091_naaao.wav;yes
+20160;Misc;Peppy Hare;K'O his target(s);What's the big idea, Fox?;Que que cê tá\nfazendo, Fox?!;peppy/20160_que_que_ce.wav;yes
+9210;Misc;Peppy Hare;Chasing targets;I won't let you get away from me!;Você não vai\nfugir de mim!;peppy/9210_voce_nao_vai.wav;yes
+9213;Misc;Peppy Hare;Chasing targets;You're mine!;Você já era!;peppy/9213_voce_jaera.wav;yes
+9240;Misc;Peppy Hare;K'O an enemy;There's one down!;Derrubei um aqui!;peppy/9240_derrubei_um.wav;yes
+18150;Misc;Peppy Hare;Randomised;Enemy down...Wait, that was one of ours!;Inimigo abati...\nNão, pera, esse era\num dos nossos!;peppy/18150_inimigo_abati.wav;yes
+9120;Misc;Peppy Hare;S.O.S.;Take care of the guy behind me, Fox!;Tira esse cara\nda minha cola, Fox!;peppy/9120_tira_esse_cara.wav;yes
+9150;Misc;Peppy Hare;S.O.S.;What's taking you so long, Fox?;Por quê você tá\ndemorando tanto,\nFox?;peppy/9150_por_que_voce.wav;yes
+9153;Misc;Peppy Hare;S.O.S.;Shoot! They've got me!;Atira! Eles tão\nme pegando aqui!;peppy/9153_atira_eles.wav;yes
+19464;Misc;Peppy Hare;S.O.S.;I can't break free!;Eu to na merda\naqui!;peppy/19464_eu_to_na.wav;yes
+5230;Misc;Peppy Hare;Rescued;Thanks, Fox.;Obrigado, Fox.;peppy/5230_obrigado_fox.wav;yes
+9180;Misc;Peppy Hare;Rescued;Your father helped me like that too!;Seu pai me ajudou\nexatamente assim\numa vez!;peppy/9180_seu_pai_me.wav;yes
+20296;Misc;Peppy Hare;Flying closely near him;Come on, Fox! You can do it!;Vamos, Fox!\nVocê consegue!;peppy/20296_vamos_fox.wav;yes
+20281;Misc;Peppy Hare;Flying closely near him;I see your father in you, Fox.;Eu vejo seu pai\nem você, Fox.;peppy/20281_eu_vejo_seu.wav;yes
+20299;Misc;Peppy Hare;Flying closely near him;Don't go dyin' on me, Fox!;Qual é? Sai de\ncima de mim, Fox!;peppy/20299_quale_sai_de.wav;yes
+20012;Misc;Peppy Hare;Shields 75-50%;Everything's A- OK.;Tá tudo bem\nde boa aqui.;peppy/20012_ta_tudo_bem.wav;yes
+20014;Misc;Peppy Hare;Shields 50-25%;I've taken a few hits, but I'm okay.;Eu tomei uns tiros\naí, mas tô bem.;peppy/20014_eu_tomei_uns.wav;yes
+20016;Misc;Peppy Hare;Shields 50-25%;I saw my life flash before my eyes!;Minha vida inteira\npassou pela\nminha cabeça agora!;peppy/20016_minha_vida_inteira.wav;yes
 20084;Misc;Katt Monroe;Hit by Fox;You trying to damage my pretty face?;Tá tentando\nestragar o meu\nrostinho, é?;katt/;no
 18020;Misc;Bill Grey;Randomised;Husky unit, cover the base!;;bill/;no
 18021;Misc;Bill Grey;Randomised;Bulldog unit, don't let anything through!;;bill/;no

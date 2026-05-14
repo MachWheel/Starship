@@ -9,17 +9,19 @@ Entregar uma dublagem completa em português brasileiro para Star Fox 64
 `ptbr_audio/lines.csv`, com texto pt-BR casando com cada fala dublada,
 distribuído como pacote drop-in para Windows.
 
-## Status atual (2026-05-10)
+## Status atual (2026-05-13)
 
-- **106 / 722 linhas completas** (~15%) — fim a fim: gravadas, roteadas no
+- **155 / 722 linhas completas** (~21%) — fim a fim: gravadas, roteadas no
   manifesto, texto do balão batendo, validadas em jogo.
-- **Corneria 61/61 ✅** — primeira missão totalmente dublada.
-- Demais missões com progresso: **Meteo 20/42**, **Sector Y 1/38**,
-  **Intro 1/7**, **Misc 23/102**.
-- Personagens com mais falas dubladas: Slippy 31, Peppy 26, Falco 16,
-  Fox 14, Granga 9, Attack Carrier Captain 6.
-- 165 linhas têm `script_pt` escrito (pronto para gravar); 113 já têm `.wav`
-  no disco.
+- **Intro 7/7 ✅** e **Corneria 61/61 ✅** — primeiras duas seções totalmente
+  dubladas.
+- Demais missões com progresso: **Meteo 40/41**, **Sector Y 1/38**,
+  **Misc 46/103**.
+- Personagens com mais falas dubladas: Peppy 53, Slippy 34, Falco 19,
+  Fox 14, Meteo Crusher pilot 10, Granga 9, General Pepper 7, Attack
+  Carrier Captain 6.
+- 23 linhas têm `script_pt` escrito (prontas para gravar); 150 `.wav` no
+  disco no total.
 - Toda a infraestrutura de áudio + texto está validada e escala sem novo
   trabalho de engenharia. Adicionar uma linha = 3 edições de dados (sem
   rebuild).

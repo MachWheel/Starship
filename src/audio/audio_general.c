@@ -1885,7 +1885,9 @@ bool g_dub_voice_suppress_active = false;
 
 /* Deferred PlaySound: queue a custom-voice WAV to fire a few audio frames
    after Audio_PlayVoice, giving the seq's radio-click SFX a head start so
-   the pt-BR voice doesn't start before the click. Tuned for ~150 ms delay. */
+   the pt-BR voice doesn't start before the click. Tuned for ~150 ms delay.
+   Used only for letSeqRun=msgId lines (where the seq is dispatching the
+   click); letSeqRun=- lines bypass the delay (see Audio_PlayVoice). */
 #define CUSTOM_VOICE_PLAY_DELAY_FRAMES 13
 static char sCustomVoicePendingWav[CUSTOM_VOICE_MAX_PATH] = "";
 static s32 sCustomVoicePlayAtFrame = 0;
@@ -1894,6 +1896,12 @@ typedef struct {
     s32 msgIds[CUSTOM_VOICE_MAX_IDS_PER_LINE];        /* 0-terminated */
     s32 letSeqRunForMsgIds[CUSTOM_VOICE_MAX_IDS_PER_LINE]; /* 0-terminated */
     char wavFile[CUSTOM_VOICE_MAX_PATH];
+    /* True iff the dub WAV already contains a baked-in radio key-down click
+       at its tail. Set via the optional 4th manifest field "endinwav". When
+       set, the next Audio_PlayVoice(msgId<4) call from the radio state
+       machine skips dispatching seq voice 0 (which would play the game's
+       original key-down click on top of the WAV's mixed-in one). */
+    bool dubHasEndClick;
 } CustomVoiceLine;
 
 static CustomVoiceLine sCustomVoiceTable[CUSTOM_VOICE_MAX_LINES];
@@ -1947,7 +1955,7 @@ static void parse_voice_manifest_line(char* line) {
     while (*p == ' ' || *p == '\t') p++;
     if (*p == '\0' || *p == '#') return;
 
-    /* Format: msgIds | letSeqRunForMsgIds | wavPath */
+    /* Format: msgIds | letSeqRunForMsgIds | wavPath [| flags] */
     char* bar1 = strchr(p, '|');
     if (bar1 == NULL) return;
     char* bar2 = strchr(bar1 + 1, '|');
@@ -1962,6 +1970,25 @@ static void parse_voice_manifest_line(char* line) {
     while (*wavStr == ' ' || *wavStr == '\t') wavStr++;
     if (*wavStr == '\0') return;
 
+    /* Optional 4th field — single-keyword flag. Currently only "endinwav"
+       is recognized: the dub WAV has a baked-in end click, so seq voice 0
+       (the game's original key-down click) should NOT fire after this
+       line. Anything else (or a missing field) leaves the flag false. */
+    bool dubHasEndClick = false;
+    char* bar3 = strchr(wavStr, '|');
+    if (bar3 != NULL) {
+        *bar3 = '\0';
+        char* flagStr = bar3 + 1;
+        while (*flagStr == ' ' || *flagStr == '\t') flagStr++;
+        s32 wlen = (s32)strlen(wavStr);
+        while (wlen > 0 && (wavStr[wlen-1] == ' ' || wavStr[wlen-1] == '\t')) {
+            wavStr[--wlen] = '\0';
+        }
+        if (strncmp(flagStr, "endinwav", 8) == 0) {
+            dubHasEndClick = true;
+        }
+    }
+
     if (sCustomVoiceCount >= CUSTOM_VOICE_MAX_LINES) return;
     CustomVoiceLine* row = &sCustomVoiceTable[sCustomVoiceCount];
     parse_id_list(msgIdsStr, row->msgIds, CUSTOM_VOICE_MAX_IDS_PER_LINE);
@@ -1969,6 +1996,7 @@ static void parse_voice_manifest_line(char* line) {
     parse_id_list(letSeqStr, row->letSeqRunForMsgIds, CUSTOM_VOICE_MAX_IDS_PER_LINE);
     strncpy(row->wavFile, wavStr, CUSTOM_VOICE_MAX_PATH - 1);
     row->wavFile[CUSTOM_VOICE_MAX_PATH - 1] = '\0';
+    row->dubHasEndClick = dubHasEndClick;
     sCustomVoiceCount++;
 }
 
@@ -2101,33 +2129,59 @@ void Audio_PlayVoice(s32 msgId) {
             }
         }
         /* Only schedule playback when transitioning between lines, not on
-           rapid same-line repeat fires (e.g. msgId=3 firing twice). PlaySound
-           is deferred by ~150 ms so the seq's radio click plays first;
-           Audio_UpdateVoice() fires it when sAudioFrameCounter catches up. */
+           rapid same-line repeat fires (e.g. msgId=3 firing twice). For
+           letSeqRun=msgId lines, the deferred delay gives the seq's radio
+           click SFX a head start so the pt-BR voice doesn't talk over it.
+           For letSeqRun=- lines, no seq dispatch happens (and the dub WAV
+           may carry its own pre-baked click), so fire the WAV immediately. */
         if (sActiveLine != line) {
             strncpy(sCustomVoicePendingWav, line->wavFile, sizeof(sCustomVoicePendingWav) - 1);
             sCustomVoicePendingWav[sizeof(sCustomVoicePendingWav) - 1] = '\0';
-            sCustomVoicePlayAtFrame = sAudioFrameCounter + CUSTOM_VOICE_PLAY_DELAY_FRAMES;
+            sCustomVoicePlayAtFrame =
+                sAudioFrameCounter + (letSeqRun ? CUSTOM_VOICE_PLAY_DELAY_FRAMES : 0);
         }
         sActiveLine = line;
         if (letSeqRun) {
             /* Lead msgId — forward to seq so the radio-click SFX baked into
-               the original sample plays. Then suppress voice-content notes
-               that follow (see g_dub_voice_pass_count in audio_playback.c). */
+               the original sample plays. Pass count = 2 lets through note 1
+               (click + opening phoneme) and note 2 (trailing phoneme) so the
+               click has full body. Voice-content notes (3+) are muted by the
+               per-init gate in audio_playback.c::Audio_NoteInitForLayer. */
             sCurrentVoiceId = sNextVoiceId = msgId;
             sSetNextVoiceId = true;
             g_dub_voice_pass_count = 2;
             g_dub_voice_suppress_active = true;
+        } else {
+            /* letSeqRun=- — actively cancel any pending seq voice trigger
+               from a prior Audio_PlayVoice call. Without this, a leftover
+               sSetNextVoiceId=true would cause Audio_UpdateVoice to
+               dispatch a stale voiceId on the next tick, playing the
+               original game's click/voice on top of the pt-BR dub. */
+            sSetNextVoiceId = false;
         }
-        /* Continuation msgIds (1200, 1210): no seq dispatch. The English
-           body never reaches the audio channels. */
         return;
     }
 
     /* Any non-custom voice closes the previous custom line so the next one
-       can restart cleanly. Also drop any pending deferred PlaySound. */
+       can restart cleanly. Also drop any pending deferred PlaySound.
+
+       Special case: voice-off signal (msgId 0/1/2/3) suppression. Those
+       msgIds dispatch the game's baked-in "key-down click" sample on seq
+       voice 0. We want that click after seq-dispatched voices (chatter,
+       briefings, original game voices). We DON'T want it after a custom
+       line whose dub WAV already includes a baked-in end click — that
+       would duplicate. The dubHasEndClick flag (manifest 4th field
+       "endinwav") marks those lines per-entry. */
+    bool skipSeqVoiceOff = (msgId < 4) && (sActiveLine != NULL) &&
+                           sActiveLine->dubHasEndClick;
     sActiveLine = NULL;
     sCustomVoicePendingWav[0] = '\0';
+
+    if (skipSeqVoiceOff) {
+        sCurrentVoiceId = 0;
+        sSetNextVoiceId = false;
+        return;
+    }
 
     sCurrentVoiceId = sNextVoiceId = msgId;
     sSetNextVoiceId = true;

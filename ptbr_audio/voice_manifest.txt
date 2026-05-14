@@ -22,6 +22,39 @@
 # Lines starting with # and blank lines are ignored. Whitespace is permitted
 # around tokens.
 
+# ==== Intro (Pepper briefs Star Fox at game open, before prologue scroll) ====
+#
+# All 6 intro msgIds use letSeqRun=- so the original seq voice is never
+# dispatched — zero possibility of EN voice bleed. The radio key-up /
+# key-down clicks are baked directly into 3 specific WAV files (mixed in
+# externally, see ptbr_audio/radio/start.wav and end.wav for the source
+# samples): 60/10 have start prefix, 60/50 have end suffix. 20/30/40 are
+# mid-Pepper-transmission with no click overlay.
+#
+# Optional 4th field "endinwav": tells Audio_PlayVoice to skip the seq
+# voice 0 dispatch that fox_radio.c case 6 fires after a transmission ends
+# (which would normally play the game's baked-in key-down click). Set on
+# the lines whose dub WAV already includes the mixed-in end click — rob/60
+# and pepper/50 — to avoid stacking two end clicks on top of each other.
+
+# ROB 64:  "Mensagem do General Pepper. Prioridade um!" (start + end mixed in)
+60      | -    | ptbr_audio/rob/60_mensagem_do.wav         | endinwav
+
+# Pepper:  "Precisamos de ajuda, Star Fox!"  (intro chain 1/5 — start mixed in)
+10      | -    | ptbr_audio/pepper/10_precisamos_de.wav
+
+# Pepper:  "Andross declarou guerra!"        (intro chain 2/5)
+20      | -    | ptbr_audio/pepper/20_andross_declarou.wav
+
+# Pepper:  "Ele invadiu o sistema Lylat"     (intro chain 3/5)
+30      | -    | ptbr_audio/pepper/30_ele_invadiu_o.wav
+
+# Pepper:  "e esta tentando dominar Corneria!" (intro chain 4/5)
+40      | -    | ptbr_audio/pepper/40_e_esta_tentando.wav
+
+# Pepper:  "Nosso exercito nao conseguira sozinho! Depressa, Star Fox!" (5/5 — end mixed in)
+50      | -    | ptbr_audio/pepper/50_nosso_exercito.wav  | endinwav
+
 # Opening Narrator: prologue voice-over ("Corneria, quarto planeta...").
 # Fired by Audio_PlayVoiceWithoutBGM(1000) in Map_Prologue_Update @ fox_map.c:2109
 # when the scrolling text reaches y=205. letSeqRun=- so the original English
@@ -340,6 +373,69 @@
 # Peppy:   "Tem vagabundo vindo por tras de voce!"
 3050    | 3050 | ptbr_audio/peppy/3050_tem_vagabundo.wav
 
+# Falco:   "Sua vez de me agradecer agora em." (exit tunnel asteroid)
+3100    | 3100 | ptbr_audio/falco/3100_sua_vez_de.wav
+
+# Falco:   "Cuidado ai Fox!" (depends on previous mission performance)
+20315   | 20315 | ptbr_audio/falco/20315_cuidado_ai.wav
+
+# Slippy:  "Voces querem me pegar e?" (Flip Bots tail Slippy)
+3110    | 3110 | ptbr_audio/slippy/3110_voces_querem_me.wav
+
+# Slippy:  "Vai tomando!" (Flip Bots tail Slippy)
+3120    | 3120 | ptbr_audio/slippy/3120_vai_tomando.wav
+
+# Slippy:  "Segure A para carregar o laser!" (near Warp Rings)
+20313   | 20313 | ptbr_audio/slippy/20313_segure_a_para.wav
+
+# Peppy:   "Voce pode travar a mira nos inimigos assim tambem!" (Butterfly clusters)
+20314   | 20314 | ptbr_audio/peppy/20314_voce_pode_travar.wav
+
+# Peppy:   "Nunca desista! Confie no seu instinto!" (random low-health pep talk,
+#          fox_play.c:5861 — paired with 20307; the 19360 wav recorded earlier
+#          was misidentified as Meteo rings, but msgId 19360 is actually
+#          James's Andross spirit-line. Repurposed Peppy WAV to 20304.)
+20304   | 20304 | ptbr_audio/peppy/20304_nunca_desista_confie.wav
+
+# Peppy:   "So atira neles, Fox!" (passing Laser Asteroids)
+3040    | 3040 | ptbr_audio/peppy/3040_so_atira_neles.wav
+
+# Peppy:   "Os escudos dele absorvem os lasers!" (Crusher absorbs lasers)
+3315    | 3315 | ptbr_audio/peppy/3315_os_escudos_dele.wav
+
+# Crusher: "Eu nao posso permitir que passem daqui." (Meteo Crusher approaches)
+3300    | 3300 | ptbr_audio/crusher/3300_eu_nao_posso.wav
+
+# Crusher: "Vamos ver qual e a de voces." (energy reflector startup)
+3310    | 3310 | ptbr_audio/crusher/3310_vamos_ver_qual.wav
+
+# Crusher: "Eu subestimei voces." (Crusher drops barricade)
+3320    | 3320 | ptbr_audio/crusher/3320_eu_subestimei_voces.wav
+
+# Crusher: "Que tal isso?" (energy stream startup)
+3321    | 3321 | ptbr_audio/crusher/3321_que_tal_isso.wav
+
+# Crusher: "Eu nao sou pareo para voces." (shield gauge emptied)
+3322    | 3322 | ptbr_audio/crusher/3322_eu_nao_sou.wav
+
+# Crusher: "Ta bom, eu perdi..." (admit defeat)
+3330    | 3330 | ptbr_audio/crusher/3330_ta_bom_eu.wav
+
+# Crusher: "Voce e mais esperto do que eu pensava!" (take out power cores)
+3371    | 3371 | ptbr_audio/crusher/3371_voce_e_mais.wav
+
+# Falco:   "Tu vai ficar ouvindo esse macaco ai?" (Crusher turns over, Falco active)
+3340    | 3340 | ptbr_audio/falco/3340_tu_vai_ficar.wav
+
+# Crusher: "Voces nao sao tao estupidos quanto parecem!" (Crusher turns over, Falco active)
+3345    | 3345 | ptbr_audio/crusher/3345_voces_nao_sao.wav
+
+# Crusher: "Porra, se essa nao funcionar...!" (Crusher turns over, Falco inactive)
+3350    | 3350 | ptbr_audio/crusher/3350_porra_se_essa.wav
+
+# Crusher: "Eu nao acredito que perdi pra essa escoria!" (Crusher downed)
+3370    | 3370 | ptbr_audio/crusher/3370_eu_nao_acredito.wav
+
 # ==== Sector Y ====
 
 # Slippy:  "Slippy foi atingido!"
@@ -349,3 +445,66 @@
 
 # ROB 64:  "Localizacao confirmada. Enviando suprimentos." (supply-drop announcement)
 20230   | 20230 | ptbr_audio/rob/20230_localizacao_confirmada.wav
+
+# Peppy:   "Mandou bem, Fox!" (score bonus +7 hits)
+17160   | 17160 | ptbr_audio/peppy/17160_mandou_bem.wav
+
+# Peppy:   "Sai fora, Fox!" (hit by Fox)
+20070   | 20070 | ptbr_audio/peppy/20070_sai_fora_fox.wav
+
+# Peppy:   "Olha onde voce ta voando cara!" (Fox crashes into him)
+20200   | 20200 | ptbr_audio/peppy/20200_olha_onde_voce.wav
+
+# Peppy:   "Desculpa galera. Vou ter que ralar fora agora!" (retire)
+20221   | 20221 | ptbr_audio/peppy/20221_desculpa_galera.wav
+
+# Peppy:   "NAOOO!!!" (Fox-is-dead reaction)
+20091   | 20091 | ptbr_audio/peppy/20091_naaao.wav
+
+# Peppy:   "Que que ce ta fazendo, Fox?!" (KO his target)
+20160   | 20160 | ptbr_audio/peppy/20160_que_que_ce.wav
+
+# Peppy:   "Voce nao vai fugir de mim!" (chasing targets)
+9210    | 9210 | ptbr_audio/peppy/9210_voce_nao_vai.wav
+
+# Peppy:   "Voce ja era!" (chasing targets)
+9213    | 9213 | ptbr_audio/peppy/9213_voce_jaera.wav
+
+# Peppy:   "Derrubei um aqui!" (KO an enemy)
+9240    | 9240 | ptbr_audio/peppy/9240_derrubei_um.wav
+
+# Peppy:   "Inimigo abati... Nao, pera, esse era um dos nossos!" (randomised)
+18150   | 18150 | ptbr_audio/peppy/18150_inimigo_abati.wav
+
+# Peppy:   "Tira esse cara da minha cola, Fox!" (S.O.S.)
+9120    | 9120 | ptbr_audio/peppy/9120_tira_esse_cara.wav
+
+# Peppy:   "Por que voce ta demorando tanto, Fox?" (S.O.S.)
+9150    | 9150 | ptbr_audio/peppy/9150_por_que_voce.wav
+
+# Peppy:   "Atira! Eles tao me pegando aqui!" (S.O.S.)
+9153    | 9153 | ptbr_audio/peppy/9153_atira_eles.wav
+
+# Peppy:   "Eu to na merda aqui!" (S.O.S.)
+19464   | 19464 | ptbr_audio/peppy/19464_eu_to_na.wav
+
+# Peppy:   "Seu pai me ajudou exatamente assim uma vez!" (rescued)
+9180    | 9180 | ptbr_audio/peppy/9180_seu_pai_me.wav
+
+# Peppy:   "Vamos, Fox! Voce consegue!" (flying closely near him)
+20296   | 20296 | ptbr_audio/peppy/20296_vamos_fox.wav
+
+# Peppy:   "Eu vejo seu pai em voce, Fox." (flying closely near him)
+20281   | 20281 | ptbr_audio/peppy/20281_eu_vejo_seu.wav
+
+# Peppy:   "Qual e? Sai de cima de mim, Fox!" (flying closely near him)
+20299   | 20299 | ptbr_audio/peppy/20299_quale_sai_de.wav
+
+# Peppy:   "Ta tudo bem de boa aqui." (shields 75-50%)
+20012   | 20012 | ptbr_audio/peppy/20012_ta_tudo_bem.wav
+
+# Peppy:   "Eu tomei uns tiros ai, mas to bem." (shields 50-25%)
+20014   | 20014 | ptbr_audio/peppy/20014_eu_tomei_uns.wav
+
+# Peppy:   "Minha vida inteira passou pela minha cabeca agora!" (shields 50-25%)
+20016   | 20016 | ptbr_audio/peppy/20016_minha_vida_inteira.wav
